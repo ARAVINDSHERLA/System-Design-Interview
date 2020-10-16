@@ -1,0 +1,10 @@
+*.tex
+README.pdf
+testbed-pks-nsxt.rb
+.DS_Store
+cheatsheet-wcp-A4
+local_notes.org
+*-A4.log
+*.out
+*.aux
+README.log

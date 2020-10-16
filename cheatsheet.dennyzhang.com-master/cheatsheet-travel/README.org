@@ -1,0 +1,85 @@
+* CheatSheet: Take Flights For Travel                                                   :Life:
+:PROPERTIES:
+:type:     life
+:export_file_name: cheatsheet-travel.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-travel"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-travel/cheatsheet-travel.pdf][cheatsheet-travel.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/life/][life]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-travel
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][Cheatsheet: Driver License]], [[https://cheatsheet.dennyzhang.com/cheatsheet-visa-A4][Cheatsheet: Visa]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+Checklist before travel by flights
+** Basic
+| Item                                   | Summary                             |
+|----------------------------------------+-------------------------------------|
+| Check flight status for United Airline | [[https://www.united.com/web/en-US/apps/travel/flightstatus/default.aspx][Link: Flight status and information]] |
+** Checklist: Mandatory
+| Item       | Summary                                                     |
+|------------+-------------------------------------------------------------|
+| ID         | driver license, passport, etc.                              |
+| Toothpaste | most hotels don't provide it now.                           |
+| Cash       | Tips for hotels; Or scenarios which won't take credit cards |
+| Chargers   | cellphones, laptop, etc.                                    |
+| Slippers   | be more comfortable on the plane or hotel                   |
+** Checklist: International Flights
+| Item             | Summary                               |
+|------------------+---------------------------------------|
+| Pen              | Might need to fill forms on the plane |
+| Fruits           | Apples, Oranges, etc                  |
+| Check-in earlier | Choose seats                          |
+| Earphone         | Noisy background on plane             |
+| Blanket          | It could cold on the plane            |
+| Pillow           | Sleep well on the flights             |
+| Glass protection | Sleep well on the flights             |
+** Checklist: Optional
+| Item                | Summary                               |
+|---------------------+---------------------------------------|
+| Sport shoes         | In case of lots of walking.           |
+| Tower               | In case don't like the ones on hotels |
+| Travel Kit          |                                       |
+| Eyecontact          |                                       |
+| Women/Girls special |                                       |
+** More Resources
+ License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<div style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-travel}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-travel}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-travel}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-travel}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:

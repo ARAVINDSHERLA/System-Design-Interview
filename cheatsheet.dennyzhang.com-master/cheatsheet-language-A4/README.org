@@ -1,0 +1,120 @@
+* Programming Language Implemenetations CheatSheet                    :Interview:
+:PROPERTIES:
+:type:     language
+:export_file_name: cheatsheet-language-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-language-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-language-A4/cheatsheet-language-A4.pdf][cheatsheet-language-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/interview/][interview]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-language-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-golang-A4][Golang CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Languages - Source Code
+| Name                  | Summary                                                       |
+|-----------------------+---------------------------------------------------------------|
+| Java JDK Source Code  | [[https://github.com/openjdk-mirror/jdk7u-jdk/tree/master/src/share/classes/java/util][Github: jdk7u-jdk]]                                             |
+| Golang Source Code    | [[https://github.com/golang/go/tree/master/src/runtime][Github: go]]                                                    |
+| Python Source Code    | [[https://github.com/python/cpython][Github: cpython]], [[http://pgbovine.net/cpython-internals.htm][Link: CPython internals: A ten-hour codewalk]] |
+| Git Source Code       | [[https://github.com/git/git][Github: git]]                                                   |
+| Cassandra Source Code | [[https://github.com/apache/cassandra][Github: apache/cassandra]]                                      |
+| Zookeeper Source Code | [[https://github.com/apache/zookeeper][Github: apache/zookeeper]]                                      |
+| Reference             | [[http://tutorials.jenkov.com/java-util-concurrent/index.html][Link: Java Concurrency Utilities]]                              |
+** Middleware & DB
+| Name              | Summary                    |
+|-------------------+----------------------------|
+| Redis Source Code | [[https://github.com/antirez/redis/tree/unstable/src][Github: redis]]              |
+| MySQL             | [[https://github.com/mysql/mysql-server][Github: mysql/mysql-server]] |
+| Postgres          | [[https://github.com/postgres/postgres][Github: postgres/postgres]]  |
+| Kafaka            |                            |
+| Spark             |                            |
+** Community Design Proposals
+| Name                        | Summary                                  |
+|-----------------------------+------------------------------------------|
+| Python Design Proposals     | [[https://www.python.org/dev/peps/][Link: Python PEP Index]]                   |
+| Kubernetes Design Proposals | [[https://github.com/kubernetes/enhancements/tree/master/keps][Github: Kubernetes Enhancement Proposals]] |
+** Data Structures
+| Name                                        | Summary                                                               |
+|---------------------------------------------+-----------------------------------------------------------------------|
+| Blocking Queue                              |                                                                       |
+| Delayed Queue                               |                                                                       |
+| Concurrent Linked Queue                     | [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/concurrent/ConcurrentLinkedQueue.java][Github: jdk7u-jdk/.../concurrent/ConcurrentLinkedQueue.java]]           |
+| Priority Blocking Queue                     | [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/concurrent/PriorityBlockingQueue.java][Github: jdk7u-jdk/.../concurrent/PriorityBlockingQueue.java]]           |
+| Deque                                       | [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/Deque.java][Github: jdk7u-jdk/.../Deque.java]]                                      |
+| Bitset                                      |                                                                       |
+| Garbage Collection                          |                                                                       |
+| Concurrent Hash Map                         |                                                                       |
+| Sorted Map, Treemap                         |                                                                       |
+| Semophore                                   | [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/concurrent/Semaphore.java][Github: jdk7u-jdk/.../concurrent/Semaphore.java]]                       |
+|---------------------------------------------+-----------------------------------------------------------------------|
+| How Golang channel feature is implement?    | [[https://www.youtube.com/watch?v=KBZlN0izeiY][YouTube: GopherCon 2017: Understanding Channels]], [[https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-channel/][Link: Golang Channel]] |
+|---------------------------------------------+-----------------------------------------------------------------------|
+| Binary index tree                           |                                                                       |
+| API Rate Limiter                            |                                                                       |
+| Skiplist                                    |                                                                       |
+| Bloom filter                                |                                                                       |
+| CRDTs (Conflict-Free Replicated Data Types) |                                                                       |
+** Functions & Methods
+| Name                                        | Summary                                                                      |
+|---------------------------------------------+------------------------------------------------------------------------------|
+| How string contains() method is implemented |                                                                              |
+| How sqrt method is implemented              | sqrt(x) = 2**k * sqrt(y) [[https://github.com/golang/go/blob/master/src/math/sqrt.go][Github: ../sqrt.go]], [[https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/native/java/lang/fdlibm/src/e_sqrt.c][Github: ../e_sqrt.c]]             |
+| How Thread.sleep() is implemented           |                                                                              |
+| How python enumerate() is implemented?      |                                                                              |
+| How python implements collections.dequeue   | Doubly-linked list: [[https://github.com/python/cpython/blob/762f93ff2efd6b7ef0177cad57939c0ab2002eac/Modules/_collectionsmodule.c#L33-L35][Github: python/cpython/.../Modules/_collections=module.c]] |
+| Java final vs finally vs finalized          |                                                                              |
+** More Resources
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+https://www.language-editor.org/dist/latest/cheatsheet.html
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-language-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-language-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-language-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-language-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* TODO delayedqueue implementation                                 :noexport:
+leader
+* TODO semophore implementation                                    :noexport:
+lock, queue
+
+state
+reschedule
+* TODO token bucket vs leaky bucket                                :noexport:
+https://en.wikipedia.org/wiki/Token_bucket

@@ -1,0 +1,558 @@
+* CheatSheet: Professional Communication For IT Workers                :Life:
+:PROPERTIES:
+:type:     communication
+:export_file_name: cheatsheet-communication-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-communication-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-communication-A4/cheatsheet-communication-A4.pdf][cheatsheet-communication-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-it-career-A4][CheatSheet: IT Career Path]], [[https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4][Cheatsheet: IT Communication]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Pitfalls For Geek Culture
+| Name                                     | Second Thinking                                                                  |
+|------------------------------------------+----------------------------------------------------------------------------------|
+| No information barrier; sharing anything | Information is power and profit margin. Only share the relevant                  |
+| No hierarchy; just talk with code        | It's more about people and business                                              |
+| Make all the possible improvements       | You may miss the priority and cross-functions cooperation                        |
+| Value inovation over cooperation         | Working solo helps to try ideas faster; but PoC is different from products       |
+| Be absolutely accurate                   | Human is not machine; So it is software development world                        |
+| Curse of knowledge                       | Normal people are not dummy; they just don't have experience you have            |
+| Assume everyone is with good will        | You may be set up or manipulated                                                 |
+| Rarely think about monetization          | Face it. Funding is very important, even for open source projects                |
+| Communication is not actionable          | Keep talking fancy tech, but few impressive highlights or actionable items       |
+| Do everything in a hard way              | Intellectual challenges may not be cost effective; you can't do everything       |
+| Reference                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-it-career-A4][CheatSheet: IT Career Path]], [[https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4][Cheatsheet: IT Communication]], [[https://cheatsheet.dennyzhang.com/cheatsheet-opensource-A4][Cheatsheet: Opensource]] |
+#+BEGIN_HTML
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=0312337361&asins=0312337361&linkId=2942aaa206d4200e314c854716b4d6ef&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+#+END_HTML
+** Reference
+| Name          | Summary                                    |
+|---------------+--------------------------------------------|
+| [[https://en.wikipedia.org/wiki/SIPOC][SIPOC Diagram]] | Supplier, Input, Process, Output, Customer |
+| Six Sigma     | [[https://www.youtube.com/watch?v=wEBPVQ7W2wg][YouTube: Six Sigma]]                         |
+** Facts
+| Name                                              | Summary                                                                    |
+|---------------------------------------------------+----------------------------------------------------------------------------|
+| The only thing matters is what you value the most | Pursuing different things will lead you to different action plans          |
+| Giving useful feedback is crucial for the senior  | Selling is even more important than doing                                  |
+| Choose realistic goals                            | Are you sure you can afford that? And do you really need that?             |
+| Act differently for different persons             | Stereotype helps; but remember each individual is different                |
+| Don't lie to yourself                             | You will fail eventually                                                   |
+| You can't win big by working solo                 |                                                                            |
+| You can't please everyone; Get the most of it     |                                                                            |
+| Saving small money may harm the org as a whole    |                                                                            |
+| Keep pushing until someone ask you to stop        |                                                                            |
+| You don't get paid for the effort you have spent  | Only for the value you have delivered                                      |
+| You can't solve all conflicts & problems          | Some problems can't be solved in your level or simply conflict of interest |
+** Terminology
+| Name         | Comment                                                                                   |
+|--------------+-------------------------------------------------------------------------------------------|
+| [[https://support.indiegogo.com/hc/en-us/articles/205183457-Building-Stretch-Goals][stretch goal]] | an additional goal you set for your campaign in case you exceed your initial funding goal |
+** Typical Things People May Want
+| Name                           | Summary |
+|--------------------------------+---------|
+| Be sharper in technical skills |         |
+| Be more profitable             |         |
+| Get more hands-on experience   |         |
+** Typical Audience
+| Name              | Summary |
+|-------------------+---------|
+| Technical Geek    |         |
+| Executives        |         |
+| Senior management |         |
+| Entrepreneur      |         |
+| Product manager   |         |
+| IT workers        |         |
+** Typical Communication Scenarios
+| Name                                                            | Summary                                             |
+|-----------------------------------------------------------------+-----------------------------------------------------|
+| When another team asks you to do some chore                     | Small things can pile up to be a big demand of time |
+| Express your feelings of inappropriate assignments/expectations |                                                     |
+| Overlapped responsibilities for multiple members/teams          |                                                     |
+** [#A] Scenario - Technical Discussion Meeting
+| Name                                       | Summary                                                                        |
+|--------------------------------------------+--------------------------------------------------------------------------------|
+| React fast for ideas people are presenting | If you're listening to my ideas, why I would spare time in yours?              |
+| Don't underestimate your effort and values | Trust yourself. You won't buy, if servants keep complaining their own products |
+| Understand the situation and big pictures  |                                                                                |
+| Avoid going to extreme                     | You will probably be wrong; and make people uncomfortable                      |
+| Learn how to interrupt politely            |                                                                                |
+| Ask questions with the format of yes/no    |                                                                                |
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+** [#A] Scenario - Talk For Your Initiatives
+| Name                                                | Summary                                                               |
+|-----------------------------------------------------+-----------------------------------------------------------------------|
+| Do rehearsal in advance                             |                                                                       |
+| Let people talk more, before pouring                |                                                                       |
+| Know what the audience is interested                |                                                                       |
+| Watch and response, before insisting                |                                                                       |
+| Drain info and opinions from others, before talking |                                                                       |
+| Every punch should right into the point             |                                                                       |
+| You have to earn your opportunities                 | The original assigment may not be good for both you and your employer |
+** [#A] Scenario - Build First Image
+| Name                                              | Summary                                                     |
+|---------------------------------------------------+-------------------------------------------------------------|
+| Label yourself; inject perception to the audience | People are clear your specialities for future opportunities |
+** [#A] Scenario - Small Talks
+| Name                       | Summary                                  |
+|----------------------------+------------------------------------------|
+| Expression of "Thank You"  | Never underestimate the power of that    |
+| Be resourceful and useful  |                                          |
+| Be interesting             | Smile and small jokes bring people close |
+| Don't make people feel bad |                                          |
+** [#A] Scenario - Talk With Evangelists
+| Name                                                         | Summary                                                       |
+|--------------------------------------------------------------+---------------------------------------------------------------|
+| Don't keep pushing people with "interview questions"         | They may walk away with pride hurted                          |
+| People may not be able to explain problems/solutions clearly | Not everyone have enough broad vision and in-depth experience |
+| Ask the right question                                       | To right people, right situation                              |
+| Admit your stupidity                                         | Don't hide it                                                 |
+| Set examples by taking hard jobs                             | Show your muscle to win the trust and respect                 |
+| People want to be super stars                                | Companies would only need that for very few scenarios         |
+** Scenario - Decide When To Share
+| Name                                                | Summary                                       |
+|-----------------------------------------------------+-----------------------------------------------|
+| Be cautious to share the most real of your thoughts | It could be a bad thing for everyone involved |
+| Only share to relevant people with relevant info    | People may get confused; be less helpful      |
+** Scenario - Avoid Getting Emotional
+| Name                                                                 | Summary                                     |
+|----------------------------------------------------------------------+---------------------------------------------|
+| Even if you don't like each other, you two can achieve more together |                                             |
+| The world is never fair                                              | Avoid feeling angry, if something is unfair |
+** Scenario - Reject Politely
+| Name                               | Summary |
+|------------------------------------+---------|
+| Ask people to create a PR          |         |
+| Ignorance is also a valid response |         |
+** Scenario - When To Ignore Issues
+| Name                                                          | Summary                           |
+|---------------------------------------------------------------+-----------------------------------|
+| Some improvements may not be that valuable as them seem to be |                                   |
+| As long as you're not blocked, don't bother                   | Track but think before escalating |
+** Scenario - Shared Responsibilities
+| Name                                                                | Summary |
+|---------------------------------------------------------------------+---------|
+| Don't want to cover other ass, especially when you don't like them  |         |
+| The ability to work independently, regardless of existing obstacles |         |
+** More Resources
+License: Code is licencommunication under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-communication-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-communication-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* DONE Please watch it at your earliest convenience                :noexport:
+  CLOSED: [2019-04-24 Wed 10:48]
+* Talk with Engineers for Tech                                     :noexport:
+- Principles
+| Name                         | Summary |
+|------------------------------+---------|
+| Don't try to do the show off |         |
+| Listen and *Ask*             |         |
+
+- Questions To ask
+| Name                         | Summary |
+|------------------------------+---------|
+| Have you tried the tech?     |         |
+| Do you know someone related? |         |
+| What if ...?                 |         |
+* Talk to your non-technical managers                              :noexport:
+| Name                       | Summary                              |
+|----------------------------+--------------------------------------|
+| What and why takes efforts | Earn resource and time for your team |
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Scenario: sshd common function                              :noexport:
+https://github.com/vmware/pks-ci/pull/440
+https://github.com/vmware/pks-ci/pull/441
+* TODO Scenario: Two partner solving the problem: nimbus vrops     :noexport:
+* TODO Scenario: telmetry bosh propertity issue with non-vsphere env :noexport:
+https://raas.gcp.pks-releng.cf-app.com/teams/oratos-vmware/pipelines/vsphere65-nsx23-om23-install-airgap-master/jobs/configure-and-deploy-tile/builds/2
+#+BEGIN_EXAMPLE
+
+Task 328 | 07:25:34 | Preparing deployment: Preparing deployment (00:00:06)
+Task 328 | 07:25:52 | Error: Unable to render instance groups for deployment. Errors are:
+  - Unable to render jobs for instance group 'pivotal-container-service'. Errors are:
+    - Unable to render templates for job 'telemetry-server'. Errors are:
+      - Error filling in template 'fluentd.sh.erb' (line 8: Can't find property '["billing.db-username"]')
+      - Error filling in template 'fluentd.conf.erb' (line 30: Can't find property '["billing.db-username"]')
+      - Error filling in template 'post-start.erb' (line 6: Can't find property '["pks-instance-id"]')
+
+Task 328 Started  Tue Dec 25 07:25:34 UTC 2018
+Task 328 Finished Tue Dec 25 07:25:52 UTC 2018
+Task 328 Duration 00:00:18
+Task 328 error
+
+
+Updating deployment:
+  Expected task '328' to succeed but state is 'error'
+Exit code 1
+===== 2018-12-25 07:25:52 UTC Finished "/usr/local/bin/bosh --no-color --non-interactive --tty --environment=30.0.0.11 --deployment=pivotal-container-service-b6574e107834eb9855aa deploy /var/tempest/workspaces/default/deployments/pivotal-container-service-b6574e107834eb9855aa.yml"; Duration: 19s; Exit Status: 1
+Exited with 1.
+#+END_EXAMPLE
+* TODO Scenario: dev ci is down at Christmas, what I should do?    :noexport:
+https://ci.vcna.io/teams/oratos-vmware/pipelines/pks-vrops-release/jobs/run-tests/builds/190
+#+BEGIN_EXAMPLE
+Error: Server Error
+The server encountered a temporary error and could not complete your request.
+Please try again in 30 seconds.
+#+END_EXAMPLE
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO within our scope vs out of our scope                        :noexport:
+* TODO Avoid arguing with non-important things                     :noexport:
+* TODO What you should avoid doing as a team lead?                 :noexport:
+* TODO Think ahead for questions that different roles would ask    :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Questions May Not Be Clear                             :noexport:
+** Promotion depends on your deliverables?
+** 能战斗, 能抗事
+** 充分的信息沟通是不对的
+* TODO [#A] Things I do well                                       :noexport:
+** Enage team members, and grow project as a team effort
+** Be close to colleagues
+** Made steady and persistent achivement
+** Willing to learn
+* TODO [#A] Mistakes I have made                    :noexport:
+** Speak with confidence
+** Strong argument with problems of a low priority
+** Try to win trust and respect from everyone
+* TODO Personal notes                                              :noexport:
+Recap
+
+Common
+1.	不要过度的相信老板的upper management能力.
+M.C. 理想的情况是,老板帮你在更高一个level上setup一个比较合理的预期,自己figure out相关的technical challenges.
+2.	在收集到足够的信息之前,不要武断专行.
+PKS-X, Denny's CI/CD不与business alignment
+3.	Looking for a good career manager.
+4.	Don't complain with direct reports
+5.	找到项目最关键的人,再争取最关键的人的trust
+6.	选择好的环境.Choose the right battle
+7.	用抽象的语言来概括总结问题,同时要用核心的supporting details
+8.	Be positive when talking with your managers and your team
+Keep being sharp和always identify problems不见得是好事
+9.
+
+XX
+1.	聊天时,要进行testing.不要assume谈话对方都懂你的意思
+2.	赢得所有人的trust,是一个不合理的需求/预期.应该针对关键人做定向工作
+3.	Choose the right battle
+4.	在bay area, 努力是default
+Michael晚上三点回去
+5.	在proposal时,挖一个小口子,然后慢慢扩大这个坑
+6.	说的Detail不准确,被人抓到了把柄.然后自己赶快认了,而不是自己去圆场
+Bosh root privilege
+7.	在大方向上,能自圆其说
+8.	耳根软
+9.	并不能从PM得到实质`有用的信息
+10.
+
+XX
+1.	与team一起合作,project manager, product manager, people manager.
+2.	不要有太多的complain, stay positive.
+3.	Manage both ends, up and down, not limited to the direct layer.
+* TODO pushing manager                                             :noexport:
+- Send out meeting notes and agreements: 防止manager的欲望上调
+- 《向上管理的艺术》
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* If you can't understand people                                   :noexport:
+* Junior people issues                                             :noexport:
+- Can't manage risks
+* Lessons learned: Don't ask unnecessary requirements              :noexport:
+* Need data to support decisions/trade-off you make                :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Puzzles: Is it a valid expectation: setup friendship with your reports :noexport:
+* TODO Puzzles: team management: bad tones                         :noexport:
+* watch out                                                        :noexport:
+
+不要被人tag
+
+别向任何人,就算是你最要好的朋友抱怨有关你的职位或薪资
+Speak with confidence
+
+耳根软
+不敢做major decision
+* [#A] Question: Set the right goal, and avoid useless effort/arguments :noexport:
+* TODO Question: Set the timeline                                  :noexport:
+* doc: 责任不能分解或转移                                          :noexport:
+* TODO doc: set up to fail                                         :noexport:
+* TODO doc: team management                                        :noexport:
+- 与新的team member合作, 需要观察和磨合
+- 前一段时间, 某个team member太拼.他可能想slow down一下
+* TODO doc: Communication and provide env                          :noexport:
+- Need PKS api team's support:
+  Provide APIs to discover K8S clusters with required attributes
+  Expose the operation as an API for the Management Pack to call.
+- Need to provide testbed for vrops team
+- Need to coordinate in between vrops and pks core team
+* TODO Lesson learned: Need to be time sensitive                   :noexport:
+* doc: setup to fail                                               :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] doc: ask questions in tech meeting                     :noexport:
+- Too general technical questions
+* TODO [#A] doc: Constantly check with people, and sync up with projects and ideas they are working on :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] doc: local notes                                       :noexport:
+** TODO doc: Listen the missing points
+** Argument to protect myself
+** Invalid discussion
+** HALF doc: the experience you value may not matter to the interviwers
+ Let's say you have lots of experience with elasticsearch, but the interviwers just want to examine candarssa experience
+
+ You're super good emacs user. They don't care
+** HALF doc: big corps has there in-house solutions
+ Zoltan Paldi [2:20 PM]
+ On the different level there are different kind of problems that you need to solve.
+
+ The big corps required very deep knowledge about the given technologies.
+
+ Denny Zhang (Github . Blogger) [2:22 PM]
+ agree
+
+ Zoltan Paldi [2:22 PM]
+ They do not enough that you can you use it or you can choose which one is fit for the given problem, they also want to know that you can compare the given implementations and products in the given purposes.
+ And you also have to know what is the differences among the given solutions in a dev prospective as well.
+
+ Denny Zhang (Github . Blogger) [2:24 PM]
+ Think from different angles. you mean? (edited)
+
+- 不要在一些无关紧要的地方去为难别人或队友
+- 错位生长:团队不同role要有自己的成长空间
+** TODO doc: avoid being negative thinking and talking              :noexport:
+** TODO Give constant status update                                 :noexport:
+** TODO Try something ahead, then discussing                        :noexport:
+** TODO doc: add technical complication for the problems            :noexport:
+** TODO doc: cross-team communication                               :noexport:
+*** Do we really need bi-weelky status meeting?
+*** file tickets to track status
+*** check status: vrops?
+** TODO doc: Don't be emotional                                     :noexport:
+** TODO Doc: don't think you know everything                        :noexport:
+** TODO doc: shield teammate from overhelming information and obligations :noexport:
+** TODO doc: need to think fast and suggest fast                    :noexport:
+** TODO [#A] doc: need to decide the direction and priority; learn to give up for more :noexport:
+** TODO doc: outlook cheatsheet: share the calender: Calendar -> Oragnize -> Permission :noexport:
+https://support.office.com/en-us/article/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88
+** TODO doc: choose relatively non-critical issues from a list of blocking issues :noexport:
+** TODO doc: Name your favorite tech stack. What is your favorite thing about it and what is your least favorite thing about it? :noexport:
+https://news.ycombinator.com/item?id=18955731
+
+Senior hiring:
+- Why this question is good: any dev knows that every tech decision comes with good things and terrible things. I love Python, but GIL, circular imports, shitty deployment/package management, 2.x vs 3.x nonsense all suck. If you haven't been in the trenches, you can't answer this _specifically_... you can only answer it _broadly_. And it's very apparent right away to interviewer.
+
+** TODO doc: solve problems stage by stage, and one by one. Thus the team can get focused :noexport:
+** Mindset
+| Name                                     | Rational |
+|------------------------------------------+----------|
+| Work on the first priority things! Now!! |          |
+| Don't set the limits for yourself        |          |
+| Don't set the limits for your teammates  |          |
+** [#A] Mistakes                                                   :noexport:
+| Name                                                     | Rational                                                  |
+|----------------------------------------------------------+-----------------------------------------------------------|
+| Avoid strong negative statement directly                 | People may get offended or hurt                           |
+| Don't get people false answers, when not sure            | It damages your authority                                 |
+| Share the exact match answer. Pause, then add more       | Bring instant value and avoid confusing people            |
+| Do you really understand what the audience already know? | People may have the same thinking with slight differences |
+| Don't expect people admire your tech hobbies             | People are busy and result-driven                         |
+| Addres problems which can be easily solved later         |                                                           |
+** TODO Avoid confuse people                                       :noexport:
+ #+BEGIN_EXAMPLE
+ Lakshmi Gayatri [32 minutes ago]
+ Pasted image at 2019-01-11, 11:31 PM
+
+ Denny Zhang [11 minutes ago]
+ I have in recent 1.3
+
+
+ Lakshmi Gayatri [4 minutes ago]
+ Thanks @Denny Zhang . I filed a bug for this. Could you fix it? I had to deploy
+
+
+ Denny Zhang [3 minutes ago]
+ I'm not working on this part.
+
+ I just happened to notice the similar error
+
+
+ Lakshmi Gayatri [3 minutes ago]
+ Ok.
+ #+END_EXAMPLE
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** Justify Your Value In Dicussions - Defensive
+| Name                                                         | Rational |
+|--------------------------------------------------------------+----------|
+| Add key observations people have overlooked                  |          |
+| Ask good questions to drive conversation to the deeper level |          |
+** Lead an engineering team
+| Name                                              | Summary                                                             |
+|---------------------------------------------------+---------------------------------------------------------------------|
+| Trust people                                      |                                                                     |
+| Coach junior members for the overview tasks       |                                                                     |
+|---------------------------------------------------+---------------------------------------------------------------------|
+| Be resonable                                      | You can't be too greedy; Ask people for impossible missions         |
+| Be open                                           | Avoid misunderstanding and false guessings                          |
+| Wrong goal: clear goal                            | hurt people, and won't benefit you                                  |
+| Avoid being greedy                                |                                                                     |
+|---------------------------------------------------+---------------------------------------------------------------------|
+| Instead of giving instructions, show problems     | Need people to think and understand, or even bring better solutions |
+|---------------------------------------------------+---------------------------------------------------------------------|
+| Don't buddy co-workers                            | Set the boundary for future tough conversations                     |
+| Avoid being blocked by other teams                | Need to identify the alternatives                                   |
+| Avoid last minute changes                         |                                                                     |
+| Risk management: always has a plan B              |                                                                     |
+| Avoid your engineering following useless workflow |                                                                     |
+** [#A] Common Dilemas                                             :noexport:
+| Name                                                 | Summary                                                 |
+|------------------------------------------------------+---------------------------------------------------------|
+| I don't want to write down very clear tech documents |                                                         |
+| I don't want to give earlier feedback loop           |                                                         |
+| People may not know the truth at a deep level        |                                                         |
+| Extra wrappers + poor documents confuse people       |                                                         |
+| You need to explain your value in their languages    | Sometimes the statement they believe may not make sense |
+* small talk                                                       :noexport:
+https://www.youtube.com/watch?v=R1vskiVDwl4
+* notes                                                            :noexport:
+** how it worked before?
+** "讲道理"和"问问题"是聊天的两个基本组成部分
+** 精致的利己主义,没有人格魅力
+** 讲的故事要生动
+** [#A] 闲聊中学习                                                 :noexport:
+** - 自己给自己园话,然后再讨论建议
+** - 自己给自己打好label,然后告诉别人
+Labels: Container expert/Technical selling
+** 心要纯                                                          :noexport:
+* 技术有实力 ！= 有能力把事情做好                                  :noexport:
+FZ case
+* outcome matters                                                  :noexport:
+** Status reports should be outcome based and not activity based.
+* TODO [#A] ask questions                                          :noexport:
+* TODO [#A] discuss in a colabaration                              :noexport:
+* start the conversations                                          :noexport:
+** Let's starts with no-no                                         :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* For technical problems, if you don't tell, people may not see    :noexport:
+* People may not deliver what they claims                          :noexport:
+* Messages(slack, emails) may not be read deliberately or unconciously :noexport:
+* Common sense might be missing quite often                   :noexport:
+- No e2e tests, before PR
+* Simon Sinek - YouTube: Why leaders make you safe                 :noexport:
+* Lesson learned                                                   :noexport:
+- When you boss says I have communicated with XXX, is it really true?
+* local notes                                                      :noexport:
+- I can baby-sit the pipeline until I see it go green
+- Lots of interesting questions are stupid. And the answers don't really matter. Just think and enjoy.
+- Your online business should be designed for a specific audience. It's not just a collection of what you like. Or even wore - what you think your audience should like.
+* [#A] How to ask questions in sharing session?                    :noexport:
+* TODO [#A] Escape bike-shedding                                   :noexport:
+* ask question, reply it directly                                  :noexport:
+* I would defer the questions to a manager                         :noexport:
+* TODO Based on my observations, there are a lot of work here, it will take time to understand to figure out what need to be done. :noexport:
+* [#A] Save you bullets. You don't need to show your muscle, if unnecessary :noexport:
+* TODO Naming could be confusing: vmware/kubectl-plugin-vsphere :noexport:
+* TODO Identity People's bluffing                                  :noexport:
+* TODO People keep talking about their requests, but ignore your requests :noexport:
+#+BEGIN_EXAMPLE
+Denny Zhang 10:24 AM
+Morning XXX
+I'd like to get notified when people have PRs for GCM.
+Do I need to join gitlab teams? e.g,
+https://gitlab.eng.vmware.com/core-build/cluster-api-provider-wcp/project_members
+https://gitlab.eng.vmware.com/core-build/vm-operator/project_members
+https://gitlab.eng.vmware.com/core-build/guest-cluster-controller/project_members
+XXX YYY:spiral_calendar_pad: 10:24 AM
+Hey Denny, before that did you see my related question last night ?
+XXX YYY
+Curious, do you have any ideas on how to do this? https://jira.eng.vmware.com/browse/GCM-645
+Direct Message | Yesterday at 10:59 PM | View conversation
+Denny Zhang 10:25 AM
+No idea. Haven't done that before.
+Still ramping up things.
+XXX YYY:spiral_calendar_pad: 10:26 AM
+right, nothing to do with GC. just gilab stuff
+gitlab stuff
+Cool.
+Is that the reason you were asking to be notified ?
+Denny Zhang 10:27 AM
+I noticed there are some PRs, I might be able to help.
+So it shall help that I can be in the reviewer list
+XXX YYY:spiral_calendar_pad: 10:27 AM
+awesome. thank you.
+Denny Zhang 10:28 AM
+e.g, https://gitlab.eng.vmware.com/core-build/cluster-api-provider-wcp/merge_requests/67
+We can do more than that.
+There might be more differences except golang version in between local build vs gobuild.
+And any part can contribute to the build failure
+XXX YYY:spiral_calendar_pad: 10:40 AM
+YOu will have to ask Zach, I am not in these repos yet
+he can add you as a member to these projects
+Denny Zhang 10:40 AM
+Cool. I checked with Sabari. Let me ask Zach
+#+END_EXAMPLE
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] 要搭团队技术新锐的顺风车                               :noexport:
+* TODO 看到了问题,不要马上去解决                                  :noexport:
+- 理解是什么问题,理解是什么影响
+  PKS项目中, pivotal工作方式的问题与我无关.
+- 想想是谁的问题.谁解决更好
+- 现在解决,还是之后合适时机解决
+  PKS.next中Kaiting的焦点
+- 最后,才是怎么解决
+* TODO 不要脸皮薄, 该认怂时不要逞能                                :noexport:
+* TODO Clarify different definition of one same term               :noexport:
+Since people have different definitions of integration tests, let me clarify my perspective to provide a standard.
+
+Unit tests focus on function-level scope.  Integration tests focus on
+a higher-level functional scope.  However, integration tests are
+light-weight functional tests that do not require standing up an
+entire system to execute.  Integration tests typically run in the
+context of a test harness that stands up processes and mocks in a
+sufficient way to validate API or stack functionality in a low-cost,
+time-efficient manner.
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO 陈述句 without emotions                                     :noexport:
+* DONE too much details: may confuse people, because they are taking things as order word by word :noexport:
+  CLOSED: [2020-03-31 Tue 09:22]
+--convert

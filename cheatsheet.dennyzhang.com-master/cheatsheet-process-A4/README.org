@@ -1,0 +1,362 @@
+* CheatSheet: Linux Process                                           :Linux:
+:PROPERTIES:
+:type:     linux
+:export_file_name: cheatsheet-process-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-process-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-process-A4/cheatsheet-process-A4.pdf][cheatsheet-process-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-process-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-file-A4][CheatSheet: Linux Files]], [[https://cheatsheet.dennyzhang.com/cheatsheet-networking-A4][CheatSheet: Linux Networking]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Linux Process Status
+| Status                                                          | Type                      |
+|-----------------------------------------------------------------+---------------------------|
+| =R= Ready or running                                            | =TASK_RUNNING(R)=         |
+| =D= Uninterruptible sleep (usually IO)                          | =TASK_UNINTERRUPTIBLE(D)= |
+| =S= Interruptible sleep (waiting for an event to complete)      | =TASK_INTERRUPTIBLE(S)=   |
+| =T= Execution stopped                                           | =TASK_STOPPED(T)=         |
+| =Z= defunct/zombie, terminated but not cleaned up by its parent | =TASK_ZOMBIE(Z)=          |
+| Processes contribute to CPU load                                | =R=, =D=                  |
+** Find process
+| Name                         | Comment                                          |
+|------------------------------+--------------------------------------------------|
+| Sort processes by ram usage  | =ps -eo size,pid,user,pcpu,command --sort -rss=  |
+| Sort processes by cpu usage  | =ps -eo size,pid,user,pcpu,command --sort -pcpu= |
+| Get parent process id by pid | ps -o ppid= -p <pid>                             |
+| Find process by name         | =pgrep <process_name>=                           |
+| List zombie processes        | See [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-process-A4/zombie-process.sh][zombie-process.sh]]                            |
+| List all process             | =ps aux=, =ps axjf=                              |
+** Top Command
+| Name                               | Comment                      |
+|------------------------------------+------------------------------|
+| Top show process full command line | Use =c= to toggle            |
+| Top sort process by memory usage   | =Shift+m=                    |
+| Top for certain processes          | =top -p `pgrep -d "," java`= |
+** Examine process
+| Name                                  | Comment                  |
+|---------------------------------------+--------------------------|
+| Trace system calls and signals by pid | =strace -p <pid>=        |
+| List all file handlers by pid         | =lsof -p <pid>=          |
+| Display process tree by pid           | =pstree -A -n -p <pid>=  |
+| List all listening ports by pid       | See [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-process-A4/proc-listen-ports.sh][proc-listen-ports.sh]] |
+| Get process ram usage by pid          | =sudo pmap -x <pid>=     |
+** Kill process
+| Name                                  | Comment                                            |
+|---------------------------------------+----------------------------------------------------|
+| Kill process gracefully               | =kill <pid>=, =kill -15 <pid>=, =kill -TERM <pid>= |
+| Kill process by force                 | =kill -9 <pid>=, =kill -KILL <pid>=                |
+| kill process by its full process name | =pkill <processname>=                              |
+| kill process by it's partial name     | =pkill -f <process-string>=                        |
+| Kill process by process name          | =killall <process_name>=                           |
+** Explore /proc filesystem
+| Name                                | Comment                                |
+|-------------------------------------+----------------------------------------|
+| Check process start command         | =cat /proc/$pid/cmdline=               |
+| Check process environment variables | =cat /proc/$pid/environ=               |
+| Check process ulimits setting       | =cat /proc/$pid/limits=                |
+| Check cpu utilization               | =/proc/loadavg=                        |
+| List all partitions                 | =/proc/partitions=                     |
+| List all modules                    | =/proc/modules=                        |
+| List TCP/UDP packages               | =sudo cat /proc/$PID/net/nf_conntrack= |
+| Get current IP from /proc           | See [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-process-A4/proc-get-ip.sh][proc-get-ip.sh]]                     |
+** More Resources
+License: Code is licendiff under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-process-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-process-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-process-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-process-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO grep                                                        :noexport:
+# Search a file for a pattern
+grep pattern file
+
+# Case insensitive search (with line numbers)
+grep -in pattern file
+
+# Recursively grep for string <pattern> in folder:
+grep -R pattern folder
+
+# Read search patterns from a file (one per line)
+grep -f pattern_file file
+
+# Find lines NOT containing pattern
+grep -v pattern file
+
+# You can grep with regular expressions
+grep "^00" file  #Match lines starting with 00
+grep -E "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" file  #Find IP add
+
+# Find all files which match {pattern} in {directory}
+# This will show: "file:line my research"
+grep -rnw 'directory' -e "pattern"
+
+# Exclude grep from your grepped output of ps.
+# Add [] to the first letter. Ex: sshd -> [s]shd
+ps aux | grep '[h]ttpd'
+
+# Colour in red {bash} and keep all other lines
+ps aux | grep -E --color 'bash|$'
+* TODO ps                                                          :noexport:
+# To list every process owned by foouser:
+ps -aufoouser
+
+# To list every process with a user-defined format:
+ps -eo pid,user,command
+
+# Exclude grep from your grepped output of ps.
+# Add [] to the first letter. Ex: sshd -> [s]shd
+ps aux | grep '[h]ttpd'
+* linux /proc filesystem                                 :noexport:IMPORTANT:
+- The proc  file  system acts as an interface to internal data structures in the kernel.
+| Item                                 | Comment                                                                                   |
+|--------------------------------------+-------------------------------------------------------------------------------------------|
+| man proc                             | manual for /proc pseudo-file system                                                       |
+| /proc                                | /home/denny/backup/tech/large_sourcecode/linux-3.4-rc7/Documentation/filesystems/proc.txt |
+| /proc/sys/kernel                     | /home/denny/backup/tech/large_sourcecode/linux-3.4-rc7/Documentation/sysctl/kernel.txt    |
+| /proc/timer_list                     |                                                                                           |
+| /proc/uptime                         |                                                                                           |
+| /proc/locks                          |                                                                                           |
+** [question] /proc/net/unix是做什么的
+   http://stackoverflow.com/questions/820782/how-do-i-find-out-what-programs-on-the-other-end-of-a-local-socket\\
+   http://unix.stackexchange.com/questions/16300/whos-got-the-other-end-of-this-unix-socketpair\\
+   A key point here is the fact that the two connected sockets will each have a different inode number.
+** [question] 为什么/proc/$PID/attr/下的文件打不开
+** [question] Do we need /proc/$PID/net/icmp for each process?
+** [question] Do we need /proc/$PID/net/protocols for each process?
+** [question] /proc/$pid/net/sockstat
+#+begin_example
+denny@denny-Vostro-1014:/proc/16413/net$ sudo cat sockstat
+sockets: used 842
+TCP: inuse 30 orphan 0 tw 0 alloc 51 mem 19
+UDP: inuse 16 mem 6
+UDPLITE: inuse 0
+RAW: inuse 0
+FRAG: inuse 0 memory 0
+#+end_example
+* Linux processes/pipe/socket                                      :noexport:
+| Item                      | Summary                                                  |
+|---------------------------+----------------------------------------------------------|
+| Pipe                      | Allow the flow of Data in one direction only             |
+| Name pipe                 | Pipe with a specific name                                |
+| Message Queues            | Message passing using a queue                            |
+| Shared Memory & Semaphore |                                                          |
+| Mapped Memory             | Similar to shared memory, but use file instead of memory |
+** [question] 为什么下面程序向stdout, stderr写内容有反应,而向stdin写内容却没有反应
+- /tmp/test.sh
+#+begin_src sh
+echo -n "please input your name:"
+read name
+echo $name
+#+end_src
+- 在terminal1,运行sh /tmp/test.sh 2>/dev/null
+- 在terminal2,找到该进程pid.并分别向该进程的stdout, stderr, stdin输入一些内容
+#+begin_example
+denny@denny-Vostro-1014:~$ ps -ef | grep /tmp/test.sh | grep -v grep
+denny    10358  9614  0 22:48 pts/3    00:00:00 sh /tmp/test.sh
+denny@denny-Vostro-1014:~$ echo -e "hello\n" >   /proc/10358/fd/1
+denny@denny-Vostro-1014:~$ echo -e "hello\n" >   /proc/10358/fd/2
+denny@denny-Vostro-1014:~$ echo -e "hello\n" >   /proc/10358/fd/0
+denny@denny-Vostro-1014:~$
+#+end_example
+- 在terminal1,可以发现stdout会有输出, 而stderr因为启动时被禁止掉了,所以没有输出.但是,为什么stdin有输入后,该shell并没有向预想中往下走了？
+#+begin_example
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh 2>/dev/null
+please input your name:hello
+
+hello
+#+end_example
+** [question] linux如何强制关闭某个进程的stdin
+*** misc                                                           :noexport:
+[root@localhost ~]# sleep 10000 |  launch '/usr/bin/mongod --quota --oplogSize 1024 --auth --pidfilepath /usr/local/ecae/db/session/mongo.pid --nohttpinterface --master --port 12010 --dbpath /usr/local/ecae/db/session --logpath /usr/local/ecae/db/session/mongodb.log --logappend'
+all output going to: /usr/local/ecae/db/session/mongodb.log
+** [question] 为什么需要exec的api,来替换当前进程
+** basic use
+*** What is a process
+- Excutable/Program Loaded -> Process
+- Program is just the Code & initial Data part
+- Additionally: Value of variables, stack, heap, program counter, process registers, else.
+** DONE 已经解决
+*** DONE shell向stderr输出内容; 如何将一个程序的stderr重定向到stdout; 如何禁掉一个程序的stderr?
+   CLOSED: [2012-08-18 六 22:03]
+- /tmp/test.sh
+#+begin_src sh
+echo "something to stdout"
+echo "something to stderr" >&2
+#+end_src
+- Test procedure
+#+begin_example
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh
+something to stdout
+something to stderr
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh 2>/dev/null
+something to stdout
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh 1>/dev/null
+something to stderr
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh 2>&1
+something to stdout
+something to stderr
+denny@denny-Vostro-1014:~$ (sh /tmp/test.sh 2>&1) 1>/dev/null
+denny@denny-Vostro-1014:~$
+#+end_example
+*** DONE 在不改变系统状态下,如何得到某个服务程序stdin的内容和stdout的内容
+   CLOSED: [2012-08-18 六 22:31]
+- /tmp/test.sh
+#+begin_src sh
+echo -n "please input your name:"
+read name
+echo $name
+#+end_src
+- 在terminal1,启动该test.sh,来模拟需要调试的服务程序
+#+begin_example
+denny@denny-Vostro-1014:~$ sh /tmp/test.sh
+please input your name:
+#+end_example
+- 在terminal2中,通过ps找到该进程,并用strace来监听该进程的stdin和stdout的内容
+#+begin_example
+denny@denny-Vostro-1014:~$ ps -ef | grep /tmp/test.sh | grep -v grep
+denny    10086  9614  0 22:25 pts/3    00:00:00 sh /tmp/test.sh
+denny@denny-Vostro-1014:~$   sudo strace -e read=0 -e write=1 -p 10086
+Process 10086 attached - interrupt to quit
+#+end_example
+- 向terminal1,输入一些内容,例如hello.那么在terminal2,可以得到stdin的内容,及test.sh将要向stdout输出的内容
+#+begin_example
+denny@denny-Vostro-1014:~$   sudo strace -e read=0 -e write=1 -p 10086
+Process 10086 attached - interrupt to quit
+read(0, "h", 1)                         = 1
+ | 00000  68                                                h                 |
+read(0, "e", 1)                         = 1
+ | 00000  65                                                e                 |
+read(0, "l", 1)                         = 1
+ | 00000  6c                                                l                 |
+read(0, "l", 1)                         = 1
+ | 00000  6c                                                l                 |
+read(0, "o", 1)                         = 1
+ | 00000  6f                                                o                 |
+read(0, "\n", 1)                        = 1
+ | 00000  0a                                                .                 |
+write(1, "hello\n", 6)                  = 6
+ | 00000  68 65 6c 6c 6f 0a                                 hello.            |
+read(10, "", 8192)                      = 0
+exit_group(0)                           = ?
+Process 10086 detached
+#+end_example
+*** DONE 如何把一个文件内容和屏幕输出两个数据流归并成一个文件
+   CLOSED: [2012-08-18 六 11:04]
+- 向文件尾部追加一些内容: (cat /etc/hosts; echo "append") ｜ sudo tee ./test.log
+*** DONE 下面这段shell的工作原理是什么
+   CLOSED: [2012-08-18 六 21:57]
+- HERE DOCUMENT可以输出成段的文字而不用加引号也不用考虑换行符的处理问题
+#+begin_src sh
+cat >hello.go <<EOF
+package main
+
+import "fmt"
+
+func main() {
+        fmt.Printf("hello, world\n")
+}
+EOF
+#+end_src
+*** DONE try linux name pipe: mknod, mkfifo
+  CLOSED: [2012-06-21 四 08:54]
+#+begin_example
+denny@denny-Vostro-1014:/tmp$ mkfifo /tmp/fifo
+denny@denny-Vostro-1014:/tmp$ ls -lt /tmp/fifo
+prw-rw-r-- 1 denny denny 0  6月 21 08:53 /tmp/fifo
+denny@denny-Vostro-1014:/tmp$ cat </tmp/fifo
+ab
+
+In another shell:
+denny@denny-Vostro-1014:/tmp$ echo ab > /tmp/fifo
+#+end_example
+*** DONE Why a normal pid's parent is 1                           :IMPORTANT:
+  CLOSED: [2012-06-23 六 06:11]
+http://apig.bokee.com/2158632.html\\
+如果父进程未调用wait函数而终止,子进程将被'init'进程收管,它将控制子进程退出后必须的清除工作
+*** Zombie
+#+begin_example
+A zombie process (a.k.a. defunct process) is a process that has ended
+execution but left in the process table of Linux operating system.
+
+Suppose the parent process that started it has executed wait system
+call to read its child process exit status, there will be no such
+defunct process left in the process table.
+#+end_example
+**** How to find zombie
+- ps -elf | awk '{print $2" "$4" "$5}' | grep ^Z
+- ps -elf | grep defunct
+**** TODO How to terminate zombie / defunct Linux process?
+http://www.walkernews.net/2011/01/30/how-to-find-and-kill-zombie-process-on-linux-system/\\
+#+begin_example
+Remember the definition of zombie process? It is a process that has
+stopped execution except its entry in process table of Linux operating
+system (and thus consuming little system resources, if the number of
+such process is small).
+
+Therefore, you hardly can terminate defunct process by using "kill -9″
+command. You might able to remove the zombie process by:
+
+    Restart or terminate its parent process that spawn it.
+    Manually sending SIGCHLD signal to parent process (advised by expert by never work for my cases):
+
+    kill -s SIGCHLD ppid
+
+
+    where ppid is the parent process ID of the defunct process.
+
+    Reboot the Linux system, if the number of zombie process grows up
+    to a harmful level (i.e. causes system performance and reliability
+    to degrade
+#+end_example
+
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Q: list which process is using a given file                 :noexport:
+lsof ?
+
+* TODO Q: Why is I/O uninterruptible?                              :noexport:
+https://unix.stackexchange.com/questions/62697/why-is-i-o-uninterruptible
+
+In short, making I/O uninterruptible is for the purpose of making the I/O task finish ASAP, without being interfered by signals.
+
+The word "uninterruptible" should refer to "uninterruptible sleep". When a process is in uninterruptible sleep, it can NOT be woken up by signals, nor can it handle signals.
+* TODO Q: difference between process vs thread vs gorountine       :noexport:

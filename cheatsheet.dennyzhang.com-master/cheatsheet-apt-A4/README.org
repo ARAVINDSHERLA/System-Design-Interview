@@ -1,0 +1,264 @@
+* CheatSheet: Ubuntu Apt                                              :Linux:
+:PROPERTIES:
+:type:     linux, tool
+:export_file_name: cheatsheet-apt-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-apt-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-apt-A4/cheatsheet-apt-A4.pdf][cheatsheet-apt-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-apt-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-shell-A4][CheatSheet: shell]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Install packages in Debian/Ubuntu
+| Name                       | Command                                               |
+|----------------------------+-------------------------------------------------------|
+| Install apt-add-repository | =apt-get install software-properties-common=          |
+| Install ps                 | =apt-get update= && =apt-get install -y procps=       |
+| Install ping               | =apt-get update= && =apt-get install -y iputils-ping= |
+| Install ssh/scp            | =apt-get install openssh-client=                      |
+** Basic
+| Name                                    | Command                                                                 |
+|-----------------------------------------+-------------------------------------------------------------------------|
+| [[https://www.brightbox.com/blog/2016/01/06/ruby-2-3-ubuntu-packages/][Install package for a given version]]     | =apt-get install ruby2.3 ruby2.3-dev=                                   |
+| Install/remove package                  | =apt-get install curl=, =which curl=, =apt-get remove curl=             |
+| Reinstall package                       | =apt-get install --reinstall procp=                                     |
+| [[https://unix.stackexchange.com/questions/191977/how-can-i-find-the-package-that-contains-a-program-in-debian][Search package by file name]]             | Install =apt-file= package, then =apt-file search --regexp '/XXX$'=     |
+| Start a ubuntu test container           | =docker run --rm -t -i --name test --entrypoint=/bin/sh ubuntu:14.04=   |
+| Start a ubuntu kubernetes pod           | =kubectl run --rm -i -t --image=ubuntu:14.04 test -- sh=                |
+| Parse log for install/remove operations | =grep 'install ' /var/log/dpkg.log=, =grep 'remove ' /var/log/dpkg.log= |
+| Download without install                | =apt-get download curl=, =ls -lth curl*.deb=                            |
+| Update package list                     | =apt-get update=                                                        |
+| dpkg/aptitude/apt/apt-get               |                                                                         |
+
+** dpkg
+| Name                                                   | Command            |
+|--------------------------------------------------------+--------------------|
+| List all installed packages                            | =dpkg -l=          |
+| Install deb package                                    | =dpkg -i some.deb= |
+| Remove a package including conf files                  | =dpkg -P some.deb= |
+| Check whether a package file has been installed before | =dpkg -s some.deb= |
+
+** Apt
+| Name                          | Command                                             |
+|-------------------------------+-----------------------------------------------------|
+| Update packages               | =apt update=, =apt update -y=                       |
+| Upgrade all existing packages | =apt upgrade=                                       |
+| Install/remove package        | =apt install curl=, =which curl=, =apt remove curl= |
+| Search package                | =apt search curl=                                   |
+
+
+** apt-cache
+| Name                              | Command                   |
+|-----------------------------------+---------------------------|
+| Search package                    | =apt-cache search curl=   |
+| Show package records              | =apt-cache show curl=     |
+| Show package reverse dependencies | =apt-cache rdepends curl= |
+** More Resources
+License: Code is licenapt under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+https://github.com/trimstray/apt-essentials
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-apt-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-apt-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-apt-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-apt-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 
+* misc                                                             :noexport:
+** apk
+# Install a package
+apk add $package
+
+# Remove a package
+apk del $package
+
+# Update repos
+apk update
+
+# Upgrade all packages
+apk upgrade
+
+# Find a package
+apk search $package
+
+** apt-cache
+# To display package versions, reverse dependencies and forward dependencies 
+# of a package
+apt-cache showpkg package_name
+
+** apt-get
+# Desc: Allows to update the operating system
+
+# To download and install updates without installing new package.
+apt-get upgrade
+
+# To download and install the updates AND install new necessary packages
+apt-get dist-upgrade
+
+# Full command:
+apt-get update && apt-get dist-upgrade
+
+# Change Cache dir and archive dir (where .deb are stored).
+apt-get -o Dir::Cache="/path/to/destination/dir/" -o Dir::Cache::archives="./" install ...
+
+# Silently keep old configuration during batch updates
+apt-get update -o DPkg::Options::='--force-confold' ...
+
+** aptitude
+# To search for packages:
+aptitude search "whatever"
+
+# To display package records for the named package(s):
+aptitude show pkg(s)
+
+# To install a package:
+aptitude install package
+
+# To remove a package:
+aptitude remove package
+
+# To remove unnecessary package:
+aptitude autoclean
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** apt dist-upgrade vs apt upgrade
+** apt vs aptitude
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** TODO apt-get install -f
+** TODO dpkg -I: # List all installed packages with versions and details
+* Ubuntu apt                                                       :noexport:
+** DONE sudo: add-apt-repository: command not found: sudo apt-get install software-properties-common
+  CLOSED: [2015-06-07 Sun 15:23]
+https://ostechnix.wordpress.com/2013/04/29/resolve-the-error-add-apt-repository-command-not-found-in-ubuntu-12-10/
+https://muffinresearch.co.uk/ubuntu-add-apt-repository-command-not-found/
+** DONE [#B] apt-key
+   CLOSED: [2015-08-07 Fri 16:22]
+*** apt-key finger
+#+BEGIN_EXAMPLE
+root@ca90313b14c2:/etc/apt# apt-key finger
+/etc/apt/trusted.gpg
+--------------------
+pub   1024D/437D05B5 2004-09-12
+      Key fingerprint = 6302 39CC 130E 1A7F D81A  27B1 4097 6EAF 437D 05B5
+uid                  Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>
+sub   2048g/79164387 2004-09-12
+
+pub   1024D/FBB75451 2004-12-30
+      Key fingerprint = C598 6B4F 1257 FFA8 6632  CBA7 4618 1433 FBB7 5451
+uid                  Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>
+
+pub   4096R/C0B21F32 2012-05-11
+      Key fingerprint = 790B C727 7767 219C 42C8  6F93 3B4F E6AC C0B2 1F32
+uid                  Ubuntu Archive Automatic Signing Key (2012) <ftpmaster@ubuntu.com>
+
+pub   4096R/EFE21092 2012-05-11
+      Key fingerprint = 8439 38DF 228D 22F7 B374  2BC0 D94A A3F0 EFE2 1092
+uid                  Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>
+
+pub   1024R/9D06AF36 2012-09-22
+      Key fingerprint = 3D16 1563 28D0 E305 6D88  5D0B D7CC 6F01 9D06 AF36
+uid                  Launchpad PPA for Cheng-Wei Chien
+
+pub   1024D/D50582E6 2009-02-01
+      Key fingerprint = 150F DE3F 7787 E7D1 1EF4  E12A 9B7D 32F2 D505 82E6
+uid                  Kohsuke Kawaguchi <kk@kohsuke.org>
+uid                  Kohsuke Kawaguchi <kohsuke.kawaguchi@sun.com>
+uid                  [jpeg image of size 3704]
+sub   2048g/10AF40FE 2009-02-01
+
+pub   1024R/84F281ED 2009-06-29
+      Key fingerprint = 3972 CA88 B828 D518 2ED7  FE6C 07B8 9372 84F2 81ED
+uid                  Launchpad 389 Directory Server
+#+END_EXAMPLE
+*** apt-key list
+#+BEGIN_EXAMPLE
+root@ca90313b14c2:~/iamdevops# apt-key list
+/etc/apt/trusted.gpg
+--------------------
+pub   1024D/437D05B5 2004-09-12
+uid                  Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>
+sub   2048g/79164387 2004-09-12
+
+pub   1024D/FBB75451 2004-12-30
+uid                  Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>
+
+pub   4096R/C0B21F32 2012-05-11
+uid                  Ubuntu Archive Automatic Signing Key (2012) <ftpmaster@ubuntu.com>
+
+pub   4096R/EFE21092 2012-05-11
+uid                  Ubuntu CD Image Automatic Signing Key (2012) <cdimage@ubuntu.com>
+
+pub   1024R/9D06AF36 2012-09-22
+uid                  Launchpad PPA for Cheng-Wei Chien
+
+pub   1024D/D50582E6 2009-02-01
+uid                  Kohsuke Kawaguchi <kk@kohsuke.org>
+uid                  Kohsuke Kawaguchi <kohsuke.kawaguchi@sun.com>
+uid                  [jpeg image of size 3704]
+sub   2048g/10AF40FE 2009-02-01
+
+pub   1024R/84F281ED 2009-06-29
+uid                  Launchpad 389 Directory Server
+#+END_EXAMPLE
+** DONE Install gcc and build-essential: yum groupinstall "Development tools"; apt-get install build-essential
+  CLOSED: [2014-03-10 Mon 17:02]
+http://stackoverflow.com/questions/19816275/no-acceptable-c-compiler-found-in-path-when-installing-python
+
+#+begin_example
+checking machine type as reported by uname -m... x86_64
+checking for --without-gcc... no
+checking for gcc... no
+checking for cc... no
+checking for cl.exe... no
+configure: error: in `/tmp/Python-2.7.3':
+configure: error: no acceptable C compiler found in $PATH
+See `config.log' for more details
+[root@unknown9494260198c6 Python-2.7.3]# make && make install
+make: *** No targets specified and no makefile found.  Stop.
+#+end_example
+** DONE aptitude: command not found: apt-get install aptitude
+  CLOSED: [2015-06-08 Mon 19:25]
+#+BEGIN_EXAMPLE
+root@387d504951ef:~#  aptitude -y install squid3
+-bash: aptitude: command not found
+#+END_EXAMPLE
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Ubuntu install sshpass                                      :noexport:
+https://www.tecmint.com/sshpass-non-interactive-ssh-login-shell-script-ssh-password/
+* HALF Ubuntu install make:  apt-get install build-essential       :noexport:
+https://askubuntu.com/questions/161104/how-do-i-install-make

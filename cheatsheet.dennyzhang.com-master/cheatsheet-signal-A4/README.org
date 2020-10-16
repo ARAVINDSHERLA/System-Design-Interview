@@ -1,0 +1,100 @@
+* Linux Signal CheatSheet                                             :Linux:
+:PROPERTIES:
+:type:     tool
+:export_file_name: cheatsheet-signal-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-signal-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-signal-A4/cheatsheet-signal-A4.pdf][cheatsheet-signal-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-signal-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-shell-A4][CheatSheet: shell]], [[https://cheatsheet.dennyzhang.com/cheatsheet-sre-A4][CheatSheet: SRE/DevOps/Sysadmin]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Basic
+| Name                                  | Command                                                                |
+|---------------------------------------+------------------------------------------------------------------------|
+| Signal for interprocess communication | A Kernel notify a process that some condition has occurred.            |
+| =kill -l=                             | List all signals                                                       |
+| Critical signals                      | The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored. |
+| =SIGKILL=, =SIGTERM=                  | Send kill signal to a given process. =kill -term $pid=, =kill -9 $pid= |
+| =SIGHUP=                              | [[https://stackoverflow.com/questions/19052354/sighup-for-reloading-configuration][Reload or restart a process]]. =kill -HUP $pid=                          |
+| =SIGHUP=                              | Terminal warns dependent processes of logout                           |
+| =SIGINT=                              | Users wish to interrupt the process                                    |
+| =SIGCHILD=                            | When a child process terminates, instruct OS to cleanup the resource   |
+| =SIGSTOP=                             | Suspend a process                                                      |
+| =SIGALRM=                             |                                                                        |
+| =SIGUSR1=, =SIGUSR2=                  | User defined signals                                                   |
+| =SIGSTOP= vs =SIGTSTP=                | SIGSTOP can't be ignored by the targetted process, but SIGTSTP can     |
+| [[https://stackoverflow.com/questions/45993444/in-detail-what-happens-when-you-press-ctrl-c-in-a-terminal][What happens, when pressing Ctrl-C]]    | Kernal translates the ASCII character(=^C=) to =SIGINT= signal         |
+| Reference                             | [[https://en.wikipedia.org/wiki/Signal_(IPC)#POSIX_signals][wikipedia: Signal (IPC)]]                                                |
+
+** Background & Daemons
+| Name                                                       | Command                                          |
+|------------------------------------------------------------+--------------------------------------------------|
+| [[https://www.thegeekstuff.com/2010/05/unix-background-job/][Suspend process: bring it to background]]                    | =kill -STOP $pid=, =Ctrl-z=                      |
+| Bring a background process to foreground                   | =fg $JOB_ID=                                     |
+| List all background jobs                                   | =jobs=, =jobs -l=                                |
+| [[https://en.wikipedia.org/wiki/Nohup][Put a running process to background, and ignore HUP signal]] | =nohup $command &=                               |
+| nohup with redirection                                     | =nohup $command>foo.out 2>foo.err < /dev/null &= |
+| Tools to bring process to background and detach signals    | =nohup=, =tmux=, =screen=                        |
+
+** More Resources
+License: Code is licensignal under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-signal-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-signal-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-signal-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-signal-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 
+* TODO background processes are related to a specific terminal/screen :noexport:
+jobs
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO SIGVTALRM                                                   :noexport:
+* TODO SIGSTOP and SIGCONT                                         :noexport:
+* TODO SIGSTOP and SIGSTP                                          :noexport:
+* TODO SIGABRT                                                     :noexport:
+* TODO SIGBUS                                                      :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO What happens if press Ctrl+C                                :noexport:
+* HALF ACL model of signal: Why send signal fails                  :noexport:
+#+BEGIN_EXAMPLE
+kubo@jumper:~$ ps -ef |grep 1439
+root      1439     1  0 Jan15 ?        00:08:29 /usr/bin/containerd
+root      2990  1439  0 10:53 ?        00:00:00 containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/70335119bfd5a557a652ef7400a5e0f5bcbd122d2d8dbcc26dbcfc545fd0cebf -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+kubo      3770 25068  0 10:55 pts/4    00:00:00 grep --color=auto 1439
+kubo@jumper:~$ kill -HUP 3009
+-bash: kill: (3009) - Operation not permitted
+kubo@jumper:~$ sudo kill -HUP 3009
+#+END_EXAMPLE
+* TODO [#A] What does & disown after a command do?                 :noexport:

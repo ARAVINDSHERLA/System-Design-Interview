@@ -1,0 +1,572 @@
+* Cheatsheet: Driver License Written Test                              :Life:
+:PROPERTIES:
+:type:     life
+:export_file_name: cheatsheet-driver-license-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-driver-license-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-driver-license-A4/cheatsheet-driver-license-A4.pdf][cheatsheet-driver-license-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/tools/][tools]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-visa-A4][Cheatsheet: Visa]], [[https://cheatsheet.dennyzhang.com/cheatsheet-travel][Cheatsheet Travel]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+
+See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+** Free Driver License Written Tests
+| Name                                  | Comment                                                          |
+|---------------------------------------+------------------------------------------------------------------|
+| Traffic control                       | [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/hdbk/ped_sig_traf_sgns][Link: Traffic Controls]]                                           |
+| Sample Class C Written Tests from DMV | [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc2written?lang=en][Test1]], [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc3written?lang=en][Test2]], [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc4written?lang=en][Test3]], [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc5written?lang=en][Test4]], [[https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc6written?lang=en][Test5]]                                |
+| FREE DMV Practice Test for California | [[https://driving-tests.org/california/dmv-practice-test/][Link: driving-tests.org]]                                          |
+| Reference                             | [[https://www.dmv.ca.gov/portal/dmv][Link: DMV Homepage - California]], [[https://www.dmv.ca.gov/web/eng_pdf/dl600.pdf][PDF: California Driver Handbook]] |
+
+** Child
+| Name                                               | Summary                                                                        |
+|----------------------------------------------------+--------------------------------------------------------------------------------|
+| Need a child passenger restraint system            | Younger than 8 years; Or no more than 4 feet 9 inches                          |
+| Airbags may pose a severe safety risk for children | Children age 12 or under should sit in the back seat of a vehicle with airbags |
+
+** Abnormal Weather/Conditions
+| Name                                                 | Summary                                                                   |
+|------------------------------------------------------+---------------------------------------------------------------------------|
+| In rainy weather, slow down                          | Drive fast may cause tires lose contact with the surface of the road      |
+| On freezing, wet days                                | Bridges and overpasses tend to freeze before the rest of the road         |
+| Roadways are the most slippery during the first rain | oil and dust on the road have not previously been washed away.            |
+| Hit an animal                                        | Call the humane society. You should not leave it to die or try to move it |
+| If your wheels drop off the roadway or pavement edge | Wait until it is safe to do so, then gradually turn back                  |
+| Use low beams when in fog, rain or snow              | High beam will reflect back, which makes you hard to see ahead            |
+| When being tailgated, create extra space             | Slow down gradually prevents a collision with the tailgater.              |
+
+** Distance
+| Name                     | Summary                                                                                      |
+|--------------------------+----------------------------------------------------------------------------------------------|
+| Drive close to cicyclist | You must ensure there is more than 3 feet width for cyclist                                  |
+| Park near railroad track | You must not park within 7.5 feet of a railroad track                                        |
+| Park near fire hydrant   | You can't part within 15 feet of a fire hydrant                                              |
+| Enter school zones       | Within 500-1000 feet of a school, the speed limit is 25 mph while children are outside       |
+| Turn a corner            | You should signal for at least 100 feet.                                                     |
+| Follow emergency vehcile | You must not follow within 400 feet of any emergency vehcile with a siren or flashing lights |
+| Use center lane          | While driving in a center left-turn lane, you may only drive for 200 feet.                   |
+| Park on a level street   | The front and back wheels must be parallel with and within 18 inches of the curb             |
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/signs.png]]
+
+** Fining
+| Name                                 | Summary                                                           |
+|--------------------------------------+-------------------------------------------------------------------|
+| The fine of litering                 | $1,000, in addition, you may be required to pick up what littered |
+| Abuse of a disabled placard or plate | a fine of up to $1,000, and up to six months of jail time         |
+| Fines in a construction zone         | Fines for traffic violations are doubled                          |
+
+** Traffic Control
+| Name                             | Summary                                                                   |
+|----------------------------------+---------------------------------------------------------------------------|
+| Traffic lights not working       | You need to come to a complete stop first                                 |
+| A flashing red traffic signal    | Treat like a STOP sign. stop, yield and only proceed when it's safe       |
+| A flashing yellow traffic signal | No need to stop, but slow down and alerted before entering intersection   |
+| Diamond-shaped sign              | Many warning signs are diamond-shaped                                     |
+| Orange-colored signs             | indicate construction areas                                               |
+| Orange, diamond-shaped signs     | It usually mark construction, maintenance, survey, and utility work areas |
+| Yellow lines                     | Separate lanes of traffic moving in opposite directions.                  |
+| A white rectangular sign         | indicate that you must obey important rules.                              |
+| Pennant-shaped yellow signs      | indicate a no passing zone                                                |
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/signs2.jpg]]
+
+** Time
+| Name                    | Summary                                                                                  |
+|-------------------------+------------------------------------------------------------------------------------------|
+| Change lanes on freeway | You should signal for at least 5 seconds                                                 |
+| Tailgating              | To avoid tailgating, leave 3 second of space between you and the vehicle in front of you |
+| Make changes            | To avoid last-minute moves, look down the road 10-15 seconds                             |
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+
+** Colored curbs
+| Name       | Summary                                                                                 |
+|------------+-----------------------------------------------------------------------------------------|
+| White curb | Stop only long enough to pick up or drop off passengers or mail.                        |
+| Green      | Park for a limited time. Look for a posted sign next to the green zone for time limits. |
+| Yellow     | Stop no longer than the time posted to load or unload passengers or freight.            |
+| Red        | No stopping, standing, or parking. (Buses may stop at a red zone marked for buses.)     |
+| Blue       | Parking for disabled people only                                                        |
+
+** Steering
+| Name                    | Summary                                                                                      |
+|-------------------------+----------------------------------------------------------------------------------------------|
+| Hand-over-hand steering | used when turning at low speeds, parking or recovering from a skid                           |
+| One-hand steering       | You can use when you're backing up without much turning                                      |
+| [[https://en.wikipedia.org/wiki/Three-point_turn][Three-point turn]]        | standard method of turning vehicles around to face the opposite direction in a limited space |
+hand-over-hand-steering:
+[[https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/hand-over-hand-steering.jpg]]
+
+one-hand-steering:
+[[https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/one-hand-steering.jpg]]
+
+three-point-turn:
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/three-point-turn.png]]
+
+** Terminology
+| Name                              | Summary                                                                          |
+|-----------------------------------+----------------------------------------------------------------------------------|
+| California "Basic Speed Law"      | You must never driver faster than what is safe in current conditions             |
+| California Move Over law          | All vehicles to vacate the lane closest to an emergency vehicle                  |
+| Skid                              | automobiles slip relative to the road [[https://en.wikipedia.org/wiki/Skid_(automobile)][Link: wikipedia]]                            |
+| BAC                               | Blood alcohol concentration                                                      |
+| A nighttime reflector             | It shows where the road lies                                                     |
+| Turnout area                      | You may pull to the side in these areas and allow cars behind you to pass. [[https://driversed.com/driving-information/driving-techniques/turnout-areas.aspx][Link]]  |
+| roundabout                        |                                                                                  |
+| DUI probation                     |                                                                                  |
+| NEV                               | neighborhood electric vehicles                                                   |
+| LSV                               | Low speed vehicles                                                               |
+| HOV lane (High-Occupancy Vehicle) | Designed for buses, motorcycles, certain low-emission vehicles and 2+ passengers |
+| Use horn                          | You may tap horn to try to make eye contact with another driver                  |
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+
+** Pictures
+cone-zone:
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/cone-zone.png]]
+
+signal-hands:
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/signal-hands.png]]
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/road_split.png]]
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/parking-wheels.jpg]]
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/keep-right.jpg]]
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/left-turn-on-green-only.png]]
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-driver-license-A4/driving-bac.jpg]]
+** More Resources
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+https://www.dmv.ca.gov/portal/dmv/dmv/dl
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/brochures/fast_facts/ffdl05
+
+https://www.dmv.ca.gov/portal/wcm/connect/a34dbefd-c615-4c07-a271-b135850de9d1/Residency_DocsList.pdf?MOD=AJPERES
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/brochures/fast_facts/ffdl07
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+
+<a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
+<a href="https://github.com/dennyzhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-driver-license-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-driver-license-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* DMV Questions                                                    :noexport:
+** You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:
+#+BEGIN_EXAMPLE
+3. You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:
+
+Leave a note on the vehicle.
+Report the accident without delay to the city police or, in unincorporated areas, to the CHP.
+Both of the above.
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc3written?lang=en
+#+END_EXAMPLE
+** You must notify the DMV within 5 days if you:
+#+BEGIN_EXAMPLE
+2. You must notify the DMV within 5 days if you:
+
+Sell or transfer your vehicle.
+Fail a smog test for your vehicle.
+Get a new prescription for lenses or contacts.
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc4written?lang=en
+#+END_EXAMPLE
+** It is illegal to park your vehicle:
+#+BEGIN_EXAMPLE
+6. It is illegal to park your vehicle:
+
+In an unmarked crosswalk.
+Within three feet of a private driveway.
+In a bicycle lane.
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc4written?lang=en
+#+END_EXAMPLE
+** Which of these vehicles must always stop before crossing railroad tracks?
+#+BEGIN_EXAMPLE
+5. Which of these vehicles must always stop before crossing railroad tracks?
+
+Tank trucks marked with hazardous materials placards.
+Motor homes or pickup trucks towing a boat trailer.
+Any vehicle with 3 or more axles or weighing more than 4,000 pounds.
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc5written?lang=en
+#+END_EXAMPLE
+** You are driving on a freeway posted for 65 mph. Most of the other vehicles are driving 70 mph or faster. You may legally drive:
+C
+#+BEGIN_EXAMPLE
+3. You are driving on a freeway posted for 65 mph. Most of the other vehicles are driving 70 mph or faster. You may legally drive:
+
+70 mph or faster to keep up with the speed of traffic.
+Between 65 mph and 70 mph.
+No faster than 65 mph.
+
+https://www.dmv.ca.gov/portal/dmv/detail/pubs/interactive/tdrive/clc5written?lang=en
+#+END_EXAMPLE
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** 在路口右转弯时,如何处理自行车道
+https://driver-test.com/exam/CA/9
+不得驶入自行车道
+必须在转弯之前停车,然后才能汇入自行车道
+必须在转弯之前汇入自行车道  正确
+** 您在变换车道或汇入其它车道时:
+https://driver-test.com/exam/CA/40
+拥有先行权
+应该先停车并察看来往的车辆
+需要跟其它车辆保持至少4秒钟的车距  正确
+** 在住宅区可以合法回转的情况是
+https://driver-test.com/exam/CA/20
+在绿色箭头灯亮起的单行道上
+当附近没有车辆接近时  正确
+穿越两组双黄实线时
+** 在夜间灯光昏暗的街道上行驶时,您应
+https://driver-test.com/exam/CA/23
+缓慢行车,以便您可以在车灯的照射范围内及时停车  正确
+打开远光灯,以看清前方的车辆
+打开仪表盘的灯光并保持该亮度,以便其他驾驶者能看清您
+** 当车内有未满18岁的乘客时,吸烟的行为是
+https://driver-test.com/exam/CA/29
+合法的,如果此人是您的子女
+在任何时候都不合法  正确
+不受法律限制
+** 您想倒车退出停车位,您应一直保持慢速倒车并且:
+https://driver-test.com/exam/CA/28
+在倒车的过程中察看后视镜
+在倒车的过程中察看车侧后视镜
+在倒车的过程中回头察看右侧和左侧的情况  正确
+** 以下哪些兒童要求使用兒童安全座椅
+https://pass-dmv-test.com/quiz-152-zh.html
+體重55磅的5歲兒童  正确
+體重60磅的6歲兒童
+體重65磅的5歲兒童
+體重70磅的8歲兒童
+** 車禍發生的瞬間,方向盤部分彈出的安全氣囊有可能對司機造成傷害,因此正確的做法是:
+https://pass-dmv-test.com/quiz-158-zh.html
+司機的頭部應該時刻位於方向盤的上方.
+司機和方向盤之間應該留有6.5英寸的距離.
+司機和方向盤之間應該留有10英寸的距离.  正确
+司機和方向盤之間應該留有20英寸的距离.
+** 在夜间灯光昏暗的街道上行驶时,您应
+https://driver-test.com/exam/CA/23
+缓慢行车,以便您可以在车灯的照射范围内及时停车  正确
+打开远光灯,以看清前方的车辆
+打开仪表盘的灯光并保持该亮度,以便其他驾驶者能看清您
+** 当车内有未满18岁的乘客时,吸烟的行为是:
+https://driver-test.com/exam/CA/29
+合法的,如果此人是您的子女
+在任何时候都不合法  正确
+不受法律限制
+** 在下列哪种情况下将六岁或以下的儿童留在机动车内属于合法行为
+https://driver-test.com/exam/CA/30
+将钥匙留在点火器上
+如有年满12岁或以上的人士照看儿童  正确
+当天气状况对儿童的健康或安全不构成威胁时
+** 您驶近交叉路口,红色交通灯正在闪烁,您应该:
+https://driver-test.com/exam/CA/32
+继续小心地驶过交叉路口
+在驶入交叉路口前停车,在安全的情况下继续前进  正确
+在驶入交叉路口前停车,等到绿灯亮起时继续前进
+** 下列哪项有关摩托车驾驶员和机动车驾驶员的表述是正确的？
+https://driver-test.com/exam/CA/34
+在交通拥堵的路况中,摩托车驾驶员不得以高于其它车辆的速度前进
+摩托车驾驶员与其它机动车驾驶员享有同等的权利和责任  正确
+摩托车体积比其它机动车小,有高于其它车辆的道路使用权
+** 两组双黄实线之间至少有两英尺的距离会被视作障碍区,以下表述哪一个正确:
+https://driver-test.com/exam/CA/35
+切勿在该障碍区行驶或穿越该障碍区  正确
+可以在该障碍区左转或掉头行驶
+可以在该障碍区左转,但不可以掉头
+** 不得穿越车道中央的双黄实线以进行
+https://driver-test.com/exam/CA/37
+超车  正确
+左转
+驶入私人车道
+** 您在变换车道或汇入其它车道时:
+https://driver-test.com/exam/CA/40
+拥有先行权
+应该先停车并察看来往的车辆
+需要跟其它车辆保持至少4秒钟的车距  正确
+** 如果交通信号灯失灵,您必须:
+https://driver-test.com/exam/CA/10
+先停车,然后在安全时再继续前进  正确
+在进入交叉路口之前停车,并让所有其他车辆先行
+仅在必要时减速或停车
+** 如果警察以酒後駕駛的名義拘捕你,而你拒絕接受血液酒精濃度測試.其後果是:
+https://pass-dmv-test.com/quiz-127-zh.html
+駕駛執照將被吊銷至少一年.  正确
+你將被無罪釋放,因為警察無法對你進行定罪.
+只有當律師在場時,警察才能對你進行該項測試.
+你的汽車將被扣押.
+** 如图所示,如果有兩組雙黃實線且它们之間的距离至少有2英尺寬;这表示什么？
+https://pass-dmv-test.com/quiz-130-zh.html
+左轉彎或 U 型轉彎時可以跨越這兩組雙黃實線.
+對司機而言,這樣的兩組雙黃實線等同於不可逾越的墻壁.  正确
+前方即將出現渡口.
+該路段僅在節假日期間才允許重型卡車通行.
+** 如圖所示,這種形狀的橘黃色標誌表示:
+https://pass-dmv-test.com/quiz-138-zh.html
+如圖所示,這種形狀的橘黃色標誌表示:
+
+掛有這種標誌的機動車有優先權.
+掛有這種標誌的機動車是慢行車輛.  正确
+前方路段出現了危險狀況.
+前方路段正在施工.
+** 如果你途径一个車禍現場并想停下來提供救援,那么應該在何處停車才是正確的？
+https://pass-dmv-test.com/quiz-57-zh.html
+先駛過車禍現場后再找適當的地方停車.  正确
+在車禍現場的旁邊停車.
+在車禍現場之前停車,這樣可以警示後面經過的車輛.
+給警察打電話以征求最合適的建議.
+** 在駕車期間,如果你血液中的酒精濃度（BAC）達到或高於法定限度會面臨什麼后果？
+https://pass-dmv-test.com/quiz-62-zh.html
+警察會當場將你拘留.
+可能會被處以罰款.  正确
+沒關係,血液內的酒精濃度並不能作為對你進行判罰的依據.
+警察會吊銷你的駕照.
+** 在冬季里,哪一種道路上最有可能存在不易被發現的冰面.
+https://pass-dmv-test.com/quiz-39-zh.html
+位於山頂附近的的道路.
+鋪有瀝青的道路.
+橋樑和立交橋上的道路.  正确
+沙土路面的道路.
+** 開車的時候,你必須要留意那些在機動車道上騎自行車的人,因為:
+https://pass-dmv-test.com/quiz-45-zh.html
+他們不遵守交通規則.
+他們擁有更高的優先權.
+他們有權與機動車共享道路.  正确
+他們的速度很慢
+** 如果一条公路上的限速是55英里/小时,那么当道路潮濕時你应该以什么速度行驶？
+https://pass-dmv-test.com/quiz-69-zh.html
+遵守限速要求,以55英里/小時的速度行駛.
+以高於限速5-10英里/小時的速度行駛.
+以低於限速5-10英里/小時的速度速度行駛.  正确
+以低於限速20-25英里/小時的速度行駛.
+** 如果你捲入了交通事故,根據法律規定你必須和對方司機交換駕照信息,同時還要:
+https://pass-dmv-test.com/quiz-71-zh.html
+提供你的保險證明.
+提供你的保險證明和車輛登記證書.
+提供你的保險證明`車輛登記證書和目前的住址.  正确
+提供你的保險證明`車輛登記證書和你的家庭醫生聯繫方式.
+** 下列陳述中的哪一個是正確的？
+https://pass-dmv-test.com/quiz-47-zh.html
+加州的公路上是沒有最低時速限制的.
+車速越快就越難控制.  正确
+超車時如果車速過快會被罰款.
+加州法律規定,凌晨5點鐘至7點鐘之間禁止大型貨車駛入高速公路.
+** 下列哪種情況下,你應該反復踩剎車來讓剎車燈閃爍或者打開緊急信號燈（雙閃燈）？
+https://pass-dmv-test.com/quiz-36-zh.html
+你想要警告其他司機不遠處發生了交通事故.  正确
+你即將臨時停車.
+你準備倒車.
+你的車子胎壓不足了.
+** 根據加州法律規定,下列哪種情況下你不能將6歲以下（含6歲）兒童留在汽車內:
+https://pass-dmv-test.com/quiz-28-zh.html
+除了該名兒童外,車內還有其他12歲以上的哥哥或姐姐.
+車鑰匙沒有取下來.  正确
+車外氣候寒冷且所有車窗都處於關閉狀態.
+夜間的停車場上.
+** 在下列何種情況下,你應該與前面的車輛保持更大的距離:
+https://pass-dmv-test.com/quiz-26-zh.html
+前面的車是小型機動車.
+後面有一輛車緊跟著你.  正确
+前面的車行駛的很慢.
+前面的車是大型貨車.
+** 如果你駕車時經過一片施工區域,應該怎麼做才對？
+   CLOSED: [2019-07-12 Fri 21:52]
+ https://pass-dmv-test.com/quiz-1-zh.html
+
+如果你駕車時經過一片施工區域,應該怎麼做才對？
+ A 減速,小心路上的工人.
+ B 鳴笛,引起周圍行人和車輛的注意.
+ C 集中精神,小心駕駛即可.  正确
+ D 加速通過,以免影響工人施工.
+** 根據加州的法律,如果你遭遇車禍且有人受傷,則必須向下列中的哪一方提交有關車禍的書面報告？
+管轄事發路段的警察局
+加州公路巡邏隊 (CHP)
+加州機動車輛管理局 (DMV)  正确
+你的保險公司
+** 前方的路口沒有信號燈,而且看不到兩側方向有駛近的車輛,此時你應該以什麼車速通過該路口呢？
+https://pass-dmv-test.com/quiz-87-zh.html
+每小時25英里
+每小時15英里  正确
+每小時10英里
+每小時40英里
+** 什麼情況下才可以在小型卡車（如"皮卡"）的車斗中坐人？
+https://pass-dmv-test.com/quiz-89-zh.html
+車斗四周的圍欄高度在24英吋以上時.
+車斗上方有車罩覆蓋時.
+車斗內配有供乘客使用的安全座椅和安全帶.  正确
+任何情況下都不能再車斗內搭載乘客.   
+** 什麼情況下你才可以在住宅區的車道上調頭？
+   CLOSED: [2019-07-12 Fri 22:04]
+https://pass-dmv-test.com/quiz-13-zh.html
+
+ 什麼情況下你才可以在住宅區的車道上調頭？
+
+ 任何時候都不能再住宅區調頭.
+ 只能在單行道上調頭.
+ 只要附近沒有其它車輛時就可以調頭  正确
+ 只能在路面上畫有兩條黃色實線時才可以調頭.
+* renew vehicle                                                    :noexport:
+https://www.dmv.ca.gov/portal/dmv/detail/online/vrir/vr_top2
+** When I need smoke test?
+* DONE local notes                                                 :noexport:
+** DONE DMV 14 Change of Address                                   :noexport:
+   CLOSED: [2019-06-15 Sat 18:47]
+ https://www.dmv.ca.gov/portal/dmv/detail/forms/dmv/dmv14
+ https://www.dmv.ca.gov/portal/dmv/detail/online/coa/welcome
+ https://www.guruin.com/articles/1857
+ https://www.chineseinla.com/f/page_viewtopic/t_684659.html
+** DONE Move from another state to CA: update your vehicle information :noexport:
+   CLOSED: [2019-06-15 Sat 18:48]
+ https://www.dmv.ca.gov/portal/dmv/dmv/vr/
+
+ https://www.dmv.ca.gov/portal/dmv/detail/online/vrir/vr_sb1500anu
+
+*** Register Your Vehicle in California
+ *A nonresident vehicle* is a vehicle last registered in another state or country.
+
+ | Form                                                       | Summary                 |
+ |------------------------------------------------------------+-------------------------|
+ | reg343 form: [[https://www.dmv.ca.gov/portal/dmv/detail/forms/reg/reg343][Application for Title or Registration REG 343]] |                         |
+ | reg31 form: [[https://www.dmv.ca.gov/portal/dmv/detail/forms/reg/reg31][Verification of Vehicle (REG 31) form]]          | Need to be filed by DMV |
+
+ [[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/register_vehicle.png]]
+
+ #+BEGIN_EXAMPLE
+ https://www.dmv.ca.gov/portal/dmv/detail/pubs/brochures/howto/htvr09#feesdue
+
+ https://www.dmv.org/ca-california/car-registration.php
+
+ https://www.dmv.org/ca-california/new-to-california.php
+ #+END_EXAMPLE
+
+*** Get a new license plate
+ https://www.dmv.ca.gov/portal/dmv/detail/vr/vr_info
+
+ [[https://cheatsheet.dennyzhang.com/cheatsheet-driver-license-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet-living-in-ca/master/substitute-plates.png]]
+
+*** Report a change of address to DMV within 10 days of the change
+ https://www.dmv.ca.gov/portal/dmv/detail/vr/vr_info
+
+** DONE change DMV address                                         :noexport:
+   CLOSED: [2019-06-16 Sun 08:29]
+ https://www.dmv.ca.gov/portal/dmv/detail/online/coa/welcome
+ http://vegas168.blogspot.com/2016/05/checklist.html
+* apply for real ID                                                :noexport:
+https://www.dmv.ca.gov/portal/dmv/detail/realid
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Traffic & Ticket Basics                                :noexport:
+https://www.courts.ca.gov/8452.htm
+
+"Notice to Appear
+
+- Stucked for 15 minutes in I280 a traffic jam
+- Run out of gas
+
+Right turn signal
+
+Looked in the rear miror and look behind
+
+Expecting the following traffic to slow down a little bit
+
+busy hour
+* TODO Failed to register an account in dmv website                :noexport:
+https://www.dmv.ca.gov/portal/dmv
+* TODO traffic ticket                                              :noexport:
+https://blog.yamibuy.com/?p=6814
+
+https://www.guruin.com/articles/2639
+
+勾选Trial By Written Declaration后,也别忘了要附上一张罚单金额的支票作为保释金
+
+勾选Trial By Written Declaration后,除了附上保释金支票,你还得要附上一份书面申请去索取TR-205表格
+
+https://www.mitbbs.com/article_t/SanFrancisco/34625653.html
+你收到courtesy notice就知道罚款是多少了.ticket输入系统很慢,有时候几个月才
+输入系统,所以你不用急.如果你输了,会有1 point,会影响保险,除非你上traffic
+school把point藏起来
+* TODO Write ticket about the traffic ticket                       :noexport:
+* TODO Update SSN Address                                          :noexport:
+https://faq.ssa.gov/en-us/Topic/article/KA-01711
+https://secure.ssa.gov/RIR/CatsView.action
+* Replacing a Lost Title in Texas                                  :noexport:
+https://www.txdmv.gov/motorists/buying-or-selling-a-vehicle/get-a-copy-of-your-title
+#+BEGIN_EXAMPLE
+Here are the steps to applying for a certified copy of title by mail:
+
+Complete Form VTR-34, Application for a Certified Copy of Title.
+VTR-34 Application for a Certified Copy of Title
+
+Enclose a copy of the owner's valid photo ID and $2 mail-in fee by check, cashier's check or money order payable to the Texas Department of Motor Vehicles. An agent of the owner or lienholder must also provide a letter of signature authority on original letterhead, a business card or a copy of the agent's employee ID.
+
+Mail the application to:
+TxDMV
+1601 Southwest Parkway, Suite A
+Wichita Falls, TX 76302
+#+END_EXAMPLE
+* turn left from a multilane one-way street onto a one-way street  :noexport:
+To turn left from a multilane one-way street onto a one-way street, you should start your turn from:
+Answers
+A.  Any lane (as long as it is safe).
+ B.  The lane closest to the left curb.
+C.  The lane in the center of the road.
+Explanation
+When turning left from a one-way street onto another one-way street, you should begin the turn from the far left lane.
+* What is fog light?                                               :noexport:
+When driving in fog, rain, or snow, use:
+ 
+Low beams.
+
+High beams.
+
+Fog lights only.
+* Premium cheatsheet for drive test                                :noexport:
+https://cheat-sheets.dmv-written-test.com/en/california/car

@@ -1,0 +1,363 @@
+* CheatSheet: Kubernetes Security                                :Cloud:
+:PROPERTIES:
+:type:     kubernetes
+:export_file_name: cheatsheet-k8s-security-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-k8s-security-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-k8s-security-A4/cheatsheet-k8s-security-A4.pdf][cheatsheet-k8s-security-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/cloud/][Cloud]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-k8s-security-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates][Kubernetes Yaml Templates]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/DennyZhang/cheatsheet-tile-A4/issues][Issues]] or star [[https://github.com/DennyZhang/cheatsheet-tile-A4][this repo]].
+** Summary
+| Name                                 | Summary                                                                             |
+|--------------------------------------+-------------------------------------------------------------------------------------|
+| Kubernetes RBAC                      | Kubernetes API Security                                                             |
+| [[https://kubernetes.io/docs/concepts/policy/pod-security-policy/][Pod Security Policy]]                  | enable fine-grained authorization of pod creation and updates.                      |
+| Pod security context                 |                                                                                     |
+| [[https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/][Admission Controls]]                   | Intercepts requests to the Kubernetes API server prior to persistence of the object |
+| Network security policy              | a specification of how groups of pods are allowed to communicate with each other.   |
+| [[http://man7.org/linux/man-pages/man7/capabilities.7.html][Linux capabilities]]                   | Allow you to break apart the power of root into smaller groups of privileges        |
+| SElinux                              |                                                                                     |
+| [[https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-authentication-authorization/][Kubelet authentication/authorization]] |                                                                                     |
+| [[https://kubernetes.io/docs/tutorials/clusters/apparmor/][AppArmor]]                             | a Linux kernel security module: reduce application attack surface                   |
+| Sandboxed Pods & gVisor              |                                                                                     |
+** Regulations
+| Name    | Summary                                      |
+|---------+----------------------------------------------|
+| GDPR    | EU General Data Protection Regulation        |
+| PCI DSS | Payment Card Industry Data Security Standard |
+** Basic Concepts
+| Name                        | Summary                                                                                       |
+|-----------------------------+-----------------------------------------------------------------------------------------------|
+| IdM                         | Identity Management                                                                           |
+| [[https://www.cloudave.com/472/authn-authz-and-gluecon/][AuthN vs AuthZ]]              | Authentication vs Authorization                                                               |
+| [[https://www.cloudave.com/472/authn-authz-and-gluecon/][OAuth vs OpenID]]             | OAuth: Open Authorization; OpenID: an authentication mechanism                                |
+| OAuth vs OAuth2             |                                                                                               |
+| SAML                        |                                                                                               |
+| Malware                     | short for "malicious software"                                                                |
+| virus                       | Infects other programs, caryying out malicious missions                                       |
+| worm                        | It doens't need to infect another program. It performs and replicates by itself automatically |
+| trojan horse                | A program that contains malware like a virus or worm                                          |
+| ransomware                  | A link of attachment executes a malware to encrypt your system and demand a ransom            |
+| vishing                     | A common type of social engineering that is done over the phone                               |
+| phishing                    | A common type of social engineering that fools you to respond to a malicious email            |
+| Data classifications levels | Restricted, Private/Protected, Confidential, Public                                           |
+| PII                         | Personally identifiable information                                                           |
+** Service Self-Protection
+| Name       | Summary                                                                                                   |
+|------------+-----------------------------------------------------------------------------------------------------------|
+| Throttling |                                                                                                           |
+| [[https://blog.bitsrc.io/understanding-throttling-and-debouncing-973131c1ba07][Debouncing]] | A debounced function will ignore all calls to it until the calls have stopped for a specified time period |
+** Security - PodSecurityPolicy
+- A PodSecurityPolicy is a cluster-level resource that controls security sensitive aspects of the pod specification.
+| Yaml                                    | Summary                                                         |
+|-----------------------------------------+-----------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/securitycontext-user.yaml][podsecurity/securitycontext-user.yaml]]   | Configure userid, at both pod and container levels              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-privileged.yaml][podsecurity/podsecurity-privileged.yaml]] | Create pod security with privileged access                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-restricted.yaml][podsecurity/podsecurity-restricted.yaml]] | Create pod security with restricted access, then apply it later |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-enforce.yaml][podsecurity/podsecurity-enforce.yaml]]    | Enforce policy security by defining role and cluster role       |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-advanced.yaml][podsecurity/podsecurity-advanced.yaml]]   | A more complicated definition of pod security policy            |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-example.yaml][podsecurity/podsecurity-example.yaml]]    | A full example with everything included                         |
+| Reference                               | [[https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates][Link: Kubernetes Yaml Templates]], [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]       |
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+** Security - NetworkPolicy
+| Yaml                                                      | Summary                                                   |
+|-----------------------------------------------------------+-----------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall-ingress.yaml][networksecurity/networksecurity-denyall-ingress.yaml]]      | Allow all ingress                                         |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-allowall-ingress.yaml][networksecurity/networksecurity-allowall-ingress.yaml]]     | Deny all ingress                                          |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall.yaml][networksecurity/networksecurity-denyall.yaml]]              | Deny all ingress and egress                               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-pod.yaml][networksecurity/networksecurity-pod.yaml]]                  | Whitelist traffic control                                 |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-complicated.yaml][networksecurity/networksecurity-complicated.yaml]]          | A comprehensive network policy example                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-port.yaml][networksecurity/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace                          |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-deny-othernamespaces.yaml][networksecurity/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces            |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyegress-exceptdns.yaml][networksecurity/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS                        |
+| Reference                                                 | [[https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates][Link: Kubernetes Yaml Templates]], [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]] |
+** Admission Controllers
+- An admission controller is a piece of code that intercepts requests to the Kubernetes API server prior to persistence of the object
+
+[[CheatSheet: Kubernetes Security][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-k8s-security-A4/admission_controller.png]]
+
+| Name                                                 | Summary                                      |
+|------------------------------------------------------+----------------------------------------------|
+| Example: admission webhook                           | [[https://github.com/kelseyhightower/denyenv-validating-admission-webhook][GitHub: denyenv-validating-admission-webhook]] |
+| Example: Admission controller for guarding namespace | [[https://github.com/yahoo/k8s-namespace-guard][GitHub: k8s-namespace-guard]]                  |
+** More Resources
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+
+<a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
+<a href="https://github.com/dennyzhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* Kubernetes Security                                      :noexport:Concept:
+:PROPERTIES:
+:type:     security
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/challenges-k8s-security"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+Blog URL: https://kubernetes.dennyzhang.com/challenges-k8s-security, Category: [[https://kubernetes.dennyzhang.com/category/concept][concept]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+
+See more Kubernetes sharing from Denny: [[https://github.com/topics/denny-kubernetes][denny-kubernetes]]
+** Admission Controllers
+
+- They are software modules that can modify or reject requests.
+- They can access the contents of the object that is being created or updated.
+- They act on objects being created, deleted, updated or connected (proxy), but not reads.
+- Multiple admission controllers can be configured. Each is called in order.
+- Admission controllers can also set complex defaults for fields.
+- Admission controllers may be "validating", "mutating", or both. Mutating controllers may modify the objects they admit; validating controllers may not.
+
+https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#what-does-each-admission-controller-do
+** Questions
+*** [#A] Why k8s switch from ABAC to RBAC?
+https://github.com/cloudfoundry-incubator/kubo-release/issues/104
+
+ABAC is difficult to manage as the API server must be restarted in order to apply any change to the policy file.
+
+https://www.youtube.com/watch?v=cgTa7YnGfHA
+
+ABAC can help your organization:
+- simplify access management
+- reduce risk due to unauthorized access
+- centralize auditing and access policy
+*** Rotate encryption keys regularly
+https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml
+*** SecurityContextDeny (Admission Controller) vs DenyEscalatingExec vs SecurityContextDeny
+*** DONE RABC can only filter resource by type. But not the individual resources?
+    CLOSED: [2018-10-02 Tue 00:38]
+You can filter individual resources, but not with name pattern
+
+https://github.com/kubernetes/kubernetes/issues/56582
+
+https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+
+Subdividing namespaces is not trivial. The current advice is to use different namespaces. Are you primarily concerned with dividing access between users or service accounts?
+*** Why network policy is implemented in CNI, instead of kube-proxy?
+Because the two pods may be in the same worker node?
+*** securityContext vs pod security policy?
+*** lifecycle management of client certificate talking with apiserver
+https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/
+*** Why /healthz can quit Pod?
+*** How sysctl works for Pod without passing --privileged flag
+https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/#setting-sysctls-for-a-pod
+*** Difference between ipvs and iptable?
+*** What's netlink?
+*** Audit: who has deleted my namespace/pods?
+kubernetes auditing: Create auditing events and send to log backend(fluentd by default)
+
+https://kubernetes.io/docs/tasks/debug-application-cluster/audit/
+
+#+BEGIN_EXAMPLE
+Kubernetes auditing allows cluster administrator to answer the following questions:
+
+- what happened?
+- when did it happen?
+- who initiated it?
+- on what did it happen?
+- where was it observed?
+- from where was it initiated?
+- to where was it going?
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Kube-apiserver performs auditing.
+
+Each request on each stage of its execution generates an event, which is then pre-processed according to a certain policy and written to a backend.
+
+Kube-apiserver out of the box provides two backends:
+
+- Log backend, which writes events to a disk
+- Webhook backend, which sends events to an external API
+#+END_EXAMPLE
+*** DONE how multiple pod securities will be applied: only one take effect :noexport:
+    CLOSED: [2018-10-17 Wed 13:50]
+
+** Tools for K8S Security
+| Name                           | Summary                          |
+|--------------------------------+----------------------------------|
+| kubernetes scan tools          | [[https://kubesec.io/][kubesec]], [[https://github.com/aquasecurity/kube-bench][kube-bench]], [[https://github.com/aquasecurity/kube-hunter][kube-hunter]] |
+| Container security scan tools  |                                  |
+| Commerical security scan tools | [[https://www.dennyzhang.com/neuvector_container][neuvector]]                        |
+| [[https://www.dennyzhang.com/docker_bench_security][docker-bench-security tool]]     |                                  |
+** Links for K8S Security
+| Name                                   | Summary |
+|----------------------------------------+---------|
+| [[https://github.com/kubernetes/community/blob/master/contributors/design-proposals/auth/security.md][Design: Security in Kubernetes]]         |         |
+| [[https://github.com/kubernetes/community/blob/master/contributors/design-proposals/storage/volume-ownership-management.md][Design: Volume plugins and idempotency]] |         |
+| [[https://github.com/kubernetes/community/blob/master/contributors/design-proposals/auth/security_context.md][Design: Security Contexts]]              |         |
+| https://kubernetes-security.info/      |         |
+** Source Code
+| Name                                      | Summary                                                                      |
+|-------------------------------------------+------------------------------------------------------------------------------|
+| Network security design doc               | [[https://github.com/kubernetes/community/blob/2780e1b37cac622b0d622208b246c60bfefd171c/contributors/design-proposals/network/network-policy.md][design-proposals/network/network-policy.md]]                                   |
+| PodSecurity - PodSecurityContextAccessor  | [[https://github.com/kubernetes/kubernetes/blob/v1.11.3/pkg/securitycontext/accessors.go][pks/securitycontext/accessors.go]], [[https://github.com/kubernetes/kubernetes/tree/v1.11.3/pkg/security/podsecuritypolicy/provider.go][pkg/security/podsecuritypolicy/provider.go]] |
+| kubelet dockershim                        | [[https://github.com/kubernetes/kubernetes/blob/v1.11.3/pkg/kubelet/dockershim/security_context_test.go][pkg/kubelet/dockershim/security_context_test.go]]                              |
+| =kubelet/kuberuntime/security_context.go= | [[https://github.com/kubernetes/kubernetes/blob/v1.11.3/pkg/kubelet/kuberuntime/security_context.go][pkg/kubelet/kuberuntime/security_context.go]]                                  |
+
+** DONE Questions
+   CLOSED: [2018-09-16 Sun 16:33]
+*** DONE How I check whether my network provider supports network policy?
+    CLOSED: [2018-09-16 Sun 16:33]
+https://kubernetes.io/docs/concepts/services-networking/network-policies/
+
+Network policies are implemented by the network plugin, so you must be using a networking solution which supports NetworkPolicy - simply creating the resource without a controller to implement it will have no effect.
+** [#A] Concept: PodSecurityPolicy
+PodSecurityPolicy defines a set of conditions that a pod must run with in order to be accepted into the system
+
+https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+
+https://gist.github.com/tallclair/11981031b6bfa829bb1fb9dcb7e026b0
+** Kubernetes Security Scan Tool
+#+BEGIN_EXAMPLE
+For k8s security, I love PodSecurity. But apparently best practices will be violated for many reasons. I'm looking for k8s security scan tools like docker-bench-security for docker.
+
+Found kube-bench in k8s. Anyone tried this one? And do you have more recommendations?
+
+https://github.com/aquasecurity/kube-bench
+
+https://dev.to/petermbenjamin/kubernetes-security-best-practices-hlk
+
+https://github.com/docker/docker-bench-security
+#+END_EXAMPLE
+** RBAC
+https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+
+[[Kubernetes Security][https://raw.githubusercontent.com/dennyzhang/challenges-k8s-security/master/rbac.png]]
+** General Security
+- Create security functions: what should be controlled
+- Map security functions into roles
+- Implement security control to avoid compromise of the roles
+** Kubernetes Built-in Security
+Links:
+https://kubernetes.io/docs/reference/access-authn-authz/
+*** Concepts
+| Name               | Summary                                                                         |
+|--------------------+---------------------------------------------------------------------------------|
+| ServiceAccount     | https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/ |
+| Node Authorization | https://kubernetes.io/docs/reference/access-authn-authz/node/                   |
+| ABAC Authorization | https://kubernetes.io/docs/reference/access-authn-authz/abac/                   |
+| RBAC Authorization | https://kubernetes.io/docs/reference/access-authn-authz/rbac/                   |
+*** Security deployemnt
+| Name                      | Summary          |
+|---------------------------+------------------|
+| Make filesystem read-only | [[https://github.com/dennyzhang/challenges-k8s-security/tree/master/mark-fs-readonly][mark-fs-readonly]] |
+| Set runAsNonRoot as True  | [[https://github.com/dennyzhang/challenges-k8s-security/tree/master/run-as-nonroot][run-as-nonroot]]   |
+** Kubernetes Federation
+Links:
+https://kubernetes.io/docs/concepts/cluster-administration/federation/
+https://github.com/kubernetes/federation
+** Kubernetes API Security
+Users access the API using kubectl, client libraries, or by making REST requests.
+
+[[https://d33wubrfki0l68.cloudfront.net/673dbafd771491a080c02c6de3fdd41b09623c90/50100/images/docs/admin/access-control-overview.svg]]
+** More Resources
+https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/
+
+https://speakerdeck.com/thesandlord/kubernetes-best-practices
+
+https://cloud.google.com/security/overview/whitepaper#a_global_network_with_unique_security_benefits
+
+https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/
+#+BEGIN_HTML
+ <a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+ <a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+ #+END_HTML
+* TODO What is Cluster Federation?                                 :noexport:
+https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/resource-metrics-api.md#scheduler
+* HALF security quiz                                               :noexport:
+** how many ways to access api?
+https://kubernetes.io/docs/reference/access-authn-authz/
+
+Users access the API using kubectl, client libraries, or by making REST requests.
+** What api auth is inside?
+https://kubernetes.io/docs/reference/access-authn-authz/
+
+Authentication modules include Client Certificates, Password, and Plain Tokens, Bootstrap Tokens, and JWT Tokens (used for service accounts).
+* TODO get cloud security cheatsheet: https://github.com/petermbenjamin/The-Security-Handbook :noexport:
+* TODO volume security                                             :noexport:
+* TODO kubectl namespace security                                  :noexport:
+* k8s dashboard security: https://github.com/kubernetes/dashboard/wiki/Access-control :noexport:
+* TODO micro-sementation simplifies network security               :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/ :noexport:
+* TODO Blog: Security Your Pod In K8S                              :noexport:
+** What the problems are?
+** pod security policy
+** least privledge
+** scan tools
+** Features I'm looking for: volume security policy, IDS
+** AppArmor
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Aqua Security: https://www.aquasec.com/                     :noexport:
+* TODO Twistlock: https://www.twistlock.com/                       :noexport:
+* TODO CIS Kubernetes Benchmark: checks best-practices of Kubernetes installations :noexport:
+https://github.com/neuvector/kubernetes-cis-benchmark
+https://docs.google.com/document/d/1tu6ZN0bs-fYEnwnB0TaFVd3aSvTuKAhKV3vsh-FtLSs/edit#heading=h.ldbz6uawjf9u
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO kube-bench: https://github.com/aquasecurity/kube-bench      :noexport:
+https://blog.aquasec.com/announcing-kube-bench-an-open-source-tool-for-running-kubernetes-cis-benchmark-tests
+Kube-Bench: An Open Source Tool for Running Kubernetes CIS Benchmark Tests
+* TODO security k8s dashboard: https://blog.heptio.com/on-securing-the-kubernetes-dashboard-16b09b1b7aca :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO k8s check admission controller                              :noexport:
+* TODO admission controller webhook                                :noexport:
+* TODO k8s oidc vs k8s service account                             :noexport:
+* combine: https://github.com/imthenachoman/How-To-Secure-A-Linux-Server :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* OIDC: OpenID Connect (OIDC)                                      :noexport:
+JWT
+refresh token
+* notes                                                            :noexport:
+- Sensitive personal information should only be collected and processed if permitted by law.
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO pre-shared secret                                           :noexport:
+https://www.rabbitmq.com/distributed.html
+Nodes authenticate to each other using a pre-shared secret typically installed by deployment automation tools.

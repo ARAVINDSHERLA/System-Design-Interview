@@ -1,0 +1,6 @@
+# https://cheatsheet.dennyzhang.com/cheatsheet-makefile-A4
+# make MODULE=audit build -f Makefile-debug
+all:build
+
+build:
+	bash -xe ./gradle_build.sh ${MODULE}

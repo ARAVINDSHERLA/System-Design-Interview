@@ -1,0 +1,630 @@
+* CheatSheet: IT Document Template & Business English                  :Life:
+:PROPERTIES:
+:type:     life
+:export_file_name: cheatsheet-doc-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-doc-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-doc-A4/cheatsheet-doc-A4.pdf][cheatsheet-doc-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-doc-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-communication-A4][CheatSheet: Professional Communication For IT Workers]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Documents
+| Name                     | Comment              |
+|--------------------------+----------------------|
+| Weekly Status Update     |                      |
+| Cross-team communication |                      |
+| Design doc               |                      |
+| Tasks                    | chore, spikes, epics |
+** Encourage team members to contribute
+| Name                                | Comment |
+|-------------------------------------+---------|
+| Feel free to fix the docs           |         |
+| Mind filing a ticket to track this? |         |
+** Meeting English
+| Name                  | Comment                                                                            |
+|-----------------------+------------------------------------------------------------------------------------|
+| Initial conversations | I'm happy to schedule a Zoom meeting, if the context here is not completely clear. |
+** Meeting English
+| Name                                   | Comment                                                        |
+|----------------------------------------+----------------------------------------------------------------|
+| When people take conversation offline  | =Please socialize the outcome=                                 |
+| Track tasks & issues                   | =Can you open up a ticket, so that we don't lose track of it?= |
+| Delay the answer                       | =Yeah, I'm trying to think=                                    |
+| Delay the answer                       | =We take the question offline=                                 |
+| Ask feedback for your proposal         | =Does that make sense so far?=                                 |
+| Start meeting without waiting everyone | =I think we have a quorum. Let's start=                        |
+| Feel free to interrupt me anytime      |                                                                |
+| I have a question, if everyone is OK   |                                                                |
+| When meeitng is overdue                | =I just add a timecheck=                                       |
+** Review Pull Requests
+| Name                        | Comment                                                        |
+|-----------------------------+----------------------------------------------------------------|
+| Ask people to review PR     | Can I get reviews for https...                                 |
+| Ask people to review PR     | Can I get a stamp for https...                                 |
+| Ask people to review PR     | Can we have eyes on https...                                   |
+| Ask people to review PR     | https://... is passing CI. And I'd appreciate a review. cc XXX |
+|-----------------------------+----------------------------------------------------------------|
+| Suggestions of small things | nit: XXX                                                       |
+| Comments as newcomers       | noob: XXX                                                      |
+| Don't repeat yourself       | DRY: XXX                                                       |
+|-----------------------------+----------------------------------------------------------------|
+| Echo the comment from @XXX  |                                                                |
+** Appraise
+| Name                                       | Comment |
+|--------------------------------------------+---------|
+| We learned a lot collaboratively as a team |         |
+** Report Tickets
+| Name                              | Comment                                            |
+|-----------------------------------+----------------------------------------------------|
+| Not sure about ticket duplication | =Let me know if this is a separate issue=          |
+|                                   | =Thanks for the historical context=                |
+| Not sure valid ticket             | =Before I open a bug, I wanted to ask the channel= |
+** Leave a conversation
+| Name                                                                    | Comment |
+|-------------------------------------------------------------------------+---------|
+| I'm gonna step away from this. I think it's clear what's wrong here     |         |
+| I'm stepping away from this for now. Still not sure what happened here. |         |
+** Start a conversation
+| Name                                                                                     | Comment |
+|------------------------------------------------------------------------------------------+---------|
+| Hey XXX - I'm not quite sure who to ask about this, so I thought I might start with you. |         |
+| Nice to virtually meet you!                                                              |         |
+** Misc
+| Name                                                                                         | Comment |
+|----------------------------------------------------------------------------------------------+---------|
+| home-grown approaches                                                                        |         |
+| Sorry for off-topic                                                                          |         |
+| Fix intermittent failures                                                                    |         |
+| Go the extra mile                                                                            |         |
+| Not feeling well this morning; woke up with cold symptoms. I'll be working remotely as I can |         |
+** More Resources
+License: Code is licenhealth under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-doc-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-doc-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-doc-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-doc-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Lessons learned in enterperise as an old IT engineer   :noexport:
+** For the tasks, before doing, think whether it's the right battle
+** Don't rely on people to change
+** Bring instant values
+** Connection and personal talks win, compared to remote/online discussion
+* TODO how to file a problem report                          :noexport:
+- Collect information automatically: collect, archive, upload, and provide a http link
+- Consistent format for problem report.
+
+Problem Report
+
+Every problem starts with a problem report, which might be an
+automated alert or one of your colleagues saying, "The system is
+slow." An effective report should tell you the expected behavior, the
+actual behavior, and, if possible, how to reproduce the behavior.8
+Ideally, the reports should have a consistent form and be stored in a
+search‐ able location, such as a bug tracking system. Here, our teams
+often have customized forms or small web apps that ask for information
+that's relevant to diagnosing the particular systems they support,
+which then automatically generate and route a bug. This may also be a
+good point at which to provide tools for problem reporters to try
+self-diagnosing or self-repairing common issues on their own.
+
+It's common practice at Google to open a bug for every issue, even
+those received via email or instant messaging. Doing so creates a log
+of investigation and remediation activities that can be referenced in
+the future. Many teams discourage reporting prob‐ lems directly to a
+person for several reasons: this practice introduces an additional
+step of transcribing the report into a bug, produces lower-quality
+reports that aren't visible to other members of the team, and tends to
+concentrate the problem-solving load on a handful of team members that
+the reporters happen to know, rather than the person currently on duty
+* TODO Blameless postmortem                                        :noexport:
+https://www.joyent.com/blog/post-mortem-debugging-and-promises
+http://www.alexa.com/siteinfo/codeascraft.com
+https://aws.amazon.com/message/5467D2/
+http://danluu.com/postmortem-lessons/
+https://blog.serverdensity.com/how-to-write-a-postmortem/
+https://github.com/danluu/post-mortems
+** Motivation & Principle
+Motivation:
+- Avoid repeat the same mistakes
+- Guide the operation and development practice
+
+Principle:
+- Fast
+- Honest and In-depth
+- Easy to retrieve
+** Postmortem content
+Postmortems are no different to other types of written communication. To be effective, their content needs a story and a timeline:
+
+What was the root cause? What turn of events led to the server failover? What roadworks cut what fiber? What DNS failures happened, and where? Keep in mind that a root cause may've set things in motion months before any outage took place.
+What steps did we take to identify and isolate the issue? How long did it take for us to triangulate it, and is there anything we could do to shorten that time?
+Who / what services bore the brunt of the outage?
+How did we fix it?
+What did we learn? How will those learnings advise our process, product, and strategy?
+** [#A] web page: Lessons learned from reading postmortems
+http://danluu.com/postmortem-lessons/
+*** webcontent                                                     :noexport:
+#+begin_example
+Location: http://danluu.com/postmortem-lessons/
+Lessons learned from reading postmortems
+---------------------------------------------------------------------------------------------------
+
+I love reading postmortems. They're educational, but unlike most educational docs, they tell an
+entertaining story. I've spent a decent chunk of time reading postmortems at both Google and
+Microsoft. I haven't done any kind of formal analysis on the most common causes of bad failures
+(yet), but there are a handful of postmortem patterns that I keep seeing over and over again.
+
+Error Handling
+
+Proper error handling code is hard. Bugs in error handling code are a major cause of bad problems.
+This means that the probability of having sequential bugs, where an error causes buggy error
+handling code to run, isn't just the independent probabilities of the individual errors multiplied.
+It's common to have cascading failures cause a serious outage. There's a sense in which this is
+obvious - error handling is generally regarded as being hard. If I mention this to people they'll
+tell me how obvious it is that a disproportionate number of serious postmortems come out of bad
+error handling and cascading failures where errors are repeatedly not handled correctly. But
+despite this being "obvious", it's not so obvious that sufficient test and static analysis effort
+are devoted to making sure that error handling works.
+
+For more on this, Ding Yuan et al. have a great paper and talk: Simple Testing Can Prevent Most
+Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems. The
+paper is basically what it says on the tin. The authors define a critical failure as something that
+can take down a whole cluster or cause data corruption, and then look at a couple hundred bugs in
+Cassandra, HBase, HDFS, MapReduce, and Redis, to find 48 critical failures. They then look at the
+causes of those failures and find that most bugs were due to bad error handling. 92% of those
+failures are actually from errors that are handled incorrectly.
+
+Graphic of previous paragraph
+
+Drilling down further, 25% of bugs are from simply ignoring an error, 8% are from catching the
+wrong exception, 2% are from incomplete TODOs, and another 23% are "easily detectable", which are
+defined as cases where "the error handling logic of a non-fatal error was so wrong that any
+statement coverage testing or more careful code reviews by the developers would have caught the
+bugs". By the way, this is one reason I don't mind Go style error handling, despite the common
+complaint that the error checking code is cluttering up the main code path. If you care about
+building robust systems, the error checking code is the main code!
+
+The full paper has a lot of gems that that I mostly won't describe here. For example, they explain
+the unreasonable effectiveness of Jepsen (98% of critical failures can be reproduced in a 3 node
+cluster). They also dig into what percentage of failures are non-deterministic (26% of their
+sample), as well as the causes of non-determinism, and create a static analysis tool that can catch
+many common error-caused failures.
+
+Configuration
+
+Configuration bugs, not code bugs, are the most common cause I've seen of really bad outages. When
+I looked at publicly available postmortems, searching for "global outage postmortem" returned about
+50% outages caused by configuration changes. Publicly available postmortems aren't a representative
+sample of all outages, but a random sampling of postmortem databases also reveals that config
+changes are responsible for a disproportionate fraction of extremely bad outages. As with error
+handling, I'm often told that it's obvious that config changes are scary, but it's not so obvious
+that most companies test and stage config changes like they do code changes.
+
+Except in extreme emergencies, risky code changes are basically never simultaneously pushed out to
+all machines because of the risk of taking down a service company-wide. But it seems that every
+company has to learn the hard way that seemingly benign config changes can also cause a
+company-wide service outage. For example, this was the cause of the infamous November 2014 Azure
+outage. I don't mean to pick on MS here; their major competitors have also had serious outages for
+similar reasons, and they've all put processes into place to reduce the risk of that sort of outage
+happening again.
+
+I don't mean to pick on large cloud companies, either. If anything, the situation there is better
+than at most startups, even very well funded ones. Most of the "unicorn" startups that I know of
+don't have a proper testing/staging environment that lets them test risky config changes. I can
+understand why - it's often hard to set up a good QA environment that mirrors prod well enough that
+config changes can get tested, and like driving without a seatbelt, nothing bad happens the vast
+majority of the time. If I had to make my own seatbelt before driving my car, I might not drive
+with a seatbelt either. Then again, if driving without a seatbelt were as scary as making config
+change, I might consider it.
+
+Back in 1985, Jim Gray observed that "operator actions, system configuration, and system maintence
+was the main source of failures - 42%". Since then, there have been a variety of studies that have
+found similar results. For example, Rabkin and Katz found the following causes for failures:
+
+Causes in decreasing order: misconfig, bug, operational, system, user, install, hardware
+
+Hardware
+
+Basically every part of a machine can fail. Many components can also cause data corruption, often
+at rates that are much higher than advertised. For example, Schroeder, Pinherio, and Weber found
+DRAM error rates were more than an order of magnitude worse than advertised. The number of silent
+errors is staggering, and this actually caused problems for Google back before they switched to ECC
+RAM. Even with error detecting hardware, things can go wrong; relying on ethernet checksums to
+protect against errors is unsafe and I've personally seen malformed packets get passed through as
+valid packets. At scale, you can run into more undetected errors than you expect, if you expect
+hardware checks to catch hardware data corruption.
+
+Failover from bad components can also fail. This AWS failure tells a typical story. Despite taking
+reasonable sounding measures to regularly test the generator power failover process, a substantial
+fraction of AWS East went down when a storm took out power and a set of backup generators failed to
+correctly provide power when loaded.
+
+Humans
+
+This section should probably be called process error and not human error since I consider having
+humans in a position where they can accidentally cause a catastrophic failure to be a process bug.
+It's generally accepted that, if you're running large scale systems, you have to have systems that
+are robust to hardware failures. If you do the math on how often machines die, it's obvious that
+systems that aren't robust to hardware failure cannot be reliable. But humans are even more error
+prone than machines. Don't get me wrong, I like humans. Some of my best friends are human. But if
+you repeatedly put a human in a position where they can cause a catastrophic failure, you'll
+eventually get a catastrophe. And yet, the following pattern is still quite common:
+
+    Oh, we're about to do a risky thing! Ok, let's have humans be VERY CAREFUL about executing the
+    risky operation. Oops! We now have a global outage.
+
+Postmortems that start with "Because this was a high risk operation, foobar high risk protocol was
+used" are ubiquitous enough that I now think of extra human-operated steps that are done to
+mitigate human risk as an ops smell. Some common protocols are having multiple people watch or
+confirm the operation, or having ops people standing by in case of disaster. Those are reasonable
+things to do, and they mitigate risk to some extent, but in many postmortems I've read, automation
+could have reduced the risk a lot more or removed it entirely. There are a lot of cases where the
+outage happened because a human was expected to flawlessly execute a series of instructions and
+failed to do so. That's exactly the kind of thing that programs are good at! In other cases, a
+human is expected to perform manual error checking. That's sometimes harder to automate, and a less
+obvious win (since a human might catch an error case that the program misses), but in most cases
+I've seen it's still a net win to automate that sort of thing.
+
+Causes in decreasing order: human error, system failure, out of IPs, natural disaster
+
+In an IDC survey, respondents voted human error as the most troublesome cause of problems in the
+datacenter.
+
+One thing I find interesting is how underrepresented human error seems to be in public postmortems.
+As far as I can tell, Google and MS both have substantially more automation than most companies, so
+I'd expect their postmortem databases to contain proportionally fewer human error caused outages
+than I see in public postmortems, but in fact it's the opposite. My guess is that's because
+companies are less likely to write up public postmortems when the root cause was human error
+enabled by risky manual procedures. A prima facie plausible alternate reason is that improved
+technology actually increases the fraction of problems caused by humans, which is true in some
+industries, like flying. I suspect that's not the case here due to the sheer number of manual
+operations done at a lot of companies, but there's no way to tell for sure without getting access
+to the postmortem databases at multiple companies. If any company wants to enable this analysis
+(and others) to be done (possibly anonymized), please get in touch.
+
+Monitoring / Alerting
+
+The lack of proper monitor is never the sole cause of a problem, but it's often a serious
+contributing factor. As is the case for human errors, these seem underrepresented in public
+postmortems. When I talk to folks at other companies about their worst near disasters, a large
+fraction of them come from not having the right sort of alerting set up. They're often saved having
+a disaster bad enough to require a public postmortem by some sort of ops heroism, but heroism isn't
+a scalable solution.
+
+Sometimes, those near disasters are caused by subtle coding bugs, which is understandable. But more
+often, it's due to blatant process bugs, like not having a clear escalation path for an entire
+class of failures, causing the wrong team to debug an issue for half a day, or not having a backup
+oncall, causing a system to lose or corrupt data for hours before anyone notices when (inevitably)
+the oncall person doesn't notice that something's going wrong.
+
+The Northeast blackout of 2003 is a great example of this. It could have been a minor outage, or
+even just a minor service degredation, but (among other things) a series of missed alerts caused it
+to become one of the worst power outages ever.
+
+Not a Conclusion
+
+This is where the conclusion's supposed to be, but I'd really like to do some serious data analysis
+before writing some kind of conclusion or call to action. What should I look for? What other major
+classes of common errors should I consider? These aren't rhetorical questions and I'm genuinely
+interested in hearing about other categories I should think about. Feel free to ping me here. I'm
+also trying to collect public postmortems here.
+
+One day, I'll get around to the serious analysis, but even without going through and classifying
+thousands of postmortems, I'll probably do a few things differently as a result of having read a
+bunch of these. I'll spend relatively more time during my code reviews on errors and error handling
+code, and relatively less time on the happy path. I'll also spend more time checking for and trying
+to convince people to fix "obvious" process bugs.
+
+One of the things I find to be curious about these failure modes is that when I talked about what I
+found with other folks, at least one person told me that each process issue I found was obvious.
+But these "obvious" things still cause a lot of failures. In one case, someone told me that what I
+was telling them was obvious at pretty much the same time their company was having a global outage
+of a multi-billion dollar service, caused by the exact thing we were talking about. Just because
+something is obvious doesn't mean it's being done.
+
+Elsewhere
+
+Richard Cook's How Complex Systems Fail takes a more general approach; his work inspired The
+Checklist Manifesto, which has saved lives.
+
+Allspaw and Robbin's Web Operations: Keeping the Data on Time talks about this sort of thing in the
+context of web apps. Allspaw also has a nice post about some related literature from other fields.
+
+In areas that are a bit closer to what I'm used to, there's a long history of studying the causes
+of failures. Some highlights inlcude Jim Gray's Why Do Computers Stop and What Can Be Done About
+It? (1985), Oppenheimer et. al's Why Do Internet Services Fail, and What Can Be Done About It?
+(2003), Nagaraja et. al's Understanding and Dealing with Operator Mistakes in Internet Services
+(2004), part of Barroso et. al's The Datacenter as a Computer (2009), and Rabkin and Katz's How
+Hadoop Clusters Break (2013), and Xu et. al's Do Not Blame Users for Misconfigurations.
+
+There's also a long history of trying to understand aircraft reliability, and the story of how
+processes have changed over the decades is fascinating, although I'm not sure how to generalize
+those lessons.
+
+Just as an aside, I find it interesting how hard it's been to eke out extra uptime and reliability.
+In 1974, Ritchie and Thompson wrote about a system "costing as little as $40,000" with 98% uptime.
+A decade later, Jim Gray uses 99.6% uptime as a reasonably good benchmark. We can do much better
+than that now, but the level of complexity required to do it is staggering.
+
+Acknowledgements
+
+Thanks to Leah Hanson, Anonymous, Marek Majkowski, Nat Welch, and Julia Hansbrough for providing
+comments on a draft of this. Anonymous, if you prefer to not be anonymous, send me a message on
+zulip. For anyone keeping score, that's three folks from Google, one person from Cloudflare, and
+one anyonymous commenter. I'm always open to comments/criticism, but I'd be especially interested
+in comments from folks who work at companies with less scale. Do my impressions generalize?
+
+Thanks to gwern and Dan Reif for taking me up on this and finding some bugs in this post.
+
+← Reviewing Steve Yegge's prediction record Slashdot and Sourceforge ->p
+Archive Popular About (hire me!) Twitter RSS
+
+#+end_example
+* Describe situation                                               :noexport:
+relegated to the position of a second tier team(so to speak) with no real ownership or ability to drive any directions.
+
+An interview is typically different from your day-to-day job.
+* notes                                                            :noexport:
+What you gonna do to mitigate the single-point-of-failure issues.
+* resign                                                           :noexport:
+While I am looking forward to the next steps in my career and new opportunity, I will deeply miss working with each of you.
+* laid-off                                                         :noexport:
+** wework
+#+BEGIN_EXAMPLE
+To the We Company Management Team:
+
+WeWork's company values encourage us to be "entrepreneurial, inspired, authentic, tenacious, grateful and together." Today, we are embracing these qualities wholeheartedly as we band together to ensure the well-being of our peers.
+
+We come from many departments across the company: building maintenance, cleaning, community, design, product, engineering and more. We believe that in the upcoming weeks we have the unique opportunity to demonstrate our true values to the world. This is a company that has inspired many of us, challenged us, and has been a formative personal and professional experience for those of us who began our careers here. WeWork has been not just a workplace, but a source of friendships and inspiration along the way.
+
+We also believe our product can have a lasting positive impact on the world. We want to improve workplace happiness for millions of office workers and support small and medium sized businesses in their entrepreneurial efforts. We have been proud to support these goals and dedicate our time and talent to achieve them. This has been our story so far.
+
+Recently, however, we have watched as layers are peeled back one-by-one to reveal a different story. This story is one of deception, exclusion and selfishness playing out at the company's highest levels. This is a story that reads as a negation of all our core values. But this story is not over.
+
+Thousands of us will be laid off in the upcoming weeks. But we want our time here to have meant something. We don't want to be defined by the scandals, the corruption, and the greed exhibited by the company's leadership. We want to leave behind a legacy that represents the true character and intentions of WeWork employees.
+
+In the immediate term, we want those being laid off to be provided fair and reasonable separation terms commensurate with their contributions, including severance pay, continuation of company-paid health insurance and compensation for lost equity. We are not the Adam Neumanns of this world - we are a diverse work force with rents to pay, households to support and children to raise. Neumann departed with a $1.7 billion severance package including a yearly $46 million "consulting fee" (higher than the total compensation of all but nine public C.E.O.s in the United States in 2018). We are not asking for this level of graft. We are asking to be treated with humanity and dignity so we can continue living life while searching to make a living elsewhere. In consideration of recent news, we will also need clarity around the contracts our cleaning staff will be required to sign in order to keep their jobs, which are being outsourced to a third party. Those of us who have visas through WeWork need assistance and adequate time to find a new employer to sponsor our respective visas.
+
+In the medium term, employees need a seat at the table so the company can address a broader range of issues. We've seen what can happen when leadership makes decisions while employees have no voice. We will need to see more transparency and more accountability.
+
+We also need the thousands who maintain our buildings and directly service members to receive full benefits and fair pay, rather than earning just above minimum wage.
+
+We need allegations of sexual misconduct and harassment to be taken seriously, acted on immediately and resolved with transparency.
+
+We need diversity and inclusion efforts to materialize into real actions, not just talking points at company meetings.
+
+We need salary transparency so we can surface and address systemic inequalities.
+
+We need an end to forced arbitration contracts, which strip employees of their right to pursue fair legal action against the company.
+
+We need all of this, and more.
+
+In the long term, we want the employees who remain at WeWork, and those who join in the future, to inherit something positive we left behind. We want them to never find themselves in this position again, and for that to happen, they need a voice.
+
+With this letter we are introducing ourselves, the WeWorkers Coalition. We are taking full advantage of our legal right to establish this coalition, and in doing so, we hope to give the future employees of WeWork the voice we never had.
+
+We want to work with you. Please join us in writing a better ending to this chapter of the WeWork story.
+
+By this Thursday at 5:00 p.m. EST, we would like to receive confirmation of your receipt of this letter and an indication of your willingness to meet us.
+#+END_EXAMPLE
+* ask PTO email                                                    :noexport:
+#+BEGIN_EXAMPLE
+Hi Jack,
+
+I'd like to request vacation time from Monday, October 2nd, through Friday, October 6th because I'll be taking a family vacation over those days.
+
+While I'm gone, I'll be reachable by email but not phone. I'll be making sure that we have coverage in the support queue while I'm gone, and I'll also be distributing a playbook to my team so it's clear who owns which issues.
+
+Is this OK?
+
+Thanks,
+
+-Ramit
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Hi XXX,
+I'd like to request vacation time of 8 days, which means from Dec 18th to Dec 31st excluding the weekends and Christmas holidays. I'll be taking a family vacation and some family activities over those days.
+While I'm gone, I'll be reachable by email and slack. Please expect a delay in response up to several hours' delay, since I might be  on and off. Feel free to contact me via phone call for urgency.
+Is this OK?
+Thanks,
+-Denny
+#+END_EXAMPLE
+* Business Essentials                                              :noexport:
+https://www.investopedia.com/business-essentials-4689832
+* TODO company culture                                             :noexport:
+You are curious about how our different backgrounds affect us at work, rather than pretending they don't affect us
+
+You recognize we all have biases, and work to grow past them
+
+ambitious common goals
+
+Of course, to be great, most of us have to put in considerable effort, but hard work and long hours is not how we measure or talk about a person's contribution.
+
+In many organizations, there is an unhealthy emphasis on process and not much freedom.
+
+The lesson is you don't need policies for everything. Most people understand the benefits of wearing clothes at work.
+
+We avoid over-correcting. Just because a few people abuse freedom doesn't mean that our employees are not worthy of great trust.
+* daily standup                                                    :noexport:
+Bug triage and bug fixing.
+
+Review PRs
+
+help with XXX
+
+Upstream CAPA meeting, 1:1
+** Details
+- more work for getting ready for capi v0.3.0
+* Appraisal                                                        :noexport:
+No place is best place to work unless you connect with your boss and team members.
+* TODO Description for PE/SRE                                      :noexport:
+Resilient production services and data pipelines
+
+Identify common patterns in challenges with operating services in production
+* TODO Reject an offer                                             :noexport:
+First of all, I sincerely appreciate your consideration for the software engineering position with Amazon. I regret to inform you that I must withdraw my application for this job. Another company has offered me an opportunity which I can't turn down. So I have already signed the offer today.
+
+Thank you for the time you spent reviewing my qualifications and interviewing with me.
+* TODO misc                                                        :noexport:
+At global scale
+Consistent check of health status
+Create a concrete road map
+Quantify the impact of your deliverables
+Our first solution may not be the best one
+
+I wish you all the best in your future endeavors!
+Non-negotiable requirement
+
+Stop typing and have a conversation
+* TODO Critical comment                                            :noexport:
+Social networks make people feel better but doesn't solve problems.
+* TODO Facebook OLTP: still using hadoop? Or Spark?                :noexport:
+Hadoop, hive, hbase
+* TODO Facebook infra testing: how to simulate the traffic         :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO faceook communication
+- status update: share what you're doing, feeling or thinking
+- Facebook Chat: real time communication with friends currently on the facebook website
+- Wall: write a public message to a friend on their wall
+- Facebook message: send a private message to a friend or someone you would like to be friends with
+- Like: Give your friends the thumbs up
+- Comments: write comments on pictures, friend's status updates or wall posts
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Resignation email                                           :noexport:
+Dear Mr./Ms. Lastname,
+
+I write to inform you that I am resigning from my position here as Associate Editor. My last day will be August 7.
+
+Thank you so much for all of the opportunities this company has provided me. I have learned so much these past three years, and will never forget the kindness of all of my colleagues.
+
+Let me know if there is anything I can do to make this transition easier. You can always contact me at firstname.lastname@email.com or 555-555-5555.
+
+Thank you again for your years of support and encouragement.
+
+Respectfully yours,
+
+Your Name
+* TODO laid-off email                                              :noexport:
+#+BEGIN_EXAMPLE
+Due to the economic impact of COVID-19 (coronavirus), XXX is implementing measures to ensure the financial stability of the company. The current pandemic situation has impacted our business significantly, and as a result, we find that we must make some difficult personnel decisions.
+
+In an effort to reduce costs, we are restructuring our business, and that will result in the elimination of a number of positions in our company.
+
+Your position has been selected, and unfortunately this means you will be laid off. Today will be your last actual workday with XXX. You will be compensated through April 1, 2020. Your medical, dental and vision (YY - if you signed up for them) insurance will be active until April 30, 2020. Further information about your benefits, unused paid time off and last paycheck will be emailed to you by your HR Team.
+.
+In the coming hour, your direct manager will be reaching out to meet with you and to answer your questions along with discussing available separation benefits, including the services of our HR team, to provide counseling and assistance in finding another job.
+
+We'll inform you via your personal email about how to retrieve any personal items at the office. You are also kindly asked to return any company property that you may have in your possession. Please email XXX with your personal email address so a shipping label can be emailed to you.
+
+Finally, we just want to thank you for all your hard work and dedication. You have made XXX a better place, and we will miss working with you. Thank you for all you have done for us.
+#+END_EXAMPLE
+* TODO cloud industry                                              :noexport:
+Availability, scalability, latency, and efficiency of our cloud service
+Experience in a high-volume or critical production service environment.
+* TODO team lead                                                   :noexport:
+Lead by example, care for the team
+Establish credibility with the quality of the team's technical execution
+Ability to deliver results and work cross-functionally
+leading cross-functional initiatives
+* TODO Critical conversation                                       :noexport:
+A lay off is a chance to trim the fat.
+* TODO cultures                                                    :noexport:
+Values are shown by who gets rewarded or let go.
+Management approval, or managers make technical decisions for the team
+
+Every day begins with a desires to make things better.
+The challenges you face are bigger than any one of us.
+Nothing is some one else's problems
+
+We don't tolerate any form of intimidation or retaliation for reporting workplace threats and violence
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Meeting English                                             :noexport:
+** [#A] English: My proununce is he, his
+* misc                                                             :noexport:
+- articulate risks
+- It's two sides of the coin
+- [[https://brianhsublog.blogspot.com/2018/10/impostor-syndrome.html#:~:text=%E3%80%8C%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4%EF%BC%88%E8%8B%B1%E8%AA%9E%EF%BC%9A,%EF%BC%88%E8%8B%B1%E8%AA%9E%EF%BC%9Afraud%20syndrome%EF%BC%89%E3%80%82][Impostor syndrome]]
+- Be more charismatic and woo the audience
+- Reframe problem statements or compe up with novel solutions
+- Develop technical skills by facilitating senior engineering discussions
+- Other people's change may break your code transitively
+- Chronic versus Sporadic Failures
+* TODO planning words                                              :noexport:
+unanticipated problems might push this into Q4
+* TODO infra words                                                 :noexport:
+Opaque architectures
+spot vs preemptable resources
+endemic problems vc pandemic problems
+
+closed and proprietary systems
+
+unplanned operational work
+
+Isolate adhoc queries from jobs with strict deadlines
+
+Infra-as-code help solve 2 top-level problems: alleviate operational complexity, and improve resource utilization
+
+- Production reliablity
+- Infra efficiency
+- Dev efficiency
+* TODO Career words                                                :noexport:
+Give more than you take.
+Promotions are lagging not leading, with clear scope and business need at the next level defined.
+
+For people like your level should be able to figure stuff by your own
+
+Push the boundary
+
+Be transparent, give people choices
+
+Being proactive, don't wait
+
+Have a learning mindset
+
+Set the tone and the state. Build trust. Be authentic.
+
+shift focus to relationships
+* TODO life words                                                  :noexport:
+Sometimes, it can feel like you have an inner dragon heating up
+
+Can it wait? Seperate emergency from impatience

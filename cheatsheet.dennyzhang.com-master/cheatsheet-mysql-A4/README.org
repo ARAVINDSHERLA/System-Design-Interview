@@ -1,0 +1,305 @@
+* CheatSheet: SQL & MySql                                             :Interview:
+:PROPERTIES:
+:type:     interview
+:export_file_name: cheatsheet-mysql-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-mysql-A4/cheatsheet-mysql-A4.pdf][cheatsheet-mysql-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/interview/][interview]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-systemdesign-A4][CheatSheet: System Design For Job Interview]], [[https://cheatsheet.dennyzhang.com/category/interview/][interview]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** SQL Problems
+| Name                                                  | Problem                                                                                 |
+|-------------------------------------------------------+-----------------------------------------------------------------------------------------|
+| Reference                                             | [[https://code.dennyzhang.com/review-sql][Leetcode SQL problems]]                                                                   |
+| Use having with group-by                              | =group by class having count(distinct student)>4= [[https://code.dennyzhang.com/classes-more-than-5-students][Leecode: Classes More Than 5 Students]] |
+| Update records with case clause                       | =set sex = case when sex = 'm' then 'f' else 'm' end= [[https://code.dennyzhang.com/swap-salary][LeetCode: Swap Salary]]             |
+| Sum with case                                         | =sum(case when state = 'approved' then 1 else 0 end)= [[https://code.dennyzhang.com/monthly-transactions-i][LeetCode: Monthly Transactions I]]  |
+| Subquery                                              | =where (customer_id, order_date) in (select ...=  [[https://code.dennyzhang.com/immediate-food-delivery-ii][LeetCode: Immediate Food Delivery II]]  |
+| Sql isnull and if                                     | =if(s1.id%2=0, s1.student, if(isnull(s2.student), s1.student, s2.student))=             |
+| round float                                           | =(round(accepts/requests, 2)= [[https://code.dennyzhang.com/friend-requests-i-overall-acceptance-rate][Leecode: Friend Requests I: Overall Acceptance Rate]]       |
+| Rank score                                            | (select @rank := 0, @prev := -1) as rows [[https://code.dennyzhang.com/rank-scores][LeetCode: Rank Scores]]                          |
+| [[https://stackoverflow.com/questions/15930514/mysql-auto-increment-temporary-column-in-select-statement][Select clause add an incremental id]]                   | select (@cnt1 := @cnt1 + 1) as id [[https://code.dennyzhang.com/students-report-by-geography][LeetCode: Students Report By Geography]]                |
+| [[https://www.w3schools.com/sql/func_mysql_date_sub.asp][MySQL DATE_SUB]]                                        | =DATE_SUB(record_date, INTERVAL 6 DAY)=                                                 |
+| Get accumulated sum for each group                    | [[https://code.dennyzhang.com/last-person-to-fit-in-the-elevator][LeetCode: Last Person to Fit in the Elevator]]                                            |
+| nth element in each group                             | [[https://code.dennyzhang.com/nth-highest-salary][LeetCode: Nth Highest Salary]], [[https://code.dennyzhang.com/get-the-second-most-recent-activity][LeetCode: Get the Second Most Recent Activity]]             |
+| topn entris for each group                            | [[https://code.dennyzhang.com/department-top-three-salaries][LeetCode: Department Top Three Salaries]]                                                 |
+| =union= vs =union all=                                | [[https://code.dennyzhang.com/friend-requests-ii-who-has-the-most-friends][LeetCode: Friend Requests II: Who Has the Most Friends]]                                  |
+| Convert float to int                                  | =cast(amount as SIGNED)=                                                                |
+| If no match show null                                 | [[https://code.dennyzhang.com/second-highest-salary][LeetCode: Second Highest Salary]]                                                         |
+| Get maximum of multiple columns                       | [[https://code.dennyzhang.com/triangle-judgement][LeetCode: Triangle Judgement]]                                                            |
+| Tree hierachy in SQL                                  | [[https://code.dennyzhang.com/all-people-report-to-the-given-manager][LeetCode: All People Report to the Given Manager]]                                        |
+| Mysql distinct in having clause                       | [[https://code.dennyzhang.com/active-users][LeetCode: Active Users]]                                                                  |
+| mysql doesn't support full outer join                 | [[https://code.dennyzhang.com/monthly-transactions-ii][LeetCode: Monthly Transactions II]]                                                       |
+| When left join+groupby, group by which tables' field? | [[https://code.dennyzhang.com/team-scores-in-football-tournament][LeetCode: Team Scores in Football Tournament]]                                            |
+| =sum(if(isnull(= vs =ifnull(sum(=                     | [[https://code.dennyzhang.com/team-scores-in-football-tournament][LeetCode: Team Scores in Football Tournament]]                                            |
+| Three tables' inner join                              | [[https://code.dennyzhang.com/students-and-examinations][LeetCode: Students and Examinations]]                                                     |
+| Find Continuous Ranges                                | [[https://code.dennyzhang.com/find-the-start-and-end-number-of-continuous-ranges][Find the Start and End Number of Continuous Ranges]]                                      |
+|-------------------------------------------------------+-----------------------------------------------------------------------------------------|
+| Impressive sql problems                               | [[https://code.dennyzhang.com/find-median-given-frequency-of-numbers][Leecode: Find Median Given Frequency of Numbers]], [[https://code.dennyzhang.com/consecutive-available-seats][LeetCode: Consecutive Available Seats]]  |
+| Impressive sql problems                               | [[https://code.dennyzhang.com/rank-scores][LeetCode: Rank Scores]], [[https://code.dennyzhang.com/exchange-seats][LeetCode: Exchange Seats]], [[https://code.dennyzhang.com/students-report-by-geography][LeetCode: Students Report By Geography]] |
+** SQL Statement
+| Name                               | Command                                                         |
+|------------------------------------+-----------------------------------------------------------------|
+| Select with regexp in where clause | =select * from expenses where date regexp '2013-0[4-5]' limit 2;= |
+| Select with like in where clause   | =select * from expenses where date like '2013-0%' limit 2;=     |
+| Select unix timestamp              | =select unix_timestamp(createtime) from expenses limit 1;=      |
+| Offset limit                       | =select * from student limit 4 offset 9=                        |
+| Use replace function               | =UPDATE tb1 SET f1=REPLACE(f1, 'abc', 'def');=                  |
+| Use if function                    | select Db, IF(IFNULL(User, "")="", DB, User) from db;           |
+** Mysql Packages
+| Name                         | Command                                                                  |
+|------------------------------+--------------------------------------------------------------------------|
+| Install mysql server         | =apt-get install mysql-server=                                           |
+| Install mysql client         | =apt-get install mysql-client libmysqlclient-dev, yum install mysql-devel=  |
+| Install python mysql library | =easy_install mysql-python=                                              |
+** DB Management
+| Name                                         | Command                                                                                   |
+|----------------------------------------------+-------------------------------------------------------------------------------------------|
+| mysql connect                                | =mysql -u$username -p$password -P$port -h$dbhost $dbname=                                 |
+| database encoding                            | =set names utf8;=                                                                         |
+| List databases                               | =show databases;=                                                                         |
+| List tables for current db                   | =show tables;=                                                                            |
+| Check table definition                       | =describe $tablename;=                                                                    |
+| Run sql in non-interactive way               | =mysql -uUSER -pPASSWORD databasename -e "select * from t limit 10"=                      |
+| Import db                                    | =mysql -uUSER -pPASSWORD dbname < backup.sql=                                             |
+| export db                                    | =mysqldump -uUSER -pPASSWORD DATABASE > backup.sql=                                       |
+| export db without schema                     | =mysqldump -uUSER -pPASSWORD DATABASE --no-data=true --add-drop-table=false > backup.sql= |
+| Grant access                                 | =GRANT SUPER ON `DBNAME`.`user` TO 'DBUSER'@'%'=                                          |
+| Add column                                   | =ALTER TABLE expenses ADD COLUMN createtime timestamp not null default now();=            |
+| Delete Column                                | =ALTER TABLE expenses DROP COLUMN createtime;=                                            |
+| Delete index                                 | =DROP INDEX indexname ON table_name;=                                                     |
+| Create index                                 | =create index idindex on table_name(col_name) using btree;=                               |
+| Reset password                               | UPDATE mysql.user SET Password=PASSWORD('MyNewPass') WHERE User='root'; FLUSH PRIVILEGES; |
+| [[https://stackoverflow.com/questions/5555328/error-1396-hy000-operation-create-user-failed-for-jacklocalhost][ERROR 1396 (HY000): Operation CREATE USER...]] | =drop user 'braindenny'@'%'; flush privileges; CREATE USER...=                            |
+| [[https://dev.mysql.com/doc/refman/8.0/en/creating-accounts.html][mysql8 create user with password]]             | =CREATE USER 'myuser'@'%' IDENTIFIED BY 'MYPASSWORD';=                                    |
+| mysql8 grant privileges to user              | =GRANT ALL PRIVILEGES ON mydbname.* TO 'myuser'@'%' WITH GRANT OPTION;=                   |
+** PSQL/Postgres
+| Name                          | Command                                                                     |
+|-------------------------------+-----------------------------------------------------------------------------|
+| Install postgres in Ubuntu    | =apt-get install postgresql postgresql-client postgresql-contrib=           |
+| Install postgres in Mac OS    | =brew install postgres=                                                     |
+| Check postgres status         | =service postgresql status=                                                 |
+| Check version                 | =psql --version=                                                            |
+| Connect postgresql            | =psql -U postgres=                                                          |
+| Create user                   | =CREATE USER tom WITH PASSWORD '';=                                         |
+| Grant access                  | =GRANT ALL PRIVILEGES ON DATABASE launchpad_empty to tom;=                  |
+| Postgres configuration        | =/var/lib/pgsql/data/pg_hba.conf=, =/etc/postgresql/*/main/postgresql.conf= |
+| Promote to super admin        | =ALTER USER myuser WITH SUPERUSER;=                                         |
+| List datbases                 | =\l=                                                                        |
+| List all tables in a database | =\d=                                                                        |
+| Change database               | =\connect launchpad_dev;=                                                   |
+| Show tables                   | =\ds=                                                                       |
+| Copy databse                  | =createdb -O root -T launchpad_dev launchpad_ustack_cn=                     |
+| Drop database                 | =drop database launchpad_ustack_cn;=                                        |
+| Connect db                    | =psql -h myhost -d mydb -U myuser -W=                                       |
+| Create user                   | =CREATE USER tom WITH PASSWORD 'myPassword';=                               |
+| Create db                     | =CREATE DATABASE jerry;=                                                    |
+** More Resources
+License: Code is licenmysql under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-mysql-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-mysql-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 
+* HALF doc: datediff('2019-06-23',available_from): https://leetcode.com/problems/unpopular-books/discuss/324747/MySQL-case-statement-in-having :noexport:
+* HALF doc: In SQL, how to select the top 2 rows for each group    :noexport:
+https://stackoverflow.com/questions/15969614/in-sql-how-to-select-the-top-2-rows-for-each-group
+* SQL                                                              :noexport:
+** DONE [#A] SQL syntax
+  CLOSED: [2017-10-18 Wed 15:37]
+http://www.dofactory.com/sql/group-by
+
+** DONE [#A] mysql topn query by group
+  CLOSED: [2017-10-20 Fri 10:35]
+# https://leetcode.com/problems/department-highest-salary/description/
+
+select Department.Name as Department, t3.Name as Employee, t3.Salary
+from Employee as t3 inner join
+     (select t1.Salary, t1.DepartmentId, count(1) as rank
+        from (select distinct Salary, DepartmentId from Employee) as t1
+             inner join
+             (select distinct Salary, DepartmentId from Employee) as t2
+             on t1.DepartmentId = t2.DepartmentId
+        where t1.Salary <= t2.Salary
+        group by t1.Salary, t1.DepartmentId) as t4
+      inner join Department
+      on t3.DepartmentId = t4.DepartmentId and t3.Salary = t4.Salary 
+      and t3.DepartmentId = Department.Id
+where t4.rank<4
+order by t3.DepartmentId asc, t3.Salary desc;
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE MySQL update case help
+  CLOSED: [2017-10-18 Wed 15:02]
+https://stackoverflow.com/questions/6734231/mysql-update-case-help
+UPDATE  ae44
+SET     price =
+        CASE
+        WHEN ID = 'AT259793380' THEN
+                '500'
+        WHEN ID = 'AT271729590' THEN
+                '600'
+        WHEN ID = 'AT275981020' THEN
+                '700'
+        END
+
+UPDATE salary SET sex = IF(sex = 'm', 'f', 'm')
+** DONE sql not in
+  CLOSED: [2017-10-18 Wed 15:20]
+;; https://leetcode.com/problems/swap-salary/
+
+select * from cinema where description not like '%boring%' and id %2 != 0 order by rating desc;
+** DONE The SQL ORDER BY OFFSET syntax
+  CLOSED: [2017-10-18 Wed 17:57]
+http://www.dofactory.com/sql/order-by-offset-fetch
+The general syntax to exclude first n records is: 
+SELECT column-names
+  FROM table-name
+ ORDER BY column-names
+OFFSET n ROWS
+
+To exclude first n records and return only the next m records:
+SELECT column-names
+  FROM table-name
+ ORDER BY column-names
+OFFSET n ROWS
+ FETCH NEXT m ROWS ONLY
+
+This will return only record (n + 1) to (n + 1 + m). See example below. 
+** DONE sql date
+  CLOSED: [2017-10-18 Wed 18:08]
+http://www.w3school.com.cn/sql/func_date_add.asp
+SELECT OrderId, DATE_ADD(OrderDate, INTERVAL 2 DAY) AS OrderPayDate
+FROM Orders
+** DONE delete with inner join
+  CLOSED: [2017-10-18 Wed 18:26]
+;; https://leetcode.com/problems/delete-duplicate-emails/description/
+
+delete t1 from Person as t1 inner join Person as t2
+on t1.Email = t2.Email
+where t1.Id > t2.Id
+
+https://stackoverflow.com/questions/16481379/how-to-delete-using-inner-join-with-sql-server
+** DONE sql not exists
+  CLOSED: [2017-10-18 Wed 18:54]
+SELECT A.Name from Customers A
+WHERE NOT EXISTS (SELECT 1 FROM Orders B WHERE A.Id = B.CustomerId)
+
+SELECT A.Name from Customers A
+LEFT JOIN Orders B on  a.Id = B.CustomerId
+WHERE b.CustomerId is NULL
+
+SELECT A.Name from Customers A
+WHERE A.Id NOT IN (SELECT B.CustomerId from Orders B)
+** DONE group having
+  CLOSED: [2017-10-18 Wed 18:57]
+;; https://leetcode.com/problems/duplicate-emails/description/
+
+select Email
+from Person
+group by Email
+having count(Email)>1;
+** DONE sql round float to 2 digits: Select round(@number,2) 
+  CLOSED: [2017-10-19 Thu 12:03]
+https://stackoverflow.com/questions/10380197/sql-rounding-off-to-2-decimal-places
+** DONE sql Replacing NULL with 0 in a SQL server query: SELECT COALESCE(col1, 0) FROM table1
+  CLOSED: [2017-10-19 Thu 12:02]
+https://stackoverflow.com/questions/16840522/replacing-null-with-0-in-a-sql-server-query
+** DONE sql case in select clause
+  CLOSED: [2017-10-19 Thu 12:05]
+https://leetcode.com/problems/trips-and-users/discuss/
+select t.Request_at Day, 
+round(sum(case when t.Status like 'cancelled_%' then 1 else 0 end)/count(*),2) Rate
+from Trips t 
+inner join Users u 
+on t.Client_Id = u.Users_Id and u.Banned='No'
+where t.Request_at between '2013-10-01' and '2013-10-03'
+group by t.Request_at
+** DONE mysql fetch offset: mysql fetch offset: SELECT * FROM tbl LIMIT 5,10;  # Retrieve rows 6-15
+  CLOSED: [2017-10-19 Thu 12:33]
+https://dev.mysql.com/doc/refman/5.7/en/select.html
+
+https://www.petefreitag.com/item/451.cfm
+** DONE mysql function convert int to string: CAST(id as VARCHAR(50))
+  CLOSED: [2017-10-19 Thu 14:41]
+https://stackoverflow.com/questions/15368753/cast-int-to-varchar
+** DONE mysql concat: SELECT CONCAT('w3resource','.','com');
+  CLOSED: [2017-10-19 Thu 12:52]
+https://www.w3resource.com/mysql/string-functions/mysql-concat-function.php
+#+BEGIN_EXAMPLE
+mysql> SELECT CONCAT('w3resource');
++----------------------+
+| CONCAT('w3resource') |
++----------------------+
+| w3resource           |
++----------------------+
+1 row in set (0.00 sec)
+Two or more arguments:
+
+mysql> SELECT CONCAT('w3resource','.','com');
++--------------------------------+
+| CONCAT('w3resource','.','com') |
++--------------------------------+
+| w3resource.com                 |
++--------------------------------+
+1 row in set (0.00 sec)
+One of the arguments is NULL :
+
+mysql> SELECT CONCAT('w3resource','.','com',NULL);
++-------------------------------------+
+| CONCAT('w3resource','.','com',NULL) |
++-------------------------------------+
+| NULL                                |
++-------------------------------------+
+1 row in set (0.02 sec)
+Numeric argument:
+
+mysql> SELECT CONCAT(102.33);
++----------------+
+| CONCAT(102.33) |
++----------------+
+| 102.33         |
++----------------+
+1 row in set (0.00 sec)
+#+END_EXAMPLE
+* TODO [#A] mysql get the first entry for each group               :noexport:
+* TODO 1000<=21300<=10000 vs 21300>=1000 and 21300<=10000          :noexport:

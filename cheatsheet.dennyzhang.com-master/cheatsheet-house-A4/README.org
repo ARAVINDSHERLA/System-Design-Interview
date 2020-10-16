@@ -1,0 +1,702 @@
+* CheatSheet: Maintain A House In US                                   :Life:
+:PROPERTIES:
+:type:     life
+:export_file_name: cheatsheet-house-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-house-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-house-A4/cheatsheet-house-A4.pdf][cheatsheet-house-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/linux/][linux]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-house-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-garden-A4][CheatSheet: Backyard Gardening]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Regular Maintenance
+| Name                                             | Summary   |
+|--------------------------------------------------+-----------|
+| Deep cleaning for Kitchen floor                  | Monthly   |
+| Deep cleaning for restroom                       | Monthly   |
+| For each restroom refill toliet paper, hand soap | Monthly   |
+| Wash hot pot kettle                              | Monthly   |
+| Examine the leaves of trees and plants           | Monthly   |
+| Mow the lawn                                     | Monthly   |
+| Wash the slippers                                | Monthly   |
+|--------------------------------------------------+-----------|
+| Clean kitchen sink with soda+vinegar+hot water   | Quarterly |
+| Clean washing machine                            | Quarterly |
+| Clean dish machine                               | Quarterly |
+|--------------------------------------------------+-----------|
+| Level and overseed the lawn                      | Annually  |
+| Clean leaves and dirts from gutters on the roof  | Annually  |
+| Change heater filter                             | Annually  |
+| Check for the crack in the walls or foundations  | Annually  |
+| Spray home for pest control                      | Annually  |
+** Appliance Maintenance
+| Name                      | Summary                                 |
+|---------------------------+-----------------------------------------|
+| Dish washer               |                                         |
+| Laundry                   |                                         |
+| Dryer                     |                                         |
+| AC(air conditioner)       |                                         |
+|---------------------------+-----------------------------------------|
+| Kitchen Faucet is leaking | [[https://www.youtube.com/watch?v=zMH61Yabdj0][YouTube: How to Repair a Leaking Faucet]] |
+| Kitchen sink is leaking   |                                         |
+| Toilet is leaking       | [[https://www.youtube.com/watch?v=OjSbQhXTdHI][YouTube: How to Repair a Leaking Toilet]] |
+** Smart Home
+| Name                       | Summary                                                               |
+|----------------------------+-----------------------------------------------------------------------|
+| [[https://www.meethue.com/getstarted][Philips Hue]]                |                                                                       |
+| [[https://www.youtube.com/watch?v=e9pIMjGm_n0][Amazon Echo 3rd generation]] |                                                                       |
+| [[https://www.youtube.com/watch?v=iP82FMNS0GA][Ring Alarm]]                 | Base station, keypad, motion detector, contact sensor, range extender |
+| [[https://www.youtube.com/watch?v=lJw2zebq6KY][Ring Alarm Motion Sensor]]   |                                                                       |
+| [[https://www.youtube.com/watch?v=97i3VQmHWVo][Ring Alarm range extender]]  | Help to make sure devices communicate well with base station          |
+#+BEGIN_HTML
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B07D7Q6CHB&asins=B07D7Q6CHB&linkId=fb8b8f93c432332a3f582ff16f63fead&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B01M9AU8MB&asins=B01M9AU8MB&linkId=baca79d8c4d3e71b3dd88077a542ee68&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B01KBEOQJU&asins=B01KBEOQJU&linkId=6400902429f66fdaa80735cfcc1bcc0a&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+#+END_HTML
+** Pest control
+| Name                                  | Summary                                                                                               |
+|---------------------------------------+-------------------------------------------------------------------------------------------------------|
+| Termites/white ants                   | [[https://www.youtube.com/watch?v=ZvowhUYjqvQ][YouTube: Termites]]                                                                                     |
+| Spray Home for pest control           | [[https://www.youtube.com/watch?v=OmWNoz3P1YM][YouTube: Spray Home Like A Pest Control Pro]]                                                           |
+| Kill ants                             | [[https://www.youtube.com/watch?v=dRi1zdgm5C8][YouTube: How to Get Rid of Ants: Guaranteed Ant Control in Home & Yard]]                                |
+| Kill ants - utilize ant baits & traps | [[https://www.youtube.com/watch?v=2IQZIehbzcs][YouTube: TOP 5 Ways to Get Rid of Ants Around Your Home]], [[https://www.youtube.com/watch?v=IKYbabTzGvo][YouTube: ALL NATURAL ANT CONTROL using BORAX]] |
+| Kill ants - seal entry points         | [[https://www.youtube.com/watch?v=2IQZIehbzcs][YouTube: TOP 5 Ways to Get Rid of Ants Around Your Home]]                                               |
+| Reference                             | [[https://www.youtube.com/watch?v=l_MbJ_wMnjY][YouTube: How To Do Your Own Home Pest]]                                                                 |
+#+BEGIN_HTML
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B00E4GACB8&asins=B00E4GACB8&linkId=f96dd0ba2e643c7d3e089673b4d343b3&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=dennyzhang-20&marketplace=amazon&region=US&placement=B07BRZDDTZ&asins=B07BRZDDTZ&linkId=ca43ab1eefc052a072b3f1f58b783015&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+</iframe>
+#+END_HTML
+** Floors & Wall
+| Name                               | Summary                                    |
+|------------------------------------+--------------------------------------------|
+| Roof Gutter                        | [[https://www.youtube.com/watch?v=45LbnlaJvtI][YouTube: How to Repair a Leaky Gutter]]      |
+| Wood Floors is squeaky             | [[https://www.youtube.com/watch?v=3iAseVZZKlY][YouTube: Repair Squeaky Wood Floors]]        |
+| Wood Floor is chipped              | [[https://www.youtube.com/watch?v=DPGxCageub8][YouTube: How to Patch a Chipped Wood Floor]] |
+| Patch a Hole                       | [[https://www.youtube.com/watch?v=sBJIgdFL5m8&ut=][YouTube: How to Patch a Hole in Wood Trim]]  |
+| Side wall is leaking               |                                            |
+| Tree branches overhanging the roof |                                            |
+| Reference                          | [[https://www.youtube.com/watch?v=Wgq-DLrfKjU][YouTube: Repair a Crack]]                    |
+** Reference
+| Name                      | Summary                                                   |
+|---------------------------+-----------------------------------------------------------|
+| Organization or companies | [[https://www.youtube.com/channel/UCqd2hbtE2N9fb0D2nTrLT1w][YouTube: Lowe's Home Improvement]], [[https://www.youtube.com/channel/UCUtWNBWbFL9We-cdXkiAuJA][YouTube: This Old House]] |
+| Handy man                 | [[https://www.youtube.com/user/HomeRepairTutor][YouTube: Home Repair Tutor]], [[https://www.youtube.com/channel/UCeFTtiy2iWXHZxtq8018MFA][YouTube: How2Plumb]]            |
+| Reference                 | [[https://www.youtube.com/channel/UCqKBj1cg2agtDD-hiqy6lAg][YouTube: Jonny DIY]], [[https://www.youtube.com/channel/UCUtWNBWbFL9We-cdXkiAuJA][YouTube: This Old House]]               |
+** More Resources
+License: Code is licenhouse under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+
+https://www.homeadvisor.com/
+
+https://www.todayshomeowner.com/
+
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-house-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-house-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-house-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-house-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* [#A] Utility Contact                                             :noexport:
+| Name                              | Contact                | Phone                                   | Website/Email/Notes                          |                                                                   |
+|-----------------------------------+------------------------+-----------------------------------------+----------------------------------------------+-------------------------------------------------------------------|
+| Notify USCIS                      |                        |                                         | Bestbuy/HomeDepo coupon                      |                                                                   |
+| Tree - Raymundo Dias              |                        | 408-466-1306                            |                                              |                                                                   |
+| 换门锁 - electric locks           |                        | Locksmith,Lowes                         | Lowes Ebay 有coupon                          |                                                                   |
+| Utilities: elec/gas               | PG&E                   | (877)660-6789                           | https://www.pge.com/                         |                                                                   |
+| Water                             | San Jose Water Company | (408) 279-7900                          | https://www.sjwater.com/                     |                                                                   |
+| Garbage                           | GreenTeam of San Jose  | (408) 282-4400                          | https://www.greenteam.com/                   |                                                                   |
+| Internet                          | Xfinity                | (800) 934-6489                          | https://www.xfinity.com/                     |                                                                   |
+| Change Address                    |                        | USPS                                    | https://moversguide.usps.com/mgo/whos-moving |                                                                   |
+|-----------------------------------+------------------------+-----------------------------------------+----------------------------------------------+-------------------------------------------------------------------|
+| Notify DMV                        |                        |                                         |                                              |                                                                   |
+| Change Bank address: debit/credit |                        |                                         |                                              |                                                                   |
+| Auto insurance                    |                        |                                         |                                              |                                                                   |
+| Medicare insurance                |                        |                                         |                                              |                                                                   |
+| Detal insurance                   |                        |                                         |                                              |                                                                   |
+| Update contact in VMware websites |                        |                                         |                                              |                                                                   |
+|-----------------------------------+------------------------+-----------------------------------------+----------------------------------------------+-------------------------------------------------------------------|
+| Contractor                        | James(Licensed)        | (408)916-6465                           |                                              |                                                                   |
+| Contractor                        | 丁师傅                 | (408)828-9808                           |                                              |                                                                   |
+| Cleaning                          |                        | Crystal Carpet cleaning                 | (408)930-6225                                |                                                                   |
+| Cleaning & Handyman               |                        | Handy.com                               |                                              | 通常有coupon或者新用户 折扣                                       |
+| Property Tax                      |                        | https://payments.sccgov.org/propertytax | Tax due 4/10 and 12/10 each year             |                                                                   |
+| Moving                            |                        | 兄弟搬家                                | (510) 648-6546                               | 最好当天最早时间,否则 容易迟到,通常他们报价 包含小费,预约时先确定 |
+| HOA                               | N/A                    |                                         |                                              |                                                                   |
+* DONE local notes                                                 :noexport:
+** DONE Hang pictures to the wall                                  :noexport:
+   CLOSED: [2019-03-25 Mon 09:07]
+ https://www.youtube.com/watch?v=F7_K_pqXRaw
+ - amazon https://www.amazon.com/High-Mighty-515314-20-40LB-Hillman/dp/B075CHMVN9/ref=asc_df_B075CHMVN9/?tag=hyprod-20&linkCode=df0&hvadid=222720245886&hvpos=1o1&hvnetw=g&hvrand=2779787352100780098&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031923&hvtargid=pla-390504852223&psc=1 
+** DONE How to use 百叶窗                                          :noexport:
+   CLOSED: [2019-03-25 Mon 09:07]
+** DONE Keyless door                                               :noexport:
+   CLOSED: [2019-03-26 Tue 09:41]
+ https://www.youtube.com/watch?v=KmUOSgp9PKs
+ $39.99
+ https://www.amazon.com/TurboLock-Electronic-Automatic-Installation-Bluetooth/dp/B074F1QT96/ref=sr_1_12?keywords=door+lock&qid=1552609071&s=gateway&sr=8-12
+*** When door is open, turn off the light
+** DONE termite 白蚁:2000                                          :noexport:
+   CLOSED: [2019-03-26 Tue 10:23]
+** DONE AR-11                                                      :noexport:
+   CLOSED: [2019-03-26 Tue 10:25]
+ https://www.uscis.gov/addresschange
+** DONE wired all cables and lines                                 :noexport:
+   CLOSED: [2019-03-28 Thu 14:23]
+** DONE schedule irobot to run twice a week                        :noexport:
+   CLOSED: [2019-03-28 Thu 14:28]
+** BYPASS [#A] water heater pilot won't light                      :noexport:
+   CLOSED: [2019-04-03 Wed 13:56]
+ https://www.youtube.com/watch?v=fqVbgf2OtzM
+ https://www.youtube.com/watch?v=b6quJTySjWA
+ Bradford Water Heater Pilot Not Lighting
+
+ 984 sweet ave, 95129
+
+ https://www.homeadvisor.com/myhomeadvisor/myprojects/137648540/
+
+ Disccount: 5%
+*** Benjamin Franklin Plumbing
+ 98 Verified Reviews
+ Services Include: Water Heater - Repair or Service in San Jose, CA
+
+  Write a review
+  (408) 426-4593
+*** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+*** Mike Counsil Plumbing, Inc.
+   4.3
+ 139 Verified Reviews
+ Services Include: Water Heater - Repair or Service in San Jose, CA
+
+  (408) 512-1791
+  Send a Message
+  Write a review
+
+ 20 years
+
+ $89: inspection
+
+ - How old?
+ - How many gallon water it holds?
+*** CMS Plumbing
+ 108 Verified Reviews
+ Services Include: Water Heater - Repair or Service in San Jose, CA
+
+  Write a review
+  (408) 828-6700
+** DONE replace a water heater                                     :noexport:
+   CLOSED: [2019-04-03 Wed 13:55]
+ https://www.youtube.com/watch?v=pqKR1D9gkyg
+ https://www.youtube.com/watch?v=hEBFk7S_Suk
+
+ $350 labor <2019-04-03 13:56 UTC +8>
+** DONE [#B] buy lawnmover                                         :noexport:
+   CLOSED: [2019-04-03 Wed 13:56]
+ https://gonglue.us/9713
+
+ http://chineselikela.com/deals/appliance/16435/
+*** Electric mower
+ 利:不用考虑加油,不用维护,不担心启动,噪音较小.
+
+ 弊:
+ 1`我的电动割草机有蓄电池,但要提前充电.常常是我想要割草的时候没有电,充好了电又没时间割草了.
+ 2`不到两年,我的电动割草机电池就坏了.蓄电池的寿命一般都不长,换一个并不便宜.
+ 3`电动的也可以扯线,因怕割到线,要多花时间.割草的时候,往往不能很规律的一排一排的走,有些地方割得不好,要再推回去割.
+ 4`电动的容易烧电机.虽然都很小心,还是免不了烧了.
+** DONE toliet rolling sticker                                     :noexport:
+   CLOSED: [2019-04-03 Wed 13:56]
+** DONE change air heater filter                                   :noexport:
+   CLOSED: [2019-04-06 Sat 17:27]
+** DONE Shopping: 大篓子放枕头                                     :noexport:
+   CLOSED: [2019-04-06 Sat 22:29]
+** DONE [#A] Change Refrigerator Water Filter                      :noexport:
+   CLOSED: [2019-04-07 Sun 08:39]
+ Refrigerator Water Filter
+ - Flush 4 gallons of water through water filter cartridge before use
+ - Replace dispensable filter every 3-6 months to maximize contaminant reduction.
+ https://www.youtube.com/watch?v=U-p62wMxfWU
+ https://www.amazon.com/4396841-4396710-Refrigerator-Compatible-EDR3RXD1/dp/B07MYWTTM7/ref=sr_1_3?keywords=whirlpool+refrigerator+water+filter+4396710&qid=1553656434&s=hi&sr=1-3
+ https://everydropwater.com/Assets/Doc/filterGuide.pdf
+** DONE [#A] Tear down the ikea shelf                              :noexport:
+   CLOSED: [2019-04-07 Sun 08:40]
+** DONE [#A] apply two credit cards: costco and chase safari       :noexport:
+   CLOSED: [2019-04-07 Sun 08:40]
+** DONE door hole cover plate                                      :noexport:
+   CLOSED: [2019-04-11 Thu 21:29]
+ https://www.amazon.com/s?k=door+hole+cover+plate&crid=11FTB3BCITW4D&sprefix=door+hole+%2Caps%2C191&ref=nb_sb_ss_i_1_10
+ https://www.amazon.com/Sumnacon-220-degree-Peephole-Rotating-Privacy/dp/B078G71XWD/ref=sr_1_22?keywords=door+Hole+Cover&qid=1554596208&s=gateway&sr=8-22
+ https://www.amazon.com/dp/B00XQBBPGS/ref=psdc_511316_t1_B00D2K33P4
+** DONE Ball Catch on a Door                                       :noexport:
+   CLOSED: [2019-04-16 Tue 10:18]
+ https://www.youtube.com/watch?v=HzX22sAF_NE
+ https://www.youtube.com/watch?v=z7ad-4RKQp4
+ https://www.amazon.com/Jiayi-Hardware-Adjustable-Invisible-Cupboard/dp/B07NSTKLV7/ref=sr_1_1_sspa?keywords=closet+door+Springs&qid=1554596391&s=gateway&sr=8-1-spons&psc=1
+** DONE water heater还有大概5年寿命                                :noexport:
+   CLOSED: [2019-05-06 Mon 09:45]
+** DONE home protection: ADT                                       :noexport:
+   CLOSED: [2019-06-16 Sun 08:24]
+ https://www.amazon.com/dp/B07D7Q6CHB/ref=cm_sw_r_cp_api_i_ylcQCb46CTVTT
+** DONE Dime the light in the bedroom                              :noexport:
+   CLOSED: [2019-06-16 Sun 08:24]
+** DONE change heater filter                                       :noexport:
+   CLOSED: [2019-05-09 Thu 09:19]
+ https://www.youtube.com/watch?v=Wv3_Dy97KoY
+
+ https://www.serviceexperts.com/faq/how-often-should-i-change-my-air-filter-at-home
+ How Often Should I Change My Air Filter At Home?
+** DONE loan basic                                                 :noexport:
+   CLOSED: [2019-06-16 Sun 08:28]
+*** TODO loan lender credits
+ https://www.consumerfinance.gov/ask-cfpb/what-are-discount-points-and-lender-credits-and-how-do-they-work-en-136/
+** DONE Loan for housing                                           :noexport:
+   CLOSED: [2019-06-16 Sun 08:28]
+ 12W, 24W
+
+ base: 13W, package: 13.5W
+
+ 需要贷80到110W
+
+ 小银行:
+ - 能贷多少钱
+ - 利率多出多少
+ - 如果提高自己我credits的建议
+*** Loan agent                                                     :noexport:
+**** Citi
+ Sunny
+**** BOA
+ Anna
+
+ 510-552-7271
+**** David Guo
+ +1-408-891-2002
+  信用短
+
+  72W以内
+
+  exception
+
+  工作历史,满两年
+
+  信用历史
+
+  三张信用卡
+*** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+*** 不能有两个银行
+*** single family会多一点
+*** Single 贷款: 72.6W; 70W
+** DONE Cancel old house facility: xfinity, pge and water          :noexport:
+   CLOSED: [2019-06-16 Sun 08:29]
+** DONE Cancel renter insurance                                    :noexport:
+   CLOSED: [2019-06-16 Sun 08:30]
+ https://portfolio.geico.com/dashboard/home
+** DONE toilet door is too loud                                    :noexport:
+   CLOSED: [2020-04-20 Mon 08:56]
+ https://www.amazon.com/Prime-Line-4540-Wall-Stop-Stainless/dp/B000NCWUVC/ref=pd_sim_0_4/144-9710788-0674101?_encoding=UTF8&pd_rd_i=B000NCWUVC&pd_rd_r=c715a328-58cb-11e9-ae93-bfc8ab14b226&pd_rd_w=nHaXz&pd_rd_wg=GVg1p&pf_rd_p=90485860-83e9-4fd9-b838-b28a9b7fda30&pf_rd_r=H88CN48PDGT12SQ251XZ&psc=1&refRID=H88CN48PDGT12SQ251XZ
+** DONE 橙子树挡着roof和neighbor了                                 :noexport:
+   CLOSED: [2020-02-01 Sat 10:48]
+** DONE [#B] 换主卧的马桶筒                                         :noexport:
+  CLOSED: [2020-05-01 Fri 22:29]
+** DONE [#A] 买土给两棵桔树                                         :noexport:
+  CLOSED: [2020-05-01 Fri 22:28]
+** DONE 买除草剂roundup                                             :noexport:
+  CLOSED: [2020-05-01 Fri 22:27]
+** DONE level flatten the frontyard grass                           :noexport:
+  CLOSED: [2020-05-01 Fri 22:27]
+** DONE [#A] 主卧淋浴的龙头: 更换浴室莲蓬头                         :noexport:
+  CLOSED: [2020-05-01 Fri 22:28]
+https://www.youtube.com/watch?v=U0kKGT2Kljs
+** DONE 买Taflon胶带                                                :noexport:
+  CLOSED: [2020-05-01 Fri 22:28]
+** DONE [#B] 买个高梯子, 然后clean屋顶防污cao                       :noexport:
+  CLOSED: [2020-05-01 Fri 22:28]
+** DONE 买Vinegar                                                   :noexport:
+  CLOSED: [2020-05-01 Fri 22:28]
+** DONE [#A] 烟雾报警器没有在工作                                   :noexport:
+  CLOSED: [2020-05-01 Fri 22:29]
+** DONE [#A] 买除草的铲子,泥巴,草籽                               :noexport:
+  CLOSED: [2020-05-01 Fri 22:29]
+** DONE [#B] 修外面的铁门                                          :noexport:
+   CLOSED: [2020-05-11 Mon 08:52]
+ https://www.youtube.com/watch?v=dl5K5wjvjDk
+** DONE Check monthly utility setup is good: xfinity, pge and water :noexport:
+   CLOSED: [2020-05-11 Mon 08:52]
+** DONE [#C] setup auto payment for the garbage service            :noexport:
+   CLOSED: [2020-05-11 Mon 08:53]
+** DONE [#A] setup waste service                                   :noexport:
+   CLOSED: [2020-05-11 Mon 08:53]
+** DONE [#A] contact PG&E to turn on gas service                   :noexport:
+   CLOSED: [2020-05-11 Mon 08:53]
+ https://www.pge.com/en/mybusiness/account/sst/fumigation.page
+ http://terms.naer.edu.tw/detail/1678626/?index=2
+** DONE [#B] fix holes in wooden door                              :noexport:
+   CLOSED: [2020-05-11 Mon 08:54]
+** DONE Stop Squeaky Door Hinges                                   :noexport:
+   CLOSED: [2020-05-11 Mon 08:55]
+ https://www.wikihow.life/Stop-Squeaky-Door-Hinges
+ https://www.amazon.com/Latchy-Catchy-Never-Again-Goldie/dp/B01N8SYYG2/ref=sr_1_24?keywords=squeaky+door&qid=1554606593&s=hi&sr=1-24
+** DONE water service: setup online payment                        :noexport:
+   CLOSED: [2020-05-11 Mon 08:55]
+** DONE Split this cheatsheet: buy a house & maintain ahouse       :noexport:
+   CLOSED: [2020-05-11 Mon 08:55]
+** DONE Ring: Buy Doorbell, wooden door                            :noexport:
+   CLOSED: [2020-05-11 Mon 08:55]
+** Buy A House                                                     :noexport:
+| Name                                | Summary                                                |
+|-------------------------------------+--------------------------------------------------------|
+| Check noises                        | =activities from public facilities=, =4 lane speedway= |
+| Check natural lights                | =Check the house in a rainy or cloudy days=            |
+| Check public school                 | =Good public schools secure your investment=           |
+| Check the neighborhood              | =Check nearby grocerstore, coffee shop=                |
+| Get Pre-approve letter for mortgage | =2 years' working experience=, =Need 3 credit lines=   |
+** Setup After Moving                                              :noexport:
+| Name                                        | Summary |
+|---------------------------------------------+---------|
+| Electric & Gas service setup online payment |         |
+| Garbage service setup online payment        |         |
+| Water service setup online payment          |         |
+** Terminology For Buying A House                                  :noexport:
+| Name                             | Summary                                                                                    |
+|----------------------------------+--------------------------------------------------------------------------------------------|
+| Process                          | Pre-approval -> Home inspection -> Underwriting -> Closing Disclosure -> Escrow -> Funded  |
+| [[https://en.wikipedia.org/wiki/Verification_of_employment][Verification of employment]] (VOE) | Review the employment history of a borrower, to determine his/her job stability            |
+| [[https://gustancho.com/verification-of-rent][Verification of Rent]] (VOR)       | VOR with payment shock lower than 5% is considered a strong compensating factor by lenders |
+| US 30 Year Mortgage Rate         | [[https://ycharts.com/indicators/30_year_mortgage_rate][Link: ycharts]]                                                                              |
+** Change Address After Closing The Deal
+| Name                                     | Summary                                                           |
+|------------------------------------------+-------------------------------------------------------------------|
+| Change all credit/debit card address     |                                                                   |
+| Change address in company HR system      |                                                                   |
+| Change address for auto insurance policy |                                                                   |
+| [[https://www.uscis.gov/addresschange][Form A-11]] for immigrants                 | Most non-U.S. report a change of address within 10 days of moving |
+** DONE bathbut drain                                              :noexport:
+   CLOSED: [2020-05-24 Sun 16:59]
+ https://www.youtube.com/watch?v=TuXvZM--HRc
+ https://www.homedepot.com/p/Pypthon-Drain-Cleaning-Tool-MACPYP001/206405608
+** DONE reset hot boiling water machine: two hard press            :noexport:
+   CLOSED: [2020-05-31 Sun 16:55]
+** DONE replace sprinker spray head                                :noexport:
+   CLOSED: [2020-05-31 Sun 23:02]
+** DONE Buy a Printer                                              :noexport:
+   CLOSED: [2020-06-07 Sun 20:15]
+ https://www.bestbuy.com/site/hp-envy-photo-7155-wireless-all-in-one-instant-ink-ready-printer-black/5962000.p?skuId=5962000
+
+ HP 64 black ink cartridge
+** DONE [#A] peach tree is sick                                    :noexport:
+   CLOSED: [2020-06-07 Sun 20:22]
+** DONE 买做前后院用的手套                                         :noexport:
+   CLOSED: [2020-06-07 Sun 20:22]
+** DONE 买月季的药: Black Spot on Roses                            :noexport:
+   CLOSED: [2020-06-07 Sun 20:23]
+ https://www.youtube.com/watch?v=G1K2LYuOnGA
+ https://www.youtube.com/watch?v=MsxiC-fe_bU
+** DONE Move garbage bin to the street                             :noexport:
+   CLOSED: [2020-06-07 Sun 20:25]
+ [[https://www.youtube.com/watch?v=umI415yrNZQ][YouTube: Household Waste Collection Services]]
+** DONE sync up contact into my cellphone                          :noexport:
+   CLOSED: [2020-06-07 Sun 20:25]
+** DONE [#A] Unclog a Kitchen Sink                                 :noexport:
+   CLOSED: [2020-06-07 Sun 20:29]
+ plumbing
+
+ drain
+
+ sink
+
+ garbage disposal
+** DONE 桔子树叶子发黄: 多浇水                                     :noexport:
+  CLOSED: [2020-06-28 Sun 12:33]
+** CANCELED local notes                                            :noexport:
+*** CANCELED 一键把所有的灯关了                                    :noexport:
+    CLOSED: [2019-06-16 Sun 08:31]
+*** CANCELED 厕所的水压不够                                        :noexport:
+    CLOSED: [2020-04-20 Mon 08:54]
+*** CANCELED 买一个更宽的地毯放在主卧                              :noexport:
+    CLOSED: [2020-04-20 Mon 08:54]
+*** CANCELED [#A] Start a website for american house maintainance  :noexport:
+    CLOSED: [2019-06-16 Sun 08:29]
+*** CANCELED Basketball Hoop for garage door                       :noexport:
+    CLOSED: [2019-06-16 Sun 08:29]
+  https://www.youtube.com/watch?v=q0j7aA_c0CI
+  https://www.youtube.com/watch?v=kKZY72AY9M0
+*** CANCELED get a electric lawn mover from criaglist              :noexport:
+    CLOSED: [2019-04-03 Wed 13:56]
+  freemont: $215
+  https://sfbay.craigslist.org/eby/grd/d/newark-brand-new-electric-lawn-mower/6843218175.html
+*** CANCELED 洗碗机洗不干净                                        :noexport:
+    CLOSED: [2020-04-30 Thu 23:24]
+*** CANCELED change address: 家庭医生 儿科医生 牙科医生等          :noexport:
+    CLOSED: [2020-05-01 Fri 22:30]
+  http://vegas168.blogspot.com/2016/05/checklist.html
+*** CANCELED [#B] Update geico home address: increase $164         :noexport:
+    CLOSED: [2020-05-01 Fri 22:31]
+*** CANCELED Hallway bath 的sink 水压比较低                        :noexport:
+    CLOSED: [2020-05-11 Mon 08:52]
+*** CANCELED [#B] Sign up Kaiser account and doctor                :noexport:
+    CLOSED: [2020-05-11 Mon 08:53]
+*** CANCELED [#A] apply two additional credit card to increase the credit score :noexport:
+    CLOSED: [2020-05-11 Mon 08:53]
+*** CANCELED [#A] bath room is leaking: Seal Around A Tub Or Shower :noexport:
+    CLOSED: [2020-05-11 Mon 08:55]
+  https://www.youtube.com/watch?v=F7Y6XQ9MoHE
+*** CANCELED [#A] 水管堵塞是否要买home warranty                    :noexport:
+    CLOSED: [2020-05-11 Mon 08:54]
+  https://zhuanlan.zhihu.com/p/32033320
+  plumber.前段时间水管堵塞,找了handyman都没有用,只能找plumber公司,幸好有warranty,所以大部分都保险报销了,要不估计要大出血.handyman和我说看你的严重程度了,如果就是一般的堵塞,估计400,500刀.要是major pipe有问题,找市政厅来,几千刀也是少的.
+*** CANCELED Change pg&e energy tier?                              :noexport:
+    CLOSED: [2020-05-11 Mon 08:54]
+*** CANCELED [#A] bath room: Vertical Shower Door Seal             :noexport:
+    CLOSED: [2020-05-11 Mon 08:54]
+  silicone seal
+
+  https://www.amazon.com/Zengest-Strip-Bottom-Shower-Transparent/dp/B07MPNYBBJ/ref=sr_1_2_sspa?keywords=Vertical%2BShower%2BDoor%2BSeal&qid=1554620898&s=gateway&sr=8-2-spons&th=1
+
+  https://www.amazon.com/s?k=Vertical+Shower+Door+Seal&ref=nb_sb_noss
+
+  https://www.youtube.com/watch?v=PTADQAyDztI
+  https://www.youtube.com/watch?v=ECdXEAAIBFI
+  https://www.youtube.com/watch?v=x56o59oTgx0
+  https://www.youtube.com/watch?v=lyWC4DFAF1w
+*** CANCELED 处理logitech的mouse and keyboard                      :noexport:
+    CLOSED: [2020-05-09 Sat 07:45]
+*** CANCELED [#A] 后院没有自动喷水                                 :noexport:
+    CLOSED: [2020-06-07 Sun 20:22]
+*** CANCELED lg washing machine wm8000hva manual                   :noexport:
+    CLOSED: [2020-06-07 Sun 20:25]
+  https://www.lg.com/us/support/products/documents/WM8000%20Manual.pdf
+*** CANCELED [#A] clean laundry filter                             :noexport:
+    CLOSED: [2020-06-07 Sun 20:26]
+  https://www.youtube.com/watch?v=7x362qb0IRk
+  https://www.youtube.com/watch?v=WxxOtXTiDUY
+*** CANCELED 1031 Tax Exchange                                     :noexport:
+    CLOSED: [2020-06-07 Sun 20:27]
+*** CANCELED bathroom toilet noise                                 :noexport:
+    CLOSED: [2020-06-07 Sun 20:26]
+*** CANCELED LG Front Load Washer - door seal                      :noexport:
+    CLOSED: [2020-06-07 Sun 20:28]
+  https://www.manualslib.com/manual/270172/Lg-Wm8000hva.html?page=24#manual
+  https://www.manualslib.com/manual/270172/Lg-Wm8000hva.html?page=29#manual
+  https://www.manualslib.com/manual/270172/Lg-Wm8000hva.html?page=11#manual
+** CANCELED 买棵果树, 种在前院: 桔子树可以救活了                   :noexport:
+   CLOSED: [2020-06-28 Sun 12:33]
+** CANCELED Switch to google fi plan: $20                          :noexport:
+   CLOSED: [2020-06-09 Tue 08:29]
+ https://fi.google.com/about/plans/
+ https://www.androidauthority.com/google-project-fi-plans-855797/
+** DONE 买个盆装柠檬                                               :noexport:
+   CLOSED: [2020-06-28 Sun 12:35]
+** CANCELED 前院的桔树死了,找市政府换一棵更合适的树                :noexport:
+   CLOSED: [2020-06-28 Sun 12:35]
+** DONE bugs in trash can during the summer time: keep it dry. Seal the bags:noexport:
+   CLOSED: [2020-06-28 Sun 12:37]
+** CANCELED deal with fruit flies                                  :noexport:
+   CLOSED: [2020-06-28 Sun 12:37]
+ https://www.youtube.com/watch?v=WwM0TA5N61U
+ https://www.youtube.com/watch?v=wBcd4_OgG7I
+ - clean
+ - bait
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Learn skills: increase my credit history: lease contract, utility :noexport:
+* TODO Learn skills: How to check Termites                         :noexport:
+* TODO Learn skills: Preventative maintenance is a key element to saving money   :noexport:
+* TODO learn skills from chinese community                         :noexport:
+https://zhuanlan.zhihu.com/p/32033320
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* Two kitchen drawers are not stable                               :noexport:
+* 地基里面有曾经出现过小动物的痕迹（老鼠/ 松鼠）                   :noexport:
+* 家里有灯泡坏了                                                   :noexport:
+* 有GFCI插座坏了                                                   :noexport:
+* 厕所下面有曾经漏水的痕迹                                         :noexport:
+* 空调用了13年                                                     :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO 地基有一条裂缝 不过看上去是正常的size                       :noexport:
+* TODO [#C] hang pictures to rocky wall                            :noexport:
+* TODO [#C] kitchen tile is broken: 地板砖                         :noexport:
+* HALF [#C] Fix a Crack in Concrete                                :noexport:
+https://www.youtube.com/watch?v=mYz2tSILkGk
+https://www.youtube.com/watch?v=-ykTRshSlwU
+https://www.youtube.com/watch?v=y1rOtvvxRzY
+https://www.youtube.com/watch?v=WMESCf09vW4
+https://www.youtube.com/watch?v=euLQongteF4
+* TODO bath tub spout is leaking                                   :noexport:
+https://www.youtube.com/watch?v=4OjrL09CXrQ
+https://www.youtube.com/watch?v=QcBdjH4Fdik
+https://www.youtube.com/watch?v=yq6FYfqKO0g
+* TODO 如果夏天很少開冷氣,或是家裡根本沒有冷氣的話,那麼改成E-6-smart或是E-9絕對是划算的 :noexport:
+http://chengyun-travel.blogspot.com/2013/02/pg.html
+https://www.pge.com/en_US/residential/rate-plans/how-rates-work/find-my-best-rate-plan.page
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO spray home defense                                          :noexport:
+https://www.youtube.com/watch?v=2IQZIehbzcs
+* TODO One bulb in the family room doens't work                    :noexport:
+* TODO bestbuy: ring camera                                        :noexport:
+* TODO 次卧厕所淋浴漏水                                            :noexport:
+* TODO 次卧厕所地板积水                                            :noexport:
+* TODO 主卧室的百叶窗有问题                                        :noexport:
+* TODO diving room有个LED射灯不好                                  :noexport:
+https://www.youtube.com/watch?v=aiSrdZZ1vkM
+* TODO 改造garage来停两辆车                                        :noexport:
+* TODO ring detect garage door state                               :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO 百叶窗                                                      :noexport:
+* TODO 卧室的灯                                                    :noexport:
+* TODO 洗衣机内桶要定期清洗                                        :noexport:
+* TODO 洗碗机内桶要定期清洗                                        :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Change the fruit tree in the paveway of front yard          :noexport:
+* TODO Can I Recycle Plastic Bags in the Curbside Recycling Bin?   :noexport:
+https://www.plasticsmakeitpossible.com/plastics-recycling/how-to-recycle/at-home/can-i-recycle-plastic-bags-in-the-recycling-bin/
+
+#+BEGIN_EXAMPLE
+The most important point is that recycling is decided on a community by community basis - so the list of items that can be put into recycling bins differs widely from community to community. Sometimes items collected in one community - say, pizza boxes - aren't accepted at the community next door. Why? A whole host of reasons. Sometimes recyclers can't find a good market to sell the material. Sometimes the recycling facility doesn't have the equipment to handle or separate a material.
+
+Take the pizza box example. Many recyclers don't want them because grease, mozzarella, and pepperoni leftovers can attract hordes of insects and rodents to the recycling facility. And wet or really greasy cardboard may be too difficult to process in the recycling equipment. Yuck.
+#+END_EXAMPLE
+
+
+https://www.greenteam.com/san-jose/recycling-education
+#+BEGIN_EXAMPLE
+The technology at the state of the art MRF enables workers to efficiently sort your mixed recyclable materials. A system of conveyor belts, screens, electromagnets and blasts of air separate paper from plastics, glass and other materials. Sorted bales and bins of materials are then taken to processing facilities before being sold to make new products.
+#+END_EXAMPLE
+* TODO garage door detector                                        :noexport:
+* TODO Lighting & Electric                                         :noexport:
+| Name                                      | Summary |
+|-------------------------------------------+---------|
+| =Lamp doesn't work=                       |         |
+| =GFCI= ([[https://www.osha.gov/SLTC/etools/construction/electrical_incidents/gfci.html][Ground Fault Circuit Interrupter]]) |         |
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#B] build an ADU                                           :noexport:
+https://www.youtube.com/watch?v=uuiy-wkvrno
+https://www.youtube.com/watch?v=QdhRkb56K-Q
+https://www.youtube.com/watch?v=OrelDEa-b60
+https://www.youtube.com/watch?v=Y4ht-tMugS0
+** size: 600 sqt
+https://www.youtube.com/watch?v=RSxyT3-Jqyc
+600 sq ft, $100,000
+** cost
+https://youtu.be/FVb4s-F_Hg0?t=231
+
+The total cost was $200,000. $150,000 was used to build from the ground. 1200 sq ft ADU, which included the architectural, design, city, construction fees and all appliances
+** room
+kitchen
+bedroom
+restroom
+** appliance: no need for full size
+https://youtu.be/QdhRkb56K-Q?t=894
+- refragier
+- AC
+- hot water
+** natural night
+https://www.youtube.com/watch?v=lKCoMpDDxwg
+https://www.youtube.com/watch?v=o-PESgAfTdM
+** more storage
+** save space
+- add extra storage
+- barn door (收拉门)
+https://www.youtube.com/watch?v=lKCoMpDDxwg
+** tank water heater
+https://www.youtube.com/watch?v=TiKxXknXazM
+** appliance: fans at the dining room
+** sonar power
+** seperated electricy metering
+** open & glass for natural lights
+https://youtu.be/w6Auv5QPFKw?t=34
+
+- glass door, glass window
+- big window
+- white Coloring theme
+** Washer & dryer
+https://youtu.be/QdhRkb56K-Q?t=983
+** lights on the ceiling
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** 去掉后院的灯
+** 去除移动工具房
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** TODO 染高要高一些,或者做两层？
+https://youtu.be/w6Auv5QPFKw?t=23
+https://youtu.be/tjjvNCQ-5yM?t=156
+** TODO embded lights
+https://youtu.be/2Q7hkaJOGqc?t=106
+** 立一个高钢棍 for battle ropes
+** todo Embeded outlets
+https://youtu.be/CNQ2-ZNCR4M?t=77
+** when build adu, make sure backyard sprinkler can still work
+** 把客厅的窗户改成门
+** [#A] ADU是挡后院的光
+** ADU在水泥板上挖洞, 用来种果树
+** ADU是否要单独装自己的water metering, 否则阶梯收费可能会不划算
+* TODO [#B] 公共沐浴铁杠生锈了                                     :noexport:
+* TODO [#B] 主卧买类似次卧那样比较舒服的被子                       :noexport:
+* TODO [#B] Join local community                                   :noexport:
+* TODO [#B] Build vertical plantson the wall                       :noexport:
+* TODO [#B] 后院 楔形阶梯花架                                      :noexport:
+* TODO [#B] 移动garden bed                                         :noexport:
+* TODO [#A] 修手机屏幕                                             :noexport:
+* TODO [#A] Buy a fan                                              :noexport:
+* TODO [#A] Check HSA monthly administration fees                  :noexport:
+HEALTH SAVINGS ACCOUNT (HSA)
+If you have deferrals to the HSA, you may still submit claims to your account after employment ends. Additionally, your account is portable and can be transferred to another financial institution if you choose. You will be subject to monthly administration fees on your HSA account. Please contact HealthEquity at 1-866-296-2857 for any questions. Please expect a letter from HealthEquity regarding your account approximately 2 weeks after your termination date.
+* TODO [#A] 找家庭医生                                             :noexport:
+* TODO [#A] Why does it say No AC when it's plugged in?            :noexport:
+https://www.amazon.com/ask/questions/Tx1CQ8FLYIGQPWV
+* TODO [#A] Recurring Shopping List                                :noexport:
+| Name               | Summary                                                       |
+|--------------------+---------------------------------------------------------------|
+| Disinfecting wipes | [[https://amzn.to/2FB3rrR][Amazon: Clorox Disinfecting Wipes, Bleach Free Cleaning Wipes]] |
+| Refrigerator water | [[https://amzn.to/2YDbDk6][Amazon: 4396710 Refrigerator Water]]                            |
+* TODO [#A] 后院: 爬藤月季-红色龙沙宝石                            :noexport:
+* TODO [#A] Return xfinity kit                                     :noexport:
+* TODO [#A] 了解商业医疗保险                                       :noexport:
+* TODO light in the master bedroom without taking too much space   :noexport:
+* TODO re-org the table in master bedroom without taking too much space :noexport:
+* TODO [#A] 眼睛的保护                                             :noexport:
+* TODO 整理饮水机和洗衣机                                          :noexport:
+* TODO [#A] 回国弄自己的手机号码                                   :noexport:
+* TODO [#A] master bedroom: toilet doesn't flush smoothly          :noexport:
+* TODO [#A] Get the Title of our toyota corolla                    :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO 前院把guan木丛除掉，种树                                    :noexport:
+枣子树， 苹果， 柿子树， 菠萝番石榴
+* TODO [#A] Enable the front-yard sprinkler                        :noexport:
+* TODO 树下种花                                                    :noexport:

@@ -1,0 +1,1094 @@
+* CheatSheet: Concourse                                              :VMware:
+:PROPERTIES:
+:type:     pivotal, pks, vmware
+:export_file_name: cheatsheet-concourse-A4.pdf
+:END:
+
+#+BEGIN_HTML
+<a href="https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+<div id="the whole thing" style="overflow: hidden;">
+<div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
+</div>
+
+<br/><br/>
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-concourse-A4/cheatsheet-concourse-A4.pdf][cheatsheet-concourse-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/vmware/][vmware]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-concourse-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-bosh-A4][Bosh CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-pks-A4][PKS CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+
+** Concourse Concepts
+| Name                  | Summary                                                                      |
+|-----------------------+------------------------------------------------------------------------------|
+| [[https://concourse-ci.org/fly.html][fly]]                   | Pipelines are configured entirely via fly CLI                                |
+| [[https://concourse-ci.org/teams.html][Teams]]                 | Every pipeline and one-off build belongs to a team.                          |
+| [[https://concourse-ci.org/fly.html#fly-targets][Targets]]               | Alias of Concourse endpoints, which composes of server url, credentials, etc |
+| [[https://concourse-ci.org/pipelines.html][Pipelines]]             | A pipeline is the result of configuring Jobs and Resources together.         |
+| [[https://concourse-ci.org/jobs.html][Jobs]]                  | Jobs determine the actions of your pipeline,                                 |
+| [[https://concourse-ci.org/resources.html][Resource]]              | Allow you to define inputs and outputs to jobs in a pipeline                 |
+| [[https://concourse-ci.org/tasks.html][Tasks]]                 | The smallest configurable unit in a Concourse pipeline is a single task.     |
+| Reference             | [[https://concourse-ci.org/concepts.html][Link: Concourse Concepts]], [[https://concoursetutorial.com/][Link: concoursetutorial.com]]                        |
+** Concourse Resources
+| Name                                | Summary                                                          |
+|-------------------------------------+------------------------------------------------------------------|
+| [[https://github.com/pivotalservices/file-downloader-resource][file-downloader-resource]]            | enable downloading pivotal product files and stemcells           |
+| [[https://github.com/frodenas/gcs-resource][gcs-resource]]: google bucket         |                                                                  |
+| [[https://github.com/concourse/pool-resource][pool-resource]]                       | Atomically manages external environments                         |
+| [[https://github.com/concourse/github-release-resource][github-release]]                      |                                                                  |
+| [[https://github.com/concourse/git-resource][git-release]]                         | tracks commits in a branch of a Git repository                   |
+| [[https://github.com/concourse/docker-image-resource][docker-image-resource]]: docker image |                                                                  |
+| [[https://concourse-ci.org/tags-step-modifier.html][Step: tags]]                          | Use tag to match workers                                         |
+| [[https://github.com/cloudfoundry/bosh-bootloader][bbl (bosh-bootloader)]]               | Command line utility for standing up a BOSH director on any IAAS |
+| Reference                           | [[https://github.com/pivotal-cf/pcf-pipelines/tree/v0.23.0][GitHub: pcf-pipelines]]                                            |
+** Concourse Examples
+| Name                                        | Summary                                                          |
+|---------------------------------------------+------------------------------------------------------------------|
+| Hello world pipeline                        | example: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/helloworld.yml][helloworld.yml]]                                          |
+| Pass output to input across different tasks | example: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/tasks-output-input.yml][tasks-output-input.yml]]                                  |
+| Trigger pipeline test every 5 minutes       | example: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/run-test-regularly.yml][run-test-regularly.yml]]                                  |
+| [[https://github.com/concourse/git-resource][git-resource]]                                | example: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/example-git.yml][example-git.yml]]                                         |
+| [[https://github.com/pivotalservices/concourse-curl-resource][concourse-curl-resource]]: http download link | example: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/url-download.yml][url-download.yml]]                                        |
+** Concourse Containers
+| Name                                       | Summary                                                       |
+|--------------------------------------------+---------------------------------------------------------------|
+| Login to container                         | =fly -t $target hijack -u $job_url=                           |
+| Run command without sudden exit            | =nohup SOMECOMMAND &=; =tail -f nohup.out=                    |
+| Hijack to containers with a successful run | By design when task has passed, the container will be deleted |
+** Concourse Pipeline
+| Name                                  | Summary                                                                            |
+|---------------------------------------+------------------------------------------------------------------------------------|
+| [[https://concourse-ci.org/fly.html#fly-targets][List all authenticated end points]]     | =fly targets=                                                                      |
+| Get fly version                       | =fly --version=                                                                    |
+| fly login                             | =fly -t $target login -c $concourse_url -n $team_name=                             |
+| [[https://concourse-ci.org/managing-pipelines.html#fly-get-pipeline][Get pipeline definition]]               | =fly -t $target get-pipeline -p $job_name > job.yaml=                              |
+| Update pipeline                       | =fly -t $target set-pipeline -p $pipeline_name -c pipeline.yml -l credentials.yml= |
+| Update pipeline                       | =fly -t $target set-pipeline -p $pipeline_name -c pipeline.yml -v env1=var1=       |
+| Destroy pipeline                      | =fly -t $target destroy-pipeline -p $pipeline_name=                                |
+| Destroy pipeline without confirmation | =fly -t $target destroy-pipeline -p $pipeline_name -n=                             |
+| Format pipeline                       | =fly format-pipeline -c pipeline.yml=                                              |
+| Validate pipeline                     | =fly validate-pipeline -c pipeline.yml=                                            |
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-concourse-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-concourse-A4/concourse-sample.png]]
+** Concourse Resource
+| Name                                          | Summary                                                                                    |
+|-----------------------------------------------+--------------------------------------------------------------------------------------------|
+| [[https://stackoverflow.com/questions/41108427/concourse-github-release-resource-cannot-find-older-versions-or-tags][github-release resource get the old tag]]       | =fly -t $target check-resource -r $pipeline-name/$resource-name -f tag:$tag=               |
+| bosh-io-stemcell resource get the old version | =fly -t $target check-resource -r $pipeline-name/ubuntu-xenial-stemcell -f version:170.25= |
+| github release use a specific tag             | [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4/github-release-specific-tag.md][github-release-specific-tag.md]]                                                             |
+** Concourse Security
+| Name                               | Summary                                                                          |
+|------------------------------------+----------------------------------------------------------------------------------|
+| Fly login to the default main team | =fly -t $target login -n main -c $concourse_url=                                 |
+| Fly login to a different team      | =fly -t $target login -n $team_name -c $concourse_url=                           |
+| List all teams                     | =fly -t $target teams=,  =fly -t $target teams -d=                               |
+| Fly logout all targets             | =fly logout --all=                                                               |
+| Install ansible vault in mac       | =brew install ansible=                                                           |
+| Create a team                      | =fly -t $target set-team -n $team_name --github-org $my_org=                     |
+| Create a team                      | =fly -t $target set-team -n $team_name --allow-all-users=                        |
+| Destroy a team                     | =fly -t $target destroy-team --team-name $team_name=                             |
+| Login to a team                    | =fly -t $target set-team -n $team_name=                                          |
+| Fly conf file                      | =~/.flyrc=                                                                       |
+| Reference                          | After login to the *main* team, you can update other teams. [[https://concourse-ci.org/teams.html][Link: Concourse Team]] |
+** Concourse Workers
+| Name                          | Summary                     |
+|-------------------------------+-----------------------------|
+| List all concourse workers    | =fly -t $target workers=    |
+| List all concourse containers | =fly -t $target containers= |
+
+[[https://cheatsheet.dennyzhang.com/cheatsheet-concourse-A4][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-concourse-A4/concourse-design.png]]
+** Concourse Opportunities
+| Name                                                 | Summary                                                                                        |
+|------------------------------------------------------+------------------------------------------------------------------------------------------------|
+| [[https://github.com/concourse/concourse/issues/2134][fly set-pipeline run into "error: forbidden"]]         | Need to logout from both =fly client= (=fly logout --all=) and =Concourse GUI=                 |
+| List team details for all targets                    | =fly -t $target teams -d=, =~/.flyrc=                                                          |
+| Concourse UI runs into a blank page                  | If pipeline has recursive dependencies, Concourse UI may have issue to run its javascript code |
+| Split one pipeline yaml into small *reusable* pieces | Not supported. An uncomfortable workaround: generating yaml with other tools. [[https://github.com/concourse/concourse/issues/1994][Link: GitHub]]     |
+| Add a readonly member to one team                    | Not supported. Concourse only support authentication control, but not authorization control    |
+| Does Concourse have REST API?                        | Not supported so far. [[https://github.com/concourse/concourse/issues/1122][Link: GitHub]], [[https://github.com/concourse/atc/blob/d8da97675ef4b8941ebf372dbd63f200d56da6cd/routes.go#L105-L197][Link: Concourse REST endpoints]]                             |
+| Reference                                            | [[https://github.com/starkandwayne/concourse-tutorial][concourse-tutorial]], [[https://github.com/pivotalservices/concourse-pipeline-samples][concourse-pipeline-samples]]                                                 |
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+#+END_HTML
+** fly Online Usage
+#+BEGIN_EXAMPLE
+bash-3.2$ fly --help
+error: Usage:
+  fly [OPTIONS] <command>
+
+Application Options:
+  -t, --target=              Concourse target name
+  -v, --version              Print the version of Fly and exit
+      --verbose              Print API requests and responses
+      --print-table-headers  Print table headers even for redirected output
+
+Help Options:
+  -h, --help                 Show this help message
+
+Available commands:
+  abort-build        Abort a build (aliases: ab)
+  builds             List builds data (aliases: bs)
+  check-resource     Check a resource (aliases: cr)
+  checklist          Print a Checkfile of the given pipeline (aliases: cl)
+  containers         Print the active containers (aliases: cs)
+  destroy-pipeline   Destroy a pipeline (aliases: dp)
+  destroy-team       Destroy a team and delete all of its data (aliases: dt)
+  execute            Execute a one-off build using local bits (aliases: e)
+  expose-pipeline    Make a pipeline publicly viewable (aliases: ep)
+  format-pipeline    Format a pipeline config (aliases: fp)
+  get-pipeline       Get a pipeline's current configuration (aliases: gp)
+  help               Print this help message
+  hide-pipeline      Hide a pipeline from the public (aliases: hp)
+  hijack             Execute a command in a container (aliases: intercept, i)
+  jobs               List the jobs in the pipelines (aliases: js)
+  login              Authenticate with the target (aliases: l)
+  logout             Release authentication with the target (aliases: o)
+  order-pipelines    Orders pipelines (aliases: op)
+  pause-job          Pause a job (aliases: pj)
+  pause-pipeline     Pause a pipeline (aliases: pp)
+  pause-resource     Pause a resource (aliases: pr)
+  pipelines          List the configured pipelines (aliases: ps)
+  prune-worker       Prune a stalled, landing, landed, or retiring worker (aliases: pw)
+  rename-pipeline    Rename a pipeline (aliases: rp)
+  rename-team        Rename a team (aliases: rt)
+  set-pipeline       Create or update a pipeline's configuration (aliases: sp)
+  set-team           Create or modify a team to have the given credentials (aliases: st)
+  status             Login status
+  sync               Download and replace the current fly from the target (aliases: s)
+  targets            List saved targets (aliases: ts)
+  teams              List the configured teams (aliases: t)
+  trigger-job        Start a job in a pipeline (aliases: tj)
+  unpause-job        Unpause a job (aliases: uj)
+  unpause-pipeline   Un-pause a pipeline (aliases: up)
+  unpause-resource   Unpause a resource (aliases: ur)
+  validate-pipeline  Validate a pipeline config (aliases: vp)
+  volumes            List the active volumes (aliases: vs)
+  watch              Stream a build's output (aliases: w)
+  workers            List the registered workers (aliases: ws)
+#+END_EXAMPLE
+** fly set-pipeline Online Usage
+#+BEGIN_EXAMPLE
+> fly  set-pipeline --help
+error: Usage:
+  fly [OPTIONS] set-pipeline [set-pipeline-OPTIONS]
+
+Application Options:
+  -t, --target=                     Concourse target name
+  -v, --version                     Print the version of Fly and exit
+      --verbose                     Print API requests and responses
+      --print-table-headers         Print table headers even for redirected output
+
+Help Options:
+  -h, --help                        Show this help message
+
+[set-pipeline command options]
+      -n, --non-interactive         Skips interactions, uses default values
+          --no-color                Disable color output
+          --check-creds             Validate credential variables against credential manager
+      -p, --pipeline=               Pipeline to configure
+      -c, --config=                 Pipeline configuration file
+      -v, --var=[NAME=STRING]       Specify a string value to set for a variable in the pipeline
+      -y, --yaml-var=[NAME=YAML]    Specify a YAML value to set for a variable in the pipeline
+      -l, --load-vars-from=         Variable flag that can be used for filling in template values in configuration from a YAML file
+#+END_EXAMPLE
+** More Resources
+http://www.mikeball.info/blog/concourse-git-resource/
+
+https://concoursetutorial.com/
+
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+#+BEGIN_HTML
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
+
+<a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
+<a href="https://github.com/dennyzhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
+#+END_HTML
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-concourse-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-concourse-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-concourse-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* TODO collect more concourse example                              :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO what's input and output?                                    :noexport:
+* TODO where the variables are?                                    :noexport:
+* TODO git-resource vs github-release                              :noexport:
+* HALF Why delete kubo hasn't been triggered                       :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO a problematic pipeline can make the dashboard unavailable   :noexport:
+* TODO fail to hijack to concourse container                       :noexport:
+* TODO [#A] Fly my kubo test to raas                               :noexport:
+* TODO scenario: How I login to releng container, and run bosh command? :noexport:
+https://pks-releng.ci.cf-app.com/teams/main/pipelines/vsphere-nsx-om22-upgrade-minor-oratos.vrli-ci/jobs/upgrade-test/builds/1
+
+export container_id=$(ls /tmp/build)
+cd pks-releng-ci/tasks/test-upgrade-tile
+pwd
+SCRIPT_ROOT=/tmp/build/79f5611b/pks-releng-ci/tasks/test-upgrade-tile
+pushd /tmp/build/79f5611b/pks-releng-ci/tasks/test-upgrade-tile
+source ../../lib/sshuttle-helpers.sh
+source ../../lib/kubectl-helpers.sh
+source ../../lib/pks-setup.sh
+export ENV_LOCK_FILE=/tmp/build/79f5611b/environment-lock/metadata
+popd
+
+pks login --skip-ssl-verification --username alana --password password --api pks.pks-api.cf-app.com
+
+
+export SCRIPT_ROOT="/tmp/build/$container_id/git-pks-ci/ci/scripts"
+source "${SCRIPT_ROOT}/lib/bosh-helpers.sh"
+source "${SCRIPT_ROOT}/lib/credhub-helpers.sh"
+source "${SCRIPT_ROOT}/lib/nsx-helpers.sh"
+source "${SCRIPT_ROOT}/lib/opsman-helpers.sh"
+
+init_env
+
+bosh -n deployments
+
+#+BEGIN_EXAMPLE
+   /Users/zdenny  ~/Downloads/fly-3.14 -t releng hijack -u https://pks-releng.ci.cf-app.com/teams/main/pipelines/vsphere-nsx-om22-upgrade-minor-oratos.vrli-ci/jobs/upgrade-test/builds/1                  ✘ 1
+1: build #1, step: download-kubectl, type: task
+2: build #1, step: download-kubectl, type: task
+3: build #1, step: download-pks-cli, type: task
+4: build #1, step: download-pks-cli, type: task
+5: build #1, step: environment-lock, type: get
+6: build #1, step: failure-logs, type: get
+7: build #1, step: failure-logs, type: put
+8: build #1, step: gather-logs, type: task
+9: build #1, step: get-product-version-from-tile, type: task
+10: build #1, step: notify, type: get
+11: build #1, step: notify, type: put
+12: build #1, step: pipeline-metadata, type: get
+13: build #1, step: upgrade-test, type: task
+choose a container: 13
+bash-4.4# bosh vms
+Expected non-empty Director URL
+
+Exit code 1
+bash-4.4# export container_id=$(ls /tmp/build)
+bash-4.4# export ENV_LOCK_FILE=/tmp/build/$container_id/pks-lock/metadata
+bash-4.4#
+bash-4.4# export SCRIPT_ROOT="/tmp/build/$container_id/git-pks-ci/ci/scripts"
+bash-4.4# source "${SCRIPT_ROOT}/lib/bosh-helpers.sh"
+bash: /tmp/build/79f5611b/git-pks-ci/ci/scripts/lib/bosh-helpers.sh: No such file or directory
+bash-4.4# source "${SCRIPT_ROOT}/lib/credhub-helpers.sh"
+bash: /tmp/build/79f5611b/git-pks-ci/ci/scripts/lib/credhub-helpers.sh: No such file or directory
+bash-4.4# source "${SCRIPT_ROOT}/lib/nsx-helpers.sh"
+bash: /tmp/build/79f5611b/git-pks-ci/ci/scripts/lib/nsx-helpers.sh: No such file or directory
+bash-4.4# source "${SCRIPT_ROOT}/lib/opsman-helpers.sh"
+bash: /tmp/build/79f5611b/git-pks-ci/ci/scripts/lib/opsman-helpers.sh: No such file or directory
+bash-4.4#
+bash-4.4# init_env
+bash: init_env: command not found
+bash-4.4#
+bash-4.4# bosh -n deployments
+Expected non-empty Director URL
+
+Exit code 1
+bash-4.4# which bosh
+/usr/local/bin/bosh
+bash-4.4# bosh -n deployments
+Expected non-empty Director URL
+
+Exit code 1
+#+END_EXAMPLE
+* TODO For concourse pipelines, draw a diagram                     :noexport:
+* TODO concourse takes quite a long time for job to schedule a task. Thus container is not ready for hijack :noexport:
+#+BEGIN_EXAMPLE
+   /Users/zdenny/Dropbox/private_data/work/vmware/code/pks-vrops-release/ci  ~/Downloads/fly-v4.1.0 -t pks hijack -u https://ci.vcna.io/teams/oratos-vmware/pipelines/pks-vrops-install-tile/jobs/add-tile/builds/5                   vrops-tile-integration ✘ ✹ ✭  ✘ 1
+1: build #5, step: add-tile-to-opsman, type: task
+2: build #5, step: environment-lock, type: get
+3: build #5, step: p-pks-integrations, type: get
+choose a container: 1
+error: websocket: bad handshake
+#+END_EXAMPLE
+* TODO concourse: how to transfer a big file across jobs in the same pipeline? :noexport:
+*.pivotal
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO write code in concourse yaml file                           :noexport:
+* TODO Blog: X Performance Tips To Speed Up Your Concourse Pipeline :noexport:
+** TODO [#A] Avoid pass big files across tasks: How often concourse check tile resource in gcp bucket? :noexport:
+** TODO Concourse speed up the docker image load                   :noexport:
+** TODO More parallel: Performs the given steps in parallel.
+https://concourse-ci.org/jobs.html
+* TODO [#A] Concourse significant delay across steps               :noexport:
+* TODO Concourse pipeline use multiple file instead of one yaml file :noexport:
+https://github.com/concourse/concourse/issues/1994
+* TODO Concourse manage the layout                                 :noexport:
+Each row for one project
+https://ci.vcna.io/?search=team%3A%20oratos-vmware
+* TODO [#A] Pass the output to multiple pipelines                  :noexport:
+* TODO Concourse: Interprate variable template: high order rendering :noexport:
+https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-concourse-A4/render-for-render.md
+* TODO Concourse: avoid run one pipeline in parallel               :noexport:
+* TODO Concourse execute one step only                             :noexport:
+https://github.com/starkandwayne/concourse-tutorial/blob/master/tutorials/basic/task-scripts/task_show_uname.yml
+* TODO [#B] Concourse caculate the total duration for a given pipeline :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Concourse get the failure rate for a given pipeline         :noexport:
+* TODO Concourse how to explictly and implictly dependency         :noexport:
+* TODO concourse: worker tag: https://ci.vcna.io/teams/oratos-vmware/pipelines/pks-vrops-install-tile/jobs/claim-lock/builds/1 :noexport:
+#+BEGIN_EXAMPLE
+pks-vrops-install-tile
+/
+claim-lock
+dennyzhang
+claim-lock #1
+started	18m 37s ago
+finished	18m 36s ago
+duration	1s
+1
+path	oratos-vmware/vrli/pivotal-container-service-1.3.0-build.6.pivotal
+untested-tile
+no workers satisfying: resource type 'gcs-resource', tag 'VMware'
+
+available workers: 
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+  - platform 'linux'
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+- name: claim-lock
+  serial: true
+  plan:
+  - get: untested-tile
+    trigger: true
+    tags:
+    - VMware
+  - aggregate:
+    - get: p-pks-integrations
+      tags:
+      - VMware
+    - get: git-environments-metadata
+      tags:
+      - VMware
+#+END_EXAMPLE
+* TODO concourse add timeout for one group of tasks                :noexport:
+* TODO [#A] release-env: use the same lock: https://ci.vcna.io/teams/main/pipelines/wavefront-proxy-release/jobs/release-env/builds/3 :noexport:IMPORTANT:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Concourse worker: https://concourse-ci.org/worker-internals.html :noexport:
+* TODO concourse doesn't work well with git push --force           :noexport:
+* TODO Concourse get env to override parameter                     :noexport:
+* TODO [#A] Concourse workflow hack-nimbus, what if when initialize-vrli has finished, but locks are still in claimed state. :noexport:
+* TODO Concourse cycle dependency                                  :noexport:
+#+BEGIN_EXAMPLE
+but for the record; please be careful not to create any cycles in a Concourse pipeline such as:
+```get: A, passed: B
+get: B, passed: A```
+
+because Concourse doesn't do cycle detection and everything will be bad
+#+END_EXAMPLE
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO Concourse tag the worker, and use it for the same pipeline  :noexport:
+* TODO Concourse: insufficient subnets remaining in the pool       :noexport:
+https://github.com/concourse/concourse/issues/293
+
+"Insufficient subnets" is akin to "out of memory" or "out of disk"
+* TODO Concourse container guardian                                :noexport:
+* TODO Concourse different colors: https://ci.vcna.io/teams/oratos-vmware/pipelines/pks-vrli-install-tile/jobs/test-tile-deployment/builds/11 :noexport:
+* TODO Add back: Concourse Advanced                                :noexport:
+* TODO consolidate: https://www.altoros.com/concourse-fly-cli-cheat-sheet.html :noexport:
+* TODO consolidate https://www.altoros.com/blog/concourse-fly-cli-cheat-sheet/ :noexport:
+* TODO consolicdate: https://github.com/JeffDeCola/my-cheat-sheets :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* Concourse in section                                             :noexport:
+https://concourse-ci.org/implementing-resources.html#in
+
+https://github.com/concourse/bosh-io-stemcell-resource#behavior
+
+The in script is passed a destination directory as command line
+argument $1, and is given on stdin the configured source and a precise
+version of the resource to fetch.
+* TODO [#A] bosh-io-stemcell use a dedicated version               :noexport:
+https://github.com/concourse/bosh-io-stemcell-resource
+
+version	250.4 -> 170.24
+** [#A] Bosh error: stemcell                                       :noexport:
+ https://github.com/cloudfoundry/bosh/issues/1620
+*** bosh deployment has failed
+ #+BEGIN_EXAMPLE
+
+ + tags: {}
+
+ Task 22
+
+ Task 22 | 06:58:59 | Preparing deployment: Preparing deployment (00:00:07)
+ Task 22 | 06:59:38 | Error: 
+ Can't use release 'bpm/1.0.0'. It references packages without source code and are not compiled against stemcell 'bosh-vsphere-esxi-ubuntu-xenial-go_agent/250.4':
+  - 'bpm/583e5f12a22750b2f2a3fb7da28f1671585d6632'
+  - 'bpm-runc/c0b41921c5063378870a7c8867c6dc1aa84e7d85'
+  - 'golang/e21357079e735270cf6354e6939c5c2b9a2f720f'
+  - 'test-server/f09be8f1bb19854024504f4abd74747760b9302c'
+ Can't use release 'cfcr-etcd/1.8.0'. It references packages without source code and are not compiled against stemcell 'bosh-vsphere-esxi-ubuntu-xenial-go_agent/250.4':
+  - 'acceptance/fa972ca0c5ee4b3b2eb7b5b6ca2c06b79b5914ad44c90fc1a28499a2a8cb2a77'
+  - 'etcd/ecd44062ba6171205f6eadb1aeaef05aaa5ca64b3c2203cfc8dd9b8f1a5e79b8'
+  - 'golang-1.11-linux/bb9ab510b4b82a163137540402017207b9fc7e06'
+ Can't use release 'docker/33.0.0'. It references packages without source code and are not compiled against stemcell 'bosh-vsphere-esxi-ubuntu-xenial-go_agent/250.4':
+  - 'bosh-helpers/a616966453683545eb0e28d88da5a951f5f110ae'
+  - 'ctop/e5f579167182e9a1587c2346f4e84bad2c445c2e'
+  - 'docker/3ec445ecf9197642a57e4564f0ca35b68c590c39'
+  - 'flannel/8d0657c328133f9800822819e2cdcb7eeada2158'
+  - 'golang-1.11-linux/bb9ab510b4b82a163137540402017207b9fc7e06'
+  - 'sanity-tests/dd5b1fddc1fd74e5bb1ec4f706d8e2522acf9246'
+  - 'swarm/863049fb31327a0fc6a2b9ec38b1935a2ad634d3'
+
+
+ Task 22 Started  Mon Feb  4 06:58:59 UTC 2019
+ Task 22 Finished Mon Feb  4 06:59:38 UTC 2019
+ Task 22 Duration 00:00:39
+ Task 22 error
+
+ Updating deployment:
+   Expected task '22' to succeed but state is 'error'
+
+ Exit code 1
+ ++ cleanup
+ ++ '[' -z false ']'
+ ++ '[' false = true ']'
+ #+END_EXAMPLE
+*** /tmp/build/4dc76c32/kubo-deployment/kubo-manifest.yml
+ #+BEGIN_EXAMPLE
+ addons:
+ - jobs:
+   - name: kubo-dns-aliases
+     release: kubo
+   name: bosh-dns-aliases
+ features:
+   use_dns_addresses: true
+ instance_groups:
+ - azs:
+   - az-1
+   instances: 1
+   jobs:
+   - consumes:
+       cloud-provider:
+         from: master-cloud-provider
+     name: apply-specs
+     properties:
+       addons:
+       - kube-dns
+       - metrics-server
+       - heapster
+       - kubernetes-dashboard
+       admin-password: ((kubo-admin-password))
+       admin-username: admin
+       api-token: ((kubelet-password))
+       tls:
+         heapster: ((tls-heapster))
+         influxdb: ((tls-influxdb))
+         kubernetes: ((tls-kubernetes))
+         kubernetes-dashboard: ((tls-kubernetes-dashboard))
+         metrics-server: ((tls-metrics-server))
+     release: kubo
+   - name: wavefront-proxy-errand
+     properties:
+       kubernetes-apiserver-port: 8443
+       wavefront-api-url: https://try.wavefront.com/api
+       wavefront-token: c41f0c3c-dc50-4843-bbdf-7f0885ad7082
+     release: wavefront-proxy
+   - name: wavefront-alert-creation
+     properties:
+       wavefront-alert-targets: user@example.com
+       wavefront-api-url: https://try.wavefront.com/api
+       wavefront-token: c41f0c3c-dc50-4843-bbdf-7f0885ad7082
+     release: wavefront-proxy
+   - name: wavefront-alert-deletion
+     properties:
+       wavefront-api-url: https://try.wavefront.com/api
+       wavefront-token: c41f0c3c-dc50-4843-bbdf-7f0885ad7082
+     release: wavefront-proxy
+   lifecycle: errand
+   name: apply-addons
+   networks:
+   - name: service-network
+   stemcell: default
+   vm_type: small
+ - azs:
+   - az-1
+   instances: 3
+   jobs:
+   - name: bpm
+     release: bpm
+   - name: flanneld
+     release: kubo
+   - consumes:
+       cloud-provider:
+         from: master-cloud-provider
+     name: kube-apiserver
+     properties:
+       admin-password: ((kubo-admin-password))
+       admin-username: admin
+       audit-policy:
+         apiVersion: audit.k8s.io/v1beta1
+         kind: Policy
+         rules:
+         - level: None
+           resources:
+           - group: ""
+             resources:
+             - endpoints
+             - services
+             - services/status
+           users:
+           - system:kube-proxy
+           verbs:
+           - watch
+         - level: None
+           resources:
+           - group: ""
+             resources:
+             - nodes
+             - nodes/status
+           users:
+           - kubelet
+           verbs:
+           - get
+         - level: None
+           resources:
+           - group: ""
+             resources:
+             - nodes
+             - nodes/status
+           userGroups:
+           - system:nodes
+           verbs:
+           - get
+         - level: None
+           namespaces:
+           - kube-system
+           resources:
+           - group: ""
+             resources:
+             - endpoints
+           users:
+           - system:kube-controller-manager
+           - system:kube-scheduler
+           - system:serviceaccount:kube-system:endpoint-controller
+           verbs:
+           - get
+           - update
+         - level: None
+           resources:
+           - group: ""
+             resources:
+             - namespaces
+             - namespaces/status
+             - namespaces/finalize
+           users:
+           - system:apiserver
+           verbs:
+           - get
+         - level: None
+           resources:
+           - group: metrics.k8s.io
+           users:
+           - system:kube-controller-manager
+           verbs:
+           - get
+           - list
+         - level: None
+           nonResourceURLs:
+           - /healthz*
+           - /version
+           - /swagger*
+         - level: None
+           resources:
+           - group: ""
+             resources:
+             - events
+         - level: Request
+           omitStages:
+           - RequestReceived
+           resources:
+           - group: ""
+             resources:
+             - nodes/status
+             - pods/status
+           userGroups:
+           - system:nodes
+           verbs:
+           - update
+           - patch
+         - level: Request
+           omitStages:
+           - RequestReceived
+           users:
+           - system:serviceaccount:kube-system:namespace-controller
+           verbs:
+           - deletecollection
+         - level: Metadata
+           omitStages:
+           - RequestReceived
+           resources:
+           - group: ""
+             resources:
+             - secrets
+             - configmaps
+           - group: authentication.k8s.io
+             resources:
+             - tokenreviews
+         - level: Request
+           omitStages:
+           - RequestReceived
+           resources:
+           - group: ""
+           - group: admissionregistration.k8s.io
+           - group: apiextensions.k8s.io
+           - group: apiregistration.k8s.io
+           - group: apps
+           - group: authentication.k8s.io
+           - group: authorization.k8s.io
+           - group: autoscaling
+           - group: batch
+           - group: certificates.k8s.io
+           - group: extensions
+           - group: metrics.k8s.io
+           - group: networking.k8s.io
+           - group: policy
+           - group: rbac.authorization.k8s.io
+           - group: settings.k8s.io
+           - group: storage.k8s.io
+           verbs:
+           - get
+           - list
+           - watch
+         - level: RequestResponse
+           omitStages:
+           - RequestReceived
+           resources:
+           - group: ""
+           - group: admissionregistration.k8s.io
+           - group: apiextensions.k8s.io
+           - group: apiregistration.k8s.io
+           - group: apps
+           - group: authentication.k8s.io
+           - group: authorization.k8s.io
+           - group: autoscaling
+           - group: batch
+           - group: certificates.k8s.io
+           - group: extensions
+           - group: metrics.k8s.io
+           - group: networking.k8s.io
+           - group: policy
+           - group: rbac.authorization.k8s.io
+           - group: settings.k8s.io
+           - group: storage.k8s.io
+         - level: Metadata
+           omitStages:
+           - RequestReceived
+       k8s-args:
+         allow-privileged: true
+         audit-log-maxage: 0
+         audit-log-maxbackup: 0
+         audit-log-maxsize: 10000000
+         audit-log-path: /var/vcap/sys/log/kube-apiserver/audit.log
+         audit-policy-file: /var/vcap/jobs/kube-apiserver/config/audit_policy.yml
+         authorization-mode: RBAC
+         client-ca-file: /var/vcap/jobs/kube-apiserver/config/kubernetes.pem
+         disable-admission-plugins: []
+         enable-admission-plugins: []
+         enable-aggregator-routing: true
+         enable-bootstrap-token-auth: true
+         enable-swagger-ui: true
+         etcd-cafile: /var/vcap/jobs/kube-apiserver/config/etcd-ca.crt
+         etcd-certfile: /var/vcap/jobs/kube-apiserver/config/etcd-client.crt
+         etcd-keyfile: /var/vcap/jobs/kube-apiserver/config/etcd-client.key
+         kubelet-client-certificate: /var/vcap/jobs/kube-apiserver/config/kubelet-client-cert.pem
+         kubelet-client-key: /var/vcap/jobs/kube-apiserver/config/kubelet-client-key.pem
+         proxy-client-cert-file: /var/vcap/jobs/kube-apiserver/config/kubernetes.pem
+         proxy-client-key-file: /var/vcap/jobs/kube-apiserver/config/kubernetes-key.pem
+         requestheader-allowed-names: aggregator
+         requestheader-client-ca-file: /var/vcap/jobs/kube-apiserver/config/kubernetes.pem
+         requestheader-extra-headers-prefix: X-Remote-Extra-
+         requestheader-group-headers: X-Remote-Group
+         requestheader-username-headers: X-Remote-User
+         runtime-config: api/v1
+         secure-port: 8443
+         service-account-key-file: /var/vcap/jobs/kube-apiserver/config/service-account-public-key.pem
+         service-cluster-ip-range: 10.100.200.0/24
+         storage-media-type: application/json
+         tls-cert-file: /var/vcap/jobs/kube-apiserver/config/kubernetes.pem
+         tls-private-key-file: /var/vcap/jobs/kube-apiserver/config/kubernetes-key.pem
+         token-auth-file: /var/vcap/jobs/kube-apiserver/config/tokens.csv
+         v: 2
+       kube-controller-manager-password: ((kube-controller-manager-password))
+       kube-proxy-password: ((kube-proxy-password))
+       kube-scheduler-password: ((kube-scheduler-password))
+       kubelet-drain-password: ((kubelet-drain-password))
+       kubelet-password: ((kubelet-password))
+       service-account-public-key: ((service-account-key.public_key))
+       tls:
+         kubelet-client: ((tls-kubelet-client))
+         kubernetes:
+           ca: ((tls-kubernetes.ca))
+           certificate: ((tls-kubernetes.certificate))
+           private_key: ((tls-kubernetes.private_key))
+     release: kubo
+   - consumes:
+       cloud-provider:
+         from: master-cloud-provider
+     name: kube-controller-manager
+     properties:
+       api-token: ((kube-controller-manager-password))
+       cluster-signing: ((kubo_ca))
+       k8s-args:
+         cluster-signing-cert-file: /var/vcap/jobs/kube-controller-manager/config/cluster-signing-ca.pem
+         cluster-signing-key-file: /var/vcap/jobs/kube-controller-manager/config/cluster-signing-key.pem
+         kubeconfig: /var/vcap/jobs/kube-controller-manager/config/kubeconfig
+         root-ca-file: /var/vcap/jobs/kube-controller-manager/config/ca.pem
+         service-account-private-key-file: /var/vcap/jobs/kube-controller-manager/config/service-account-private-key.pem
+         terminated-pod-gc-threshold: 100
+         tls-cert-file: /var/vcap/jobs/kube-controller-manager/config/kube-controller-manager-cert.pem
+         tls-private-key-file: /var/vcap/jobs/kube-controller-manager/config/kube-controller-manager-private-key.pem
+         use-service-account-credentials: true
+         v: 2
+       service-account-private-key: ((service-account-key.private_key))
+       tls:
+         kube-controller-manager: ((tls-kube-controller-manager))
+         kubernetes: ((tls-kubernetes))
+     release: kubo
+   - name: kube-scheduler
+     properties:
+       api-token: ((kube-scheduler-password))
+       kube-scheduler-configuration:
+         apiVersion: kubescheduler.config.k8s.io/v1alpha1
+         clientConnection:
+           kubeconfig: /var/vcap/jobs/kube-scheduler/config/kubeconfig
+         disablePreemption: false
+         kind: KubeSchedulerConfiguration
+       tls:
+         kubernetes: ((tls-kubernetes))
+     release: kubo
+   - consumes:
+       cloud-provider:
+         from: master-cloud-provider
+     name: kubernetes-roles
+     properties:
+       admin-password: ((kubo-admin-password))
+       admin-username: admin
+       tls:
+         kubernetes: ((tls-kubernetes))
+     release: kubo
+   - name: etcd
+     properties:
+       etcd:
+         dns_suffix: etcd.cfcr.internal
+       tls:
+         etcd:
+           ca: ((tls-etcd-v0-17-0.ca))
+           certificate: ((tls-etcd-v0-17-0.certificate))
+           private_key: ((tls-etcd-v0-17-0.private_key))
+         etcdctl:
+           ca: ((tls-etcdctl.ca))
+           certificate: ((tls-etcdctl.certificate))
+           private_key: ((tls-etcdctl.private_key))
+         peer:
+           ca: ((tls-etcd-v0-17-0.ca))
+           certificate: ((tls-etcd-v0-17-0.certificate))
+           private_key: ((tls-etcd-v0-17-0.private_key))
+     release: cfcr-etcd
+   - name: smoke-tests
+     release: kubo
+   - name: cloud-provider
+     properties:
+       cloud-config:
+         Disk:
+           scsicontrollertype: pvscsi
+         Global:
+           datacenter: kubo-dc
+           datastore: iscsi-ds-0
+           password: Admin!23
+           server: 192.168.111.21
+           user: administrator@vsphere.local
+           working-dir: /kubo-dc/vm/pcf_vms/456183f2-09e1-4800-ab10-a4ab628a86dd
+       cloud-provider:
+         type: vsphere
+     provides:
+       cloud-provider:
+         as: master-cloud-provider
+     release: kubo
+   name: master
+   networks:
+   - name: service-network
+   persistent_disk: 5120
+   stemcell: default
+   vm_type: small
+ - azs:
+   - az-1
+   instances: 2
+   jobs:
+   - name: flanneld
+     release: kubo
+   - name: docker
+     properties:
+       bridge: cni0
+       default_ulimits:
+       - nofile=65536
+       env: {}
+       flannel: true
+       ip_masq: false
+       iptables: false
+       live_restore: true
+       log_level: error
+       log_options:
+       - max-size=128m
+       - max-file=2
+       storage_driver: overlay2
+       store_dir: /var/vcap/data
+     release: docker
+   - name: kubernetes-dependencies
+     release: kubo
+   - name: kubelet
+     properties:
+       api-token: ((kubelet-password))
+       cloud-provider: vsphere
+       drain-api-token: ((kubelet-drain-password))
+       k8s-args:
+         cni-bin-dir: /var/vcap/jobs/kubelet/packages/cni/bin
+         container-runtime: docker
+         docker: unix:///var/vcap/sys/run/docker/docker.sock
+         docker-endpoint: unix:///var/vcap/sys/run/docker/docker.sock
+         kubeconfig: /var/vcap/jobs/kubelet/config/kubeconfig
+         network-plugin: cni
+       kubelet-configuration:
+         apiVersion: kubelet.config.k8s.io/v1beta1
+         authentication:
+           anonymous:
+             enabled: false
+           x509:
+             clientCAFile: /var/vcap/jobs/kubelet/config/kubelet-client-ca.pem
+         authorization:
+           mode: Webhook
+         clusterDNS:
+         - 10.100.200.10
+         clusterDomain: cluster.local
+         failSwapOn: false
+         kind: KubeletConfiguration
+         serializeImagePulls: false
+         tlsCertFile: /var/vcap/jobs/kubelet/config/kubelet.pem
+         tlsPrivateKeyFile: /var/vcap/jobs/kubelet/config/kubelet-key.pem
+       tls:
+         kubelet: ((tls-kubelet))
+         kubelet-client-ca:
+           certificate: ((tls-kubelet-client.ca))
+         kubernetes: ((tls-kubernetes))
+     release: kubo
+   - name: kube-proxy
+     properties:
+       api-token: ((kube-proxy-password))
+       cloud-provider: vsphere
+       kube-proxy-configuration:
+         apiVersion: kubeproxy.config.k8s.io/v1alpha1
+         clientConnection:
+           kubeconfig: /var/vcap/jobs/kube-proxy/config/kubeconfig
+         clusterCIDR: 10.200.0.0/16
+         iptables:
+           masqueradeAll: false
+           masqueradeBit: 14
+           minSyncPeriod: 0s
+           syncPeriod: 30s
+         kind: KubeProxyConfiguration
+         mode: iptables
+         portRange: ""
+       tls:
+         kubernetes: ((tls-kubernetes))
+     release: kubo
+   - name: wavefront-proxy-images
+     release: wavefront-proxy
+   name: worker
+   networks:
+   - name: service-network
+   stemcell: default
+   vm_type: small
+ name: wf-deployment-0-11-0-dev-31
+ releases:
+ - name: kubo
+   sha1: 5209bbe9152fa704bf10643e262a4a361115cde2
+   url: https://storage.googleapis.com/kubo-precompiled-releases/kubo-0.26.0-ubuntu-xenial-170.14-20181219-115018-826675828.tgz
+   version: 0.26.0
+ - name: cfcr-etcd
+   sha1: a66b5521b0fc034870811e2e26df93b3a1b9c174
+   url: https://storage.googleapis.com/kubo-precompiled-releases/cfcr-etcd-1.8.0-ubuntu-xenial-170.14-20181217-202529-027335282.tgz
+   version: 1.8.0
+ - name: docker
+   sha1: a97c316d23ced7fa0698e49aff27dc3c2fe927af
+   url: https://storage.googleapis.com/kubo-precompiled-releases/docker-33.0.0-ubuntu-xenial-170.14-20181217-202117-701759559.tgz
+   version: 33.0.0
+ - name: bpm
+   sha1: 25282503273bcd345f867b006cc4c77b670af063
+   url: https://storage.googleapis.com/kubo-precompiled-releases/bpm-1.0.0-ubuntu-xenial-170.14-20181217-202955-477555041.tgz
+   version: 1.0.0
+ - name: wavefront-proxy
+   version: 0.11.0-dev.31
+ stemcells:
+ - alias: default
+   os: ubuntu-xenial
+   version: "250.4"
+ update:
+   canaries: 1
+   canary_watch_time: 10000-300000
+   max_in_flight: 1
+   update_watch_time: 10000-300000
+ variables:
+ - name: kubo-admin-password
+   type: password
+ - name: kubelet-password
+   type: password
+ - name: kubelet-drain-password
+   type: password
+ - name: kube-proxy-password
+   type: password
+ - name: kube-controller-manager-password
+   type: password
+ - name: kube-scheduler-password
+   type: password
+ - name: kubo_ca
+   options:
+     common_name: ca
+     is_ca: true
+   type: certificate
+ - name: tls-kubelet
+   options:
+     alternative_names: []
+     ca: kubo_ca
+     common_name: kubelet.cfcr.internal
+     organization: system:nodes
+   type: certificate
+ - name: tls-kubelet-client
+   options:
+     ca: kubo_ca
+     common_name: kube-apiserver.cfcr.internal
+     extended_key_usage:
+     - client_auth
+     organization: system:masters
+   type: certificate
+ - name: tls-kubernetes
+   options:
+     alternative_names:
+     - 10.100.200.1
+     - kubernetes
+     - kubernetes.default
+     - kubernetes.default.svc
+     - kubernetes.default.svc.cluster.local
+     - master.cfcr.internal
+     - 192.168.150.102
+     ca: kubo_ca
+     common_name: 192.168.150.102
+     organization: system:masters
+   type: certificate
+ - name: service-account-key
+   type: rsa
+ - name: tls-kube-controller-manager
+   options:
+     alternative_names:
+     - localhost
+     - 127.0.0.1
+     ca: kubo_ca
+     common_name: kube-controller-manager
+     extended_key_usage:
+     - server_auth
+     key_usage:
+     - digital_signature
+     - key_encipherment
+   type: certificate
+ - name: tls-etcd-v0-17-0
+   options:
+     ca: kubo_ca
+     common_name: '*.etcd.cfcr.internal'
+     extended_key_usage:
+     - client_auth
+     - server_auth
+   type: certificate
+ - name: tls-etcdctl
+   options:
+     ca: kubo_ca
+     common_name: etcdClient
+     extended_key_usage:
+     - client_auth
+   type: certificate
+ - name: tls-metrics-server
+   options:
+     alternative_names:
+     - metrics-server.kube-system.svc
+     ca: kubo_ca
+     common_name: metrics-server
+   type: certificate
+ - name: tls-heapster
+   options:
+     alternative_names:
+     - heapster.kube-system.svc.cluster.local
+     ca: kubo_ca
+     common_name: heapster
+   type: certificate
+ - name: tls-influxdb
+   options:
+     alternative_names: []
+     ca: kubo_ca
+     common_name: monitoring-influxdb
+   type: certificate
+ - name: kubernetes-dashboard-ca
+   options:
+     common_name: ca
+     is_ca: true
+   type: certificate
+ - name: tls-kubernetes-dashboard
+   options:
+     alternative_names: []
+     ca: kubernetes-dashboard-ca
+     common_name: kubernetesdashboard.cfcr.internal
+   type: certificate
+ #+END_EXAMPLE
+* Run concourse in k8s                                             :noexport:
+https://gist.github.com/ahume/d56699f3eb2292dbbc1ba3825d44e4b5
+
+https://github.com/concourse/concourse
+
+http://127.0.0.1:8080/teams/main/pipelines/pks-wavefront-release
+* fly set-pipeline                                                 :noexport:
+https://github.com/concourse/concourse/issues/2582
+#+BEGIN_EXAMPLE
+ /Users/zdenny/Dropbox/private_data/work/vmware/code/gear2/concourse-jobs
+  fly-dev -t pks-infra set-pipeline -p gear2-nimbus -c gear2-nimbus.yaml
+error: forbidden
+#+END_EXAMPLE
+* TODO fly-dev -t gear2-ci check-resource -r gear2-nimbus/pool-git-gear2-nsx1 -f branch:gear2-ci :noexport:
+* TODO concourse enable daily testing                              :noexport:
+https://github.com/pivotalservices/concourse-pipeline-samples/tree/master/concourse-pipeline-patterns/time-triggered-pipelines/01-single-time-trigger

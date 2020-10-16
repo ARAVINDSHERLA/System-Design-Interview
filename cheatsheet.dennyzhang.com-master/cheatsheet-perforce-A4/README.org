@@ -1,0 +1,153 @@
+* CheatSheet: Perforce Source Code                                    :Tool:
+:PROPERTIES:
+:type:     tool
+:export_file_name: cheatsheet-perforce-A4.pdf
+:END:
+
+- PDF Link: [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-perforce-A4/cheatsheet-perforce-A4.pdf][cheatsheet-perforce-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/cloud/][Cloud]]
+- Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-perforce-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-vmware-A4][CheatSheet: VMware Products]], [[https://cheatsheet.dennyzhang.com/cheatsheet-openshift-A4][OpenShift CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+
+File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues]] or star [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com][this repo]].
+** Perforce Basic
+| Name                         | Summary                                       |
+|------------------------------+-----------------------------------------------|
+| Download Perforce CLI Client | [[https://www.perforce.com/downloads/helix-command-line-client-p4][Link: Download Helix Command-Line Client (P4)]] |
+| Download Perforce GUI Client | [[https://www.perforce.com/downloads/helix-visual-client-p4v][Link: Download Helix Visual Client (P4V)]]      |
+** Perforce Workflow
+| Name                             | Summary                                    |
+|----------------------------------+--------------------------------------------|
+| Config file                      | =.p4config=                                |
+| Validate p4 config file          | =ls -lth $P4CONFIG=                        |
+| Login to system                  | =p4 login=                                 |
+| Create a new P4 client           | =p4 client=                                |
+| Sync source code                 | =p4 sync=                                  |
+| Edit a file                      | =p4 edit $file_path=                       |
+| Add a file                       | =p4 add $file_path=                        |
+| See files open for edit          | =p4 opened=                                |
+| Generate CLN                     | =p4 change=                                |
+| Update an existing CLN           | =p4 change $CLN=                           |
+| Generate a review link           | =/build/apps/bin/post-review $CLN=         |
+| Resolve conflict                 | =p4 resolve=                               |
+| Check-in the change after review | =p4 submit -c $CLN=                        |
+| Check-in the change after review | =p4 shelve -c $CLN -d, =p4 submit -c $CLN= |
+** Perforce Issues
+| Name                              | Summary                                                                                    |
+|-----------------------------------+--------------------------------------------------------------------------------------------|
+| [[https://community.perforce.com/s/article/3649][6 Failures Of Perforce Submission]] | If submit succeeds, files should be removed from shelf and changelist shown as 'submitted' |
+** p4 online help
+#+BEGIN_EXAMPLE
+-bash-4.1$ p4 help
+
+    Perforce -- the Fast Software Configuration Management System.
+
+    p4 is Perforce's client tool for the command line.  Try:
+
+        p4 help simple          list most common commands
+        p4 help commands        list all standard commands
+        p4 help command         help on a specific command
+
+        p4 help administration  help on specialized administration topics
+        p4 help charset         help on character set translation
+        p4 help configurables   list server configuration variables
+        p4 help environment     list environment and registry variables
+        p4 help filetypes       list supported file types
+        p4 help jobview         help on jobview syntax
+        p4 help networkaddress  help on network address syntax
+        p4 help revisions       help on specifying file revisions
+        p4 help streamintro     introduction to streams
+        p4 help usage           generic command line arguments
+        p4 help views           help on view syntax
+        p4 help replication     help on specialized replication topics
+        p4 help dvcs            help on decentralized Perforce configurations
+
+        p4 help legal           legal and license information
+
+    The full user manual is available at
+    https://www.perforce.com/support/self-service-resources/documentation
+
+    Server 2018.2/1740258.
+#+END_EXAMPLE
+** More Resources
+https://www.perforce.com/support/self-service-resources/documentation
+
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+* org-mode configuration                                           :noexport:
+#+STARTUP: overview customtime noalign logdone showall
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
+#+LaTeX_CLASS_OPTIONS: [8pt]
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage{lastpage}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \rhead{Updated: \today}
+#+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-perforce-A4}{GitHub: https://github.com/dennyzhang/cheatsheet.dennyzhang.com/tree/master/cheatsheet-perforce-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-perforce-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-perforce-A4}}
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
+#+PRIORITIES: A D C
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:
+#+LINK_HOME:
+* TODO p4 fail to submit: shelved files                            :noexport:
+#+BEGIN_EXAMPLE
+-bash-4.1$ p4 submit -c 7330508
+Submitting change 7330508.
+Change 7330508 has shelved files --  cannot submit.
+#+END_EXAMPLE
+* TODO p4 fail to submit: Out of date files must be resolved or reverted :noexport:
+#+BEGIN_EXAMPLE
+-bash-4.1$ p4 submit -c 7330508
+Submitting change 7330508.
+//depot/bora/main/vpx/wcp/support/test-wcp - must resolve before submitting
+//depot/bora/main/vpx/wcp/support/test-wcp - must resolve #92,#93
+Out of date files must be resolved or reverted.
+Submit failed -- fix problems above then use 'p4 submit -c 7330508'.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+-bash-4.1$ p4 shelve -c 7330508 -d
+Shelved change 7330508 deleted.
+-bash-4.1$ p4 submit -c 7330508
+Submitting change 7330508.
+Locking 1 files ...
+edit //depot/bora/main/vpx/wcp/support/test-wcp#94
+Change 7330508 renamed change 7332988 and submitted.
+#+END_EXAMPLE
+* Local notes                                                      :noexport:
+| Name     | Summary                                                     |
+|----------+-------------------------------------------------------------|
+| Perforce | [[https://wiki.eng.vmware.com/Perforce][wiki: SCM/Perforce]], [[https://confluence.eng.vmware.com/display/NSBU/Perforce+Setup][Confluence: Perforce Setup]]              |
+| Perforce | [[https://confluence.eng.vmware.com/display/WCP/Build+and+Run+Unit+Tests+for+WCP+Service+on+DBC#BuildandRunUnitTestsforWCPServiceonDBC-Compile][Confluence: Build and Run Unit Tests for WCP Service on DBC]] |
+* source                                                           :noexport:
+~/.bashrc
+
+export TCROOT=/build/toolchain
+export BUILDAPPSROOT=/build/apps
+export BUILDAPPS=/build/apps/bin
+export PATH=/build/toolchain/lin64/jdk-1.7.0_51/bin:/build/toolchain/noarch/apache-ant-1.7.0/bin:$PATH
+export PATH=~/bin:~/tools/vmware-git/tools/bin:${TCROOT}/lin64/perforce-r13.1:${TCROOT}/lin64/perforce-r13.2/p4v-2013.2.685561/bin:${BUILD_APPS}/bin:$PATH
+export PATH=/mts/git/tools/bin:${PATH}
+
+export P4CONFIG=/dbc/sc-dbc1216/zdenny/p4/.p4config
+
+source ~/.bashrc
+* p4 can't login and sync                                          :noexport:
+#+BEGIN_EXAMPLE
+   /Users/zdenny/p4  p4 login                                                                                                                                                                                                                                        ✘ 1
+Enter password:
+Password invalid.
+'p4auth' validation failed: zdenny appears locked in Active Directory as of 2019-11-01 11:00:26 PDT.
+See http://tinyurl.eng.vmware.com/b2v for more info.
+
+   /Users/zdenny/p4  p4 sync                                                                                                                                                                                                                                         ✘ 1
+Client 'p4' can only be used from host 'sc-dbc1216.eng.vmware.com'.
+#+END_EXAMPLE
